@@ -58,6 +58,7 @@ if (
 allowed_environments = {
     "SurfaceGround", "MacroHorizon", "ParticleField", "FlowAxes"
 }
+allowed_rendering_modes = {"2D", "3D", "Hybrid"}
 allowed_archetypes = {
     "Establishment",
     "Continuous Physics",
@@ -80,14 +81,15 @@ allowed_strategies = {
     "Hybrid Explanatory Sequence",
 }
 premium_scene_fields = {
-    "visual_strategy", "visual_rationale", "learning_goal", "visual_style",
-    "palette", "composition_plan", "camera_language", "transition_in", "transition_out",
+    "visual_strategy", "rendering_mode", "visual_rationale", "learning_goal",
+    "visual_style", "palette", "composition_plan", "camera_language",
+    "transition_in", "transition_out",
 }
 required_scene_fields = {
     "scene_id", "title", "environment", "environment_intent",
-    "visual_strategy", "visual_rationale", "learning_goal", "visual_style",
-    "palette", "composition_plan", "camera_language", "transition_in", "transition_out",
-    "beats",
+    "visual_strategy", "rendering_mode", "visual_rationale", "learning_goal",
+    "visual_style", "palette", "composition_plan", "camera_language",
+    "transition_in", "transition_out", "beats",
 }
 required_beat_fields = {"beat_id", "full_sentence", "visual_sub_beats"}
 required_subbeat_fields = {
@@ -177,7 +179,7 @@ for si, scene in enumerate(scenes, 1):
     if is_premium:
         for field in required_scene_fields - {
             "scene_id", "title", "environment", "environment_intent", "beats",
-            "palette",
+            "palette", "rendering_mode",
         }:
             if field in scene and (
                 not isinstance(scene[field], str) or not scene[field].strip()
@@ -186,6 +188,11 @@ for si, scene in enumerate(scenes, 1):
 
         if scene.get("visual_strategy") not in allowed_strategies:
             errors.append(f"{prefix}: invalid visual_strategy.")
+
+        if scene.get("rendering_mode") not in allowed_rendering_modes:
+            errors.append(
+                f"{prefix}: rendering_mode must be exactly one of 2D, 3D, or Hybrid."
+            )
 
         palette = scene.get("palette")
         if not isinstance(palette, dict):
