@@ -1,0 +1,1 @@
+An MRI scanner uses a strong magnetic field to influence the behavior of hydrogen nuclei in the body. Radio-frequency pulses disturb their alignment, and the nuclei subsequently produce measurable signals as they return toward equilibrium. The scanner processes these signals to construct images that reveal differences between tissues.

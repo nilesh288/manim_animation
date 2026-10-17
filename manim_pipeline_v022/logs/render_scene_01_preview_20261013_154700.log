@@ -1,0 +1,104 @@
+Manim Community v0.22.0
+
+Animation 0: FadeIn(RigidDisc of 2 submobjects), etc.:   0%|          | 0/32 [00:00<?, ?it/s]Animation 0: FadeIn(RigidDisc of 2 submobjects), etc.:  38%|███▊      | 12/32 [00:00<00:00, 115.27it/s]Animation 0: FadeIn(RigidDisc of 2 submobjects), etc.:  75%|███████▌  | 24/32 [00:00<00:00, 110.28it/s]                                                                                                       [10/13/26 15:47:04] INFO     Animation 0 : Partial movie file written in scene_file_writer.py:173
+                             '/dev/shm/manim_pipeline_v022/run_JdbQ1B/vi                         
+                             deos/scene_01/480p15/partial_movie_files/Sc                         
+                             ene01/58f4c4265adcf2e543bd26b0d6a58ffe9a992                         
+                             ef62acff8d22fbc604a8fa1e71e.mp4'                                    
+                    INFO     Animation 1 : Partial movie file written in scene_file_writer.py:173
+                             '/dev/shm/manim_pipeline_v022/run_JdbQ1B/vi                         
+                             deos/scene_01/480p15/partial_movie_files/Sc                         
+                             ene01/085716dfb4b27f1e8a00232cc1f53b81744ca                         
+                             c4d4447b42bdac75f93d95aaad7.mp4'                                    
+Animation 2: _MethodAnimation(RoundedRectangle), etc.:   0%|          | 0/21 [00:00<?, ?it/s]Animation 2: _MethodAnimation(RoundedRectangle), etc.:  62%|██████▏   | 13/21 [00:00<00:00, 120.68it/s]                                                                                                                           INFO     Animation 2 : Partial movie file written in scene_file_writer.py:173
+                             '/dev/shm/manim_pipeline_v022/run_JdbQ1B/vi                         
+                             deos/scene_01/480p15/partial_movie_files/Sc                         
+                             ene01/f8af30eff360b101a3020aee8f04740b12673                         
+                             e173ec6d87936290e0f5f6abcd0.mp4'                                    
+                    INFO     Animation 3 : Partial movie file written in scene_file_writer.py:173
+                             '/dev/shm/manim_pipeline_v022/run_JdbQ1B/vi                         
+                             deos/scene_01/480p15/partial_movie_files/Sc                         
+                             ene01/c2e833ab23fcac8bf150912d3d0578a124a89                         
+                             1a80277b35e890b4613cf6e24a0.mp4'                                    
+Animation 4: _MethodAnimation(VGroup of 6 submobjects), etc.:   0%|          | 0/27 [00:00<?, ?it/s]Animation 4: _MethodAnimation(VGroup of 6 submobjects), etc.:  41%|████      | 11/27 [00:00<00:00, 103.69it/s]Animation 4: _MethodAnimation(VGroup of 6 submobjects), etc.:  81%|████████▏ | 22/27 [00:00<00:00, 102.80it/s]                                                                                                              [10/13/26 15:47:05] INFO     Animation 4 : Partial movie file written in scene_file_writer.py:173
+                             '/dev/shm/manim_pipeline_v022/run_JdbQ1B/vi                         
+                             deos/scene_01/480p15/partial_movie_files/Sc                         
+                             ene01/7d0ec00331eff6ebaa6e02c8223b9a66a8773                         
+                             0be02469e4f4bdf2bf2a1b78dd8.mp4'                                    
+                    INFO     Animation 5 : Partial movie file written in scene_file_writer.py:173
+                             '/dev/shm/manim_pipeline_v022/run_JdbQ1B/vi                         
+                             deos/scene_01/480p15/partial_movie_files/Sc                         
+                             ene01/f772838703592475e9d97e4953fd4194f159a                         
+                             78f33593b268aec16baee8b2dab.mp4'                                    
+Animation 6: Transform(VectorArrow), etc.:   0%|          | 0/19 [00:00<?, ?it/s]Animation 6: Transform(VectorArrow), etc.:  68%|██████▊   | 13/19 [00:00<00:00, 127.93it/s]                                                                                                               INFO     Animation 6 : Partial movie file written in scene_file_writer.py:173
+                             '/dev/shm/manim_pipeline_v022/run_JdbQ1B/vi                         
+                             deos/scene_01/480p15/partial_movie_files/Sc                         
+                             ene01/3bde7522794e60c56faa2c786b4e7ac084f32                         
+                             ae97be719fa82d8db51532d62ed.mp4'                                    
+                    INFO     Animation 7 : Partial movie file written in scene_file_writer.py:173
+                             '/dev/shm/manim_pipeline_v022/run_JdbQ1B/vi                         
+                             deos/scene_01/480p15/partial_movie_files/Sc                         
+                             ene01/6d4b165cec0f50041405eec38067d4f46d3a1                         
+                             2deb9d6e37f695126390e7cbc70.mp4'                                    
+Animation 8: FadeOut(VGroup of 2 submobjects), etc.:   0%|          | 0/33 [00:00<?, ?it/s]Animation 8: FadeOut(VGroup of 2 submobjects), etc.:  18%|█▊        | 6/33 [00:00<00:00, 57.05it/s]Animation 8: FadeOut(VGroup of 2 submobjects), etc.:  36%|███▋      | 12/33 [00:00<00:00, 55.98it/s]Animation 8: FadeOut(VGroup of 2 submobjects), etc.:  55%|█████▍    | 18/33 [00:00<00:00, 56.02it/s]Animation 8: FadeOut(VGroup of 2 submobjects), etc.:  76%|███████▌  | 25/33 [00:00<00:00, 57.91it/s]Animation 8: FadeOut(VGroup of 2 submobjects), etc.:  94%|█████████▍| 31/33 [00:00<00:00, 58.47it/s]                                                                                                    [10/13/26 15:47:06] INFO     Animation 8 : Partial movie file written in scene_file_writer.py:173
+                             '/dev/shm/manim_pipeline_v022/run_JdbQ1B/vi                         
+                             deos/scene_01/480p15/partial_movie_files/Sc                         
+                             ene01/d94ba4e67a0bbcacda2ac4fac7e133f2ae8d4                         
+                             2f289edaeffece7a7425b6dd57c.mp4'                                    
+                    INFO     Animation 9 : Partial movie file written in scene_file_writer.py:173
+                             '/dev/shm/manim_pipeline_v022/run_JdbQ1B/vi                         
+                             deos/scene_01/480p15/partial_movie_files/Sc                         
+                             ene01/8bb7798758ababe35a74796dff03ecb78ecea                         
+                             312afd680746a03d904f3aacbf6.mp4'                                    
+Animation 10: FadeIn(VGroup of 2 submobjects), etc.:   0%|          | 0/4 [00:00<?, ?it/s]                                                                                                              INFO     Animation 10 : Partial movie file written   scene_file_writer.py:173
+                             in                                                                  
+                             '/dev/shm/manim_pipeline_v022/run_JdbQ1B/vi                         
+                             deos/scene_01/480p15/partial_movie_files/Sc                         
+                             ene01/63a5bf256ffd489fce72ab4b43f3be1f86405                         
+                             3ae2de864c4b6ade68058ff1e6b.mp4'                                    
+Animation 11: _MethodAnimation(VGroup of 2 submobjects), etc.:   0%|          | 0/12 [00:00<?, ?it/s]                                                                                                                         INFO     Animation 11 : Partial movie file written   scene_file_writer.py:173
+                             in                                                                  
+                             '/dev/shm/manim_pipeline_v022/run_JdbQ1B/vi                         
+                             deos/scene_01/480p15/partial_movie_files/Sc                         
+                             ene01/10c9ca3cfdc048dfdce26dea501f7beaa323d                         
+                             6e811399b8bfd22eee12d23c83a.mp4'                                    
+Animation 12: FadeOut(VGroup of 3 submobjects):   0%|          | 0/4 [00:00<?, ?it/s]                                                                                     [10/13/26 15:47:07] INFO     Animation 12 : Partial movie file written   scene_file_writer.py:173
+                             in                                                                  
+                             '/dev/shm/manim_pipeline_v022/run_JdbQ1B/vi                         
+                             deos/scene_01/480p15/partial_movie_files/Sc                         
+                             ene01/e1d7c77825f4f5a22e27949809360f734a0cb                         
+                             260c4504fc2d583af6c9dc306d8.mp4'                                    
+                    INFO     Animation 13 : Partial movie file written   scene_file_writer.py:173
+                             in                                                                  
+                             '/dev/shm/manim_pipeline_v022/run_JdbQ1B/vi                         
+                             deos/scene_01/480p15/partial_movie_files/Sc                         
+                             ene01/94e15fdc1c976ba515bdffc3d654a1a2042c4                         
+                             6c4dee4bf975662830bcd9c275c.mp4'                                    
+Animation 14: FadeIn(VGroup of 3 submobjects), etc.:   0%|          | 0/27 [00:00<?, ?it/s]Animation 14: FadeIn(VGroup of 3 submobjects), etc.:  37%|███▋      | 10/27 [00:00<00:00, 95.15it/s]Animation 14: FadeIn(VGroup of 3 submobjects), etc.:  74%|███████▍  | 20/27 [00:00<00:00, 91.85it/s]                                                                                                                        INFO     Animation 14 : Partial movie file written   scene_file_writer.py:173
+                             in                                                                  
+                             '/dev/shm/manim_pipeline_v022/run_JdbQ1B/vi                         
+                             deos/scene_01/480p15/partial_movie_files/Sc                         
+                             ene01/274b6f8ced7b1aa1b9da2fa7de82cb0fa0956                         
+                             e9f1805f8a2cc659b35aa8232db.mp4'                                    
+                    INFO     Animation 15 : Partial movie file written   scene_file_writer.py:173
+                             in                                                                  
+                             '/dev/shm/manim_pipeline_v022/run_JdbQ1B/vi                         
+                             deos/scene_01/480p15/partial_movie_files/Sc                         
+                             ene01/53b377febc53515da20218f9786215f6e4c7f                         
+                             1db33ace7493558a5a4a0878037.mp4'                                    
+[10/13/26 15:47:08] INFO     Animation 16 : Partial movie file written   scene_file_writer.py:173
+                             in                                                                  
+                             '/dev/shm/manim_pipeline_v022/run_JdbQ1B/vi                         
+                             deos/scene_01/480p15/partial_movie_files/Sc                         
+                             ene01/fce350d42e8f47b1760b9d34b9fb1960668b1                         
+                             dc40c266b2fc108fdf940ce11fd.mp4'                                    
+
+🔒 [PERFECT DURATION LOCK] Rendered: 15.47s == Target: 15.48s
+                    INFO     Combining to Movie file.                    scene_file_writer.py:877
+                    INFO                                                 scene_file_writer.py:999
+                             File ready at                                                       
+                             '/dev/shm/manim_pipeline_v022/run_JdbQ1B/vi                         
+                             deos/scene_01/480p15/Scene01.mp4'                                   
+                                                                                                 
+                    INFO     Rendered Scene01                                      manager.py:226
+                             Played 17 animations                                                

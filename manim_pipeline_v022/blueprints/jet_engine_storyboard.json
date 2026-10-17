@@ -1,0 +1,110 @@
+{
+  "project": "Jet_Engine_Gas_Turbine_Cycle",
+  "total_scenes": 3,
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "title": "Air Intake and Compression",
+      "environment": "SurfaceGround",
+      "environment_intent": "Establish a coherent horizontal jet engine and reveal its front fan and successive compressor stages. Use a restrained technical environment that supports depth and mechanical clarity.",
+      "visual_strategy": "3D Cutaway / Internal Anatomy",
+      "visual_rationale": "A cutaway best communicates how incoming air passes through multiple compressor stages while preserving their spatial relationship inside the engine.",
+      "learning_goal": "Understand that the front fan draws air into the engine and that successive compressor stages process the incoming airflow.",
+      "visual_style": "Use deep navy #101923 as the dominant background, cyan #55C7E8 for incoming and compressed airflow, steel blue #71899D for engine structures, soft white #F3F6FA for primary typography, and light gray #D5DEE7 for annotations. Use restrained metallic shading, clear silhouettes, layered depth, and consistent technical typography.",
+      "composition_plan": "Keep the engine axis horizontal from left to right. Place the fan at the front on the left and compressor stages progressively toward the right. Use a partial cutaway to expose internal components while retaining enough outer casing to identify the complete engine. Show cyan airflow moving through the visible passage without obscuring blades or labels.",
+      "camera_language": "Begin with a composed view of the engine silhouette, then make a slow push toward the front fan and compressor section. Track the cyan airflow along the engine axis. Keep camera movement deliberate and avoid unnecessary rotation.",
+      "transition_in": "Open against deep navy with a restrained reveal of the horizontal engine silhouette, followed by the appearance of its front fan and outer casing.",
+      "transition_out": "Hold the cutaway with airflow visibly entering the compressor stages. Preserve the engine's horizontal orientation so the next scene can continue inside the same machine.",
+      "beats": [
+        {
+          "beat_id": "beat_01",
+          "full_sentence": "A jet engine draws air into its front fan and sends it through successive compressor stages.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "sub_beat_01",
+              "narration_anchor": "A jet engine draws air into its front fan and sends it through successive compressor stages.",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "jet_engine_casing",
+                "front_fan",
+                "compressor_stages",
+                "cyan_airflow"
+              ],
+              "visual_action": "Reveal the front fan and successive compressor stages through a clean partial cutaway. Animate cyan airflow entering from the left, passing through the fan, and continuing through the compressor stages toward the right. Keep the flow direction consistent with the engine axis and make the internal passage easy to follow."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_02",
+      "title": "Combustion and Energy Addition",
+      "environment": "FlowAxes",
+      "environment_intent": "Continue inside the same horizontal engine and clarify the combustion chamber as the region where fuel burns and adds energy to the moving gas.",
+      "visual_strategy": "Technical Schematic",
+      "visual_rationale": "A restrained sectional schematic can clearly distinguish the combustion chamber, fuel entry, and moving gas without requiring visually complex or misleading combustion simulation.",
+      "learning_goal": "Understand that fuel burns in the combustion chamber and adds energy to the gas moving through the engine.",
+      "visual_style": "Retain deep navy #101923 and the existing engine geometry. Use cyan #55C7E8 for incoming air, amber #F3A64A for combustion and energy addition, steel blue #71899D for chamber structures, soft white #F3F6FA for primary typography, and light gray #D5DEE7 for annotations. Use amber selectively so the combustion region stands out from the cooler airflow.",
+      "composition_plan": "Continue the engine's left-to-right axis. Keep the upstream compressor section partially visible on the left and bring the combustion chamber into focus near the center. Indicate fuel entering the chamber with restrained markers and use amber visual emphasis inside the chamber. Show the gas continuing downstream rather than presenting combustion as a separate disconnected object.",
+      "camera_language": "Track laterally from the compressor outlet toward the combustion chamber, then settle into a stable sectional view. Use a modest close-up to emphasize fuel entry and the combustion region without changing the engine's orientation.",
+      "transition_in": "Continue directly from the compressor outlet shown at the end of scene one, retaining the same casing, axis, and cyan flow direction.",
+      "transition_out": "Carry the energized gas visually toward the turbine section on the right. Let the amber emphasis remain localized to the combustion chamber as the camera prepares to follow the gas downstream.",
+      "beats": [
+        {
+          "beat_id": "beat_02",
+          "full_sentence": "Fuel burns in the combustion chamber, adding energy to the moving gas.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "sub_beat_01",
+              "narration_anchor": "Fuel burns in the combustion chamber, adding energy to the moving gas.",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "combustion_chamber",
+                "fuel_injection_markers",
+                "moving_gas",
+                "amber_combustion"
+              ],
+              "visual_action": "Focus on the combustion chamber within the same engine cutaway. Introduce restrained fuel-entry markers and illuminate the chamber interior in amber to represent combustion. Show the gas continuing downstream with a stronger visual emphasis after the chamber. Do not depict the gas as a solid object or imply that color alone is a quantitative measurement of energy."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_03",
+      "title": "Turbine Power, Shaft Coupling, and Exhaust Thrust",
+      "environment": "MacroHorizon",
+      "environment_intent": "Complete the engine explanation by connecting energy extraction at the turbine to compressor drive through the shaft, then show exhaust leaving the nozzle and producing thrust.",
+      "visual_strategy": "Hybrid Explanatory Sequence",
+      "visual_rationale": "The explanation requires both internal mechanical relationships and the downstream exhaust effect. A connected cutaway supported by a shaft highlight and a clear directional thrust indicator communicates these relationships in one continuous sequence.",
+      "learning_goal": "Understand that the turbine extracts some energy from the moving gas to drive the compressor through a shaft, while the exhaust produces thrust.",
+      "visual_style": "Preserve deep navy #101923, cyan #55C7E8 for airflow, amber #F3A64A for the combustion region, pale gold #FFD28A for the shaft, coral #F16D4F for exhaust, steel blue #71899D for engine structures, soft white #F3F6FA for primary typography, and light gray #D5DEE7 for annotations. Keep the mechanical parts readable and use coral only for the downstream exhaust emphasis.",
+      "composition_plan": "Maintain the engine's horizontal left-to-right axis. Show the turbine downstream of the combustion chamber and the shaft mechanically connecting the turbine to the compressor. Highlight the shaft in pale gold, then reveal the exhaust nozzle and a coral exhaust stream moving to the right. If a thrust vector is shown, point it forward to the left, opposite the exhaust flow, and label it clearly.",
+      "camera_language": "Track from the combustion chamber to the turbine, briefly emphasize the shaft connection, and continue toward the exhaust nozzle. Finish in a wider view that restores the full causal relationship between compressor, turbine, shaft, and exhaust.",
+      "transition_in": "Continue from the energized gas leaving the combustion chamber, with the same engine casing, component alignment, and downstream flow direction.",
+      "transition_out": "End on a clear, stable view of the complete engine with the turbine-to-compressor shaft connection and rightward exhaust flow visible. Keep the final frame uncluttered and suitable for a concise documentary ending.",
+      "beats": [
+        {
+          "beat_id": "beat_03",
+          "full_sentence": "The turbine extracts some of that energy to drive the compressor, while the exhaust produces thrust.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "sub_beat_01",
+              "narration_anchor": "The turbine extracts some of that energy to drive the compressor, while the exhaust produces thrust.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "turbine",
+                "shaft",
+                "compressor",
+                "exhaust_nozzle",
+                "coral_exhaust",
+                "thrust_vector"
+              ],
+              "visual_action": "Reveal the turbine downstream of the combustion chamber. Highlight the continuous shaft in pale gold and show its mechanical connection to the compressor, using restrained rotation cues to communicate drive. Then emphasize the exhaust nozzle and animate coral exhaust moving to the right. If a thrust vector is displayed, point it to the left, opposite the exhaust direction. End with the complete causal relationship readable in one frame."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

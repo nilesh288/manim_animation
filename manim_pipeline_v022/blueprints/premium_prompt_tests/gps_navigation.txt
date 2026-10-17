@@ -1,0 +1,1 @@
+GPS satellites travel in orbit and broadcast precisely timed radio signals. A receiver compares the arrival times of signals from multiple satellites to estimate its position. The system uses these timing measurements to calculate a location on Earth, even though the receiver does not transmit a signal back to the satellites.

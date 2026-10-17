@@ -1,0 +1,29 @@
+{
+  "master_audio_total_duration": 2.0,
+  "scenes": [
+    {
+      "scene_id": "engine_smoke_test",
+      "audio_start_time": 0.0,
+      "audio_end_time": 2.0,
+      "total_duration": 2.0,
+      "beats": [
+        {
+          "beat_id": 1,
+          "start_time": 0.0,
+          "end_time": 2.0,
+          "duration": 2.0,
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "1.1",
+              "start_time": 0.0,
+              "end_time": 2.0,
+              "duration": 2.0,
+              "motion_time": 1.0,
+              "hold_time": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

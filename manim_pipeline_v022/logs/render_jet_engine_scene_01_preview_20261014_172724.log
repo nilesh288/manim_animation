@@ -1,0 +1,101 @@
+Manim Community v0.22.0
+
+Animation 0: Create(Line), etc.:   0%|          | 0/18 [00:00<?, ?it/s]Animation 0: Create(Line), etc.:  89%|████████▉ | 16/18 [00:00<00:00, 151.86it/s]                                                                                 [10/14/26 17:27:29] INFO     Animation 0 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/dev/shm/manim_pipeline_v                         
+                             022/run_npS7Lq/videos/jet_                         
+                             engine_scene_01/480p15/par                         
+                             tial_movie_files/JetEngine                         
+                             Scene01/788e942eb81d48e6bd                         
+                             9ebe08bf7c12e2e4cd8c603bac                         
+                             13b3ef3b073395ea4fe1.mp4'                          
+Animation 1: FadeIn(RoundedRectangle), etc.:   0%|          | 0/12 [00:00<?, ?it/s]                                                                                                       INFO     Animation 1 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/dev/shm/manim_pipeline_v                         
+                             022/run_npS7Lq/videos/jet_                         
+                             engine_scene_01/480p15/par                         
+                             tial_movie_files/JetEngine                         
+                             Scene01/2a520eb3ecabea4d6f                         
+                             e8e53847bde994c857ab5183cc                         
+                             fee1058b9bd7e7ab773c.mp4'                          
+Animation 2: LaggedStart(Group), etc.:   0%|          | 0/13 [00:00<?, ?it/s]                                                                                                 INFO     Animation 2 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/dev/shm/manim_pipeline_v                         
+                             022/run_npS7Lq/videos/jet_                         
+                             engine_scene_01/480p15/par                         
+                             tial_movie_files/JetEngine                         
+                             Scene01/67aa04b75f567f86e5                         
+                             0f036fbfeead7cbdb932808bc7                         
+                             43474af0db5061429f14.mp4'                          
+Animation 3: LaggedStart(Group):   0%|          | 0/16 [00:00<?, ?it/s]Animation 3: LaggedStart(Group): 100%|██████████| 16/16 [00:00<00:00, 148.98it/s]                                                                                 [10/14/26 17:27:30] INFO     Animation 3 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/dev/shm/manim_pipeline_v                         
+                             022/run_npS7Lq/videos/jet_                         
+                             engine_scene_01/480p15/par                         
+                             tial_movie_files/JetEngine                         
+                             Scene01/28a91501dbcf6c1179                         
+                             11fcf7da3391e2d7281aa18e79                         
+                             a92786538b5b4df8a7c2.mp4'                          
+Animation 4: LaggedStart(Group), etc.:   0%|          | 0/13 [00:00<?, ?it/s]                                                                                                 INFO     Animation 4 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/dev/shm/manim_pipeline_v                         
+                             022/run_npS7Lq/videos/jet_                         
+                             engine_scene_01/480p15/par                         
+                             tial_movie_files/JetEngine                         
+                             Scene01/15fb807631131cfb41                         
+                             242b68df410bb3b559ee6cdd35                         
+                             2045484f777012a5846a.mp4'                          
+Animation 5: FadeIn(Text('FRONT FAN')), etc.:   0%|          | 0/10 [00:00<?, ?it/s]                                                                                                        INFO     Animation 5 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/dev/shm/manim_pipeline_v                         
+                             022/run_npS7Lq/videos/jet_                         
+                             engine_scene_01/480p15/par                         
+                             tial_movie_files/JetEngine                         
+                             Scene01/b986de5ae2db1ad1dc                         
+                             4c09c1d154bc0904c09d2424a3                         
+                             e055946690bb69cd83cd.mp4'                          
+Animation 6: _MethodAnimation(Arrow), etc.:   0%|          | 0/6 [00:00<?, ?it/s]                                                                                                     INFO     Animation 6 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/dev/shm/manim_pipeline_v                         
+                             022/run_npS7Lq/videos/jet_                         
+                             engine_scene_01/480p15/par                         
+                             tial_movie_files/JetEngine                         
+                             Scene01/6af57219ef8b0f894d                         
+                             0a7e493b45e31327d68d43a187                         
+                             2f4989cea7818a7d4ba1.mp4'                          
+[10/14/26 17:27:31] INFO     Animation 7 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/dev/shm/manim_pipeline_v                         
+                             022/run_npS7Lq/videos/jet_                         
+                             engine_scene_01/480p15/par                         
+                             tial_movie_files/JetEngine                         
+                             Scene01/b4d2d165e927e891a5                         
+                             545e34e2b38767e350ed74977e                         
+                             c62ab9de5b5c9557c173.mp4'                          
+                    WARNING  The original duration of              scene.py:1159
+                             JetEngineScene01.wait(), 0.0233333                 
+                             seconds, is too short for the current              
+                             frame rate of 15 FPS. Rendering with               
+                             the shortest possible duration of                  
+                             0.0666667 seconds instead.                         
+                    INFO     Animation 8 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/dev/shm/manim_pipeline_v                         
+                             022/run_npS7Lq/videos/jet_                         
+                             engine_scene_01/480p15/par                         
+                             tial_movie_files/JetEngine                         
+                             Scene01/63c2c78be460746698                         
+                             8a8e411c6888b6a7ff6c5a4445                         
+                             414878764b0be1a1a1c4.mp4'                          
+
+🔒 [PERFECT DURATION LOCK] Rendered: 7.13s == Target: 7.09s
+                    INFO     Combining to Movie file.   scene_file_writer.py:877
+                    INFO                                scene_file_writer.py:999
+                             File ready at                                      
+                             '/dev/shm/manim_pipeline_v                         
+                             022/run_npS7Lq/videos/jet_                         
+                             engine_scene_01/480p15/Jet                         
+                             EngineScene01.mp4'                                 
+                                                                                
+                    INFO     Rendered JetEngineScene01            manager.py:226
+                             Played 9 animations                                

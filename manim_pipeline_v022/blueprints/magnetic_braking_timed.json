@@ -1,0 +1,1128 @@
+{
+  "project": "Electromagnetic_Eddy_Current_Braking",
+  "total_scenes": 6,
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "title": "The Paradigm of Mechanical Friction",
+      "environment": "SurfaceGround",
+      "environment_intent": "Mechanical stage baseline anchored in dark slate (#2B2D42) on warm off-white canvas (#F8F9FA). Visualizes the destructive macro reality of mechanical braking through a high-speed rotating disc and clamping caliper pads.",
+      "beats": [
+        {
+          "beat_id": 1,
+          "full_sentence": "Every mechanical braking system in our everyday world relies on direct friction:",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "1.1",
+              "narration_anchor": "Every mechanical braking system in our everyday world ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "rotor_disc",
+                "caliper_assembly",
+                "baseline_track"
+              ],
+              "visual_action": "A technical cross-section of a steel disc rotor (#2B2D42 outline with Soft Cobalt #3B82F6 spin vectors) rotates rapidly along the baseline track. Two unboxed mechanical caliper jaws hover above and below the spinning rotor disc.",
+              "start_time": 0.0,
+              "end_time": 2.78,
+              "duration": 2.78,
+              "motion_time": 2.09,
+              "hold_time": 0.69
+            },
+            {
+              "sub_beat_id": "1.2",
+              "narration_anchor": "relies on direct friction:",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "caliper_pads",
+                "rotor_disc",
+                "friction_contact_zone"
+              ],
+              "visual_action": "The calipers snap inward against the spinning rotor with a sharp contact shock. Coral (#FF6B6B) stress hashes and impact sparks burst across the friction interface, visibly dragging down the disc's angular velocity.",
+              "start_time": 2.78,
+              "end_time": 4.6,
+              "duration": 1.82,
+              "motion_time": 1.36,
+              "hold_time": 0.46
+            }
+          ],
+          "start_time": 0.0,
+          "end_time": 4.6,
+          "duration": 4.6
+        },
+        {
+          "beat_id": 2,
+          "full_sentence": "physical pads grinding against steel to scrub away momentum.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "2.1",
+              "narration_anchor": "physical pads grinding against steel ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "shear_stress_lines",
+                "rotor_disc",
+                "particle_debris"
+              ],
+              "visual_action": "Shear stress lines (#FF6B6B) flare continuously across the grinding surface as microscopic dark slate (#2B2D42) wear particles eject tangentially, accompanied by high-frequency microscopic shuddering of the pads.",
+              "start_time": 4.6,
+              "end_time": 6.94,
+              "duration": 2.34,
+              "motion_time": 1.76,
+              "hold_time": 0.58
+            },
+            {
+              "sub_beat_id": "2.2",
+              "narration_anchor": "to scrub away momentum.",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "momentum_vector",
+                "telemetry_gauge",
+                "dimension_leader"
+              ],
+              "visual_action": "A horizontal VectorArrow (#3B82F6) labeled 'MOMENTUM [p]' rapidly contracts into zero directly adjacent to a DimensionRuler tick mark, terminating as a dark slate dust cloud settles on the baseline.",
+              "start_time": 6.94,
+              "end_time": 8.59,
+              "duration": 1.65,
+              "motion_time": 1.24,
+              "hold_time": 0.41
+            }
+          ],
+          "start_time": 4.6,
+          "end_time": 8.59,
+          "duration": 3.99
+        },
+        {
+          "beat_id": 3,
+          "full_sentence": "But what if an object moving at high velocity could be brought to a dead stop without a single atom ever touching?",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "3.1",
+              "narration_anchor": "But what if an object moving at high velocity ",
+              "kinetic_archetype": "Morph / Scale Shift",
+              "actors_involved": [
+                "stage_camera",
+                "rotor_remnants",
+                "drift_track"
+              ],
+              "visual_action": "The brake caliper assembly deconstructs and dissolves into thin ground baseline grid lines; the camera pans laterally rightward to reveal an expansive, pristine SurfaceGround track stretching into open space.",
+              "start_time": 8.59,
+              "end_time": 11.46,
+              "duration": 2.87,
+              "motion_time": 2.15,
+              "hold_time": 0.72
+            },
+            {
+              "sub_beat_id": "3.2",
+              "narration_anchor": "could be brought to a dead stop ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "hypothetical_carrier",
+                "velocity_streamline"
+              ],
+              "visual_action": "A streamlined projectile streaks across the track from left to right with bright trailing velocity streamlines (#3B82F6), abruptly decelerating into a dead halt in mid-flight without touching any physical wall.",
+              "start_time": 11.46,
+              "end_time": 13.12,
+              "duration": 1.66,
+              "motion_time": 1.25,
+              "hold_time": 0.41
+            },
+            {
+              "sub_beat_id": "3.3",
+              "narration_anchor": "without a single atom ever touching?",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "atomic_gap_indicator",
+                "leader_callout_clearance"
+              ],
+              "visual_action": "The object hovers completely motionless above empty space; an unboxed LeaderCallout (#4ECDC4) expands between the projectile and the track, displaying an editorial label 'ZERO CONTACT AIR GAP' flanked by microscopic boundary measurement ticks.",
+              "start_time": 13.12,
+              "end_time": 15.48,
+              "duration": 2.36,
+              "motion_time": 1.77,
+              "hold_time": 0.59
+            }
+          ],
+          "start_time": 8.59,
+          "end_time": 15.48,
+          "duration": 6.89
+        }
+      ],
+      "audio_start_time": 0.0,
+      "audio_end_time": 15.48,
+      "total_duration": 15.48
+    },
+    {
+      "scene_id": "scene_02",
+      "title": "Inertial Drift Toward Non-Magnetic Copper",
+      "environment": "SurfaceGround",
+      "environment_intent": "Frictionless runway established along the lower coordinate baseline (#2B2D42) on canvas (#F8F9FA). Establishes the physical experimental apparatus: a gliding neodymium cylinder carrying a magnetic dipole field toward an open, hollow copper pipe.",
+      "beats": [
+        {
+          "beat_id": 4,
+          "full_sentence": "On a frictionless conductive runway, an isolated magnetic cylinder glides forward in an uninterrupted state of inertial drift.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "4.1",
+              "narration_anchor": "On a frictionless conductive runway, ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "runway_rails",
+                "coordinate_ticks"
+              ],
+              "visual_action": "Twin parallel guide rails in dark slate (#2B2D42) draw smoothly onto the stage with crisp DimensionRuler tick marks evenly spaced across the warm off-white canvas floor.",
+              "start_time": 15.48,
+              "end_time": 17.92,
+              "duration": 2.44,
+              "motion_time": 1.83,
+              "hold_time": 0.61
+            },
+            {
+              "sub_beat_id": "4.2",
+              "narration_anchor": "an isolated magnetic cylinder glides forward ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "magnetic_cylinder",
+                "dipole_core"
+              ],
+              "visual_action": "A precision bicolored magnetic cylinder enters smoothly from stage left: its North pole rendered in Warm Amber (#FFAA00) and South pole in Deep Indigo (#4D44B5), outlined in crisp dark slate (#2B2D42).",
+              "start_time": 17.92,
+              "end_time": 21.04,
+              "duration": 3.12,
+              "motion_time": 2.34,
+              "hold_time": 0.78
+            },
+            {
+              "sub_beat_id": "4.3",
+              "narration_anchor": "in an uninterrupted state of inertial drift.",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "magnetic_cylinder",
+                "inertial_path"
+              ],
+              "visual_action": "The cylinder glides at constant speed across the runway with zero pitch, yaw, or mechanical vibration, hovering a fraction of a millimeter above the frictionless guide rail.",
+              "start_time": 21.04,
+              "end_time": 23.94,
+              "duration": 2.9,
+              "motion_time": 2.18,
+              "hold_time": 0.72
+            }
+          ],
+          "start_time": 15.48,
+          "end_time": 23.94,
+          "duration": 8.46
+        },
+        {
+          "beat_id": 5,
+          "full_sentence": "Its velocity vector remains completely constant, carrying linear momentum and a silent, surrounding cloud of magnetic flux across space.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "5.1",
+              "narration_anchor": "Its velocity vector remains completely constant, ",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "velocity_vector",
+                "telemetry_readout"
+              ],
+              "visual_action": "A horizontal VectorArrow in Soft Cobalt (#3B82F6) pinned to the magnet's center of mass maintains a locked, unvarying length accompanied by an unboxed editorial label 'v = CONSTANT'.",
+              "start_time": 23.94,
+              "end_time": 27.2,
+              "duration": 3.26,
+              "motion_time": 2.45,
+              "hold_time": 0.81
+            },
+            {
+              "sub_beat_id": "5.2",
+              "narration_anchor": "carrying linear momentum ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "momentum_ribbon",
+                "magnetic_cylinder"
+              ],
+              "visual_action": "A translucent forward momentum projection ribbon in Soft Cobalt (#3B82F6) projects outward ahead of the magnet, tracking its perfectly straight translational corridor.",
+              "start_time": 27.2,
+              "end_time": 28.86,
+              "duration": 1.66,
+              "motion_time": 1.25,
+              "hold_time": 0.41
+            },
+            {
+              "sub_beat_id": "5.3",
+              "narration_anchor": "and a silent, surrounding cloud of magnetic flux across space.",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "magnetic_flux_loops",
+                "field_lines"
+              ],
+              "visual_action": "Symmetric dipole field loops emerge from the North pole (#FFAA00) and arc gracefully into the South pole (#4D44B5), rendered as delicate Muted Teal (#4ECDC4) lines with dynamic directional arrowheads.",
+              "start_time": 28.86,
+              "end_time": 33.87,
+              "duration": 5.01,
+              "motion_time": 4.01,
+              "hold_time": 1.0
+            }
+          ],
+          "start_time": 23.94,
+          "end_time": 33.87,
+          "duration": 9.93
+        },
+        {
+          "beat_id": 6,
+          "full_sentence": "Downstream on the track sits an open chamber forged from pure copper: a metal that is completely non-magnetic to static touch.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "6.1",
+              "narration_anchor": "Downstream on the track sits an open chamber forged from pure copper: ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "copper_chamber",
+                "runway_rails"
+              ],
+              "visual_action": "Further downstream on the track, a thick-walled cylindrical copper pipe (#FF6B6B tinted warm metallic copper) appears in longitudinal cross-section, its hollow central bore aligned coaxially with the oncoming magnet's flight path.",
+              "start_time": 33.87,
+              "end_time": 38.95,
+              "duration": 5.08,
+              "motion_time": 4.06,
+              "hold_time": 1.02
+            },
+            {
+              "sub_beat_id": "6.2",
+              "narration_anchor": "a metal that is completely non-magnetic to static touch.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "static_probe",
+                "copper_wall",
+                "callout_permeability"
+              ],
+              "visual_action": "A small static test magnetic disc drops against the outer copper wall and slides freely off without attraction; an unboxed LeaderCallout (#2B2D42) indicates 'RELATIVE PERMEABILITY \u03bcr \u2248 1.0 (NON-MAGNETIC)'.",
+              "start_time": 38.95,
+              "end_time": 42.93,
+              "duration": 3.98,
+              "motion_time": 3.18,
+              "hold_time": 0.8
+            }
+          ],
+          "start_time": 33.87,
+          "end_time": 42.93,
+          "duration": 9.06
+        },
+        {
+          "beat_id": 7,
+          "full_sentence": "As the traveling magnet approaches the entrance, the distance between the two bodies collapses toward zero.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "7.1",
+              "narration_anchor": "As the traveling magnet approaches the entrance, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "magnetic_cylinder",
+                "copper_entrance"
+              ],
+              "visual_action": "The magnetic cylinder maintains its steady drift toward the open bore, steadily closing the spatial gap on the SurfaceGround axis.",
+              "start_time": 42.93,
+              "end_time": 45.74,
+              "duration": 2.81,
+              "motion_time": 2.11,
+              "hold_time": 0.7
+            },
+            {
+              "sub_beat_id": "7.2",
+              "narration_anchor": "the distance between the two bodies collapses toward zero.",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "distance_gauge",
+                "dimension_ruler_dx"
+              ],
+              "visual_action": "A dynamic DimensionRuler spanned between the magnet's leading face and the pipe entrance shrinks rapidly, its numeric delta label '\u0394x' visibly collapsing toward zero.",
+              "start_time": 45.74,
+              "end_time": 49.17,
+              "duration": 3.43,
+              "motion_time": 2.57,
+              "hold_time": 0.86
+            }
+          ],
+          "start_time": 42.93,
+          "end_time": 49.17,
+          "duration": 6.24
+        }
+      ],
+      "audio_start_time": 15.48,
+      "audio_end_time": 49.17,
+      "total_duration": 33.69
+    },
+    {
+      "scene_id": "scene_03",
+      "title": "The Flux Spike and Faraday's Law",
+      "environment": "FlowAxes",
+      "environment_intent": "Analytical coordinate plane (#2B2D42) on canvas (#F8F9FA). The upper quadrant tracks the spatial penetration of field lines through the annular copper ring; the lower quadrant establishes an orthogonal graph tracking Magnetic Flux (\u03a6) vs Time (t).",
+      "beats": [
+        {
+          "beat_id": 8,
+          "full_sentence": "As the magnet closes the gap, the invisible lines of magnetic field begin to slice directly through the conductive copper walls.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "8.1",
+              "narration_anchor": "As the magnet closes the gap, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "spatial_magnet",
+                "copper_annulus"
+              ],
+              "visual_action": "In the spatial quadrant, the Amber North pole (#FFAA00) breaches the entry threshold of the copper cross-section.",
+              "start_time": 49.17,
+              "end_time": 51.38,
+              "duration": 2.21,
+              "motion_time": 1.66,
+              "hold_time": 0.55
+            },
+            {
+              "sub_beat_id": "8.2",
+              "narration_anchor": "the invisible lines of magnetic field begin to slice directly through the conductive copper walls.",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "flux_lines",
+                "copper_lattice_slice"
+              ],
+              "visual_action": "Teal field lines (#4ECDC4) physically intersect the copper wall boundaries, triggering sharp luminous contact nodes (#FFAA00) wherever a flux vector cuts through the conductive metal boundary.",
+              "start_time": 51.38,
+              "end_time": 57.22,
+              "duration": 5.84,
+              "motion_time": 4.67,
+              "hold_time": 1.17
+            }
+          ],
+          "start_time": 49.17,
+          "end_time": 57.22,
+          "duration": 8.05
+        },
+        {
+          "beat_id": 9,
+          "full_sentence": "In that brief fraction of a second, the magnetic flux penetrating the metal spikes from zero into a steep exponential climb.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "9.1",
+              "narration_anchor": "In that brief fraction of a second, ",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "time_marker",
+                "graph_axes"
+              ],
+              "visual_action": "On the lower FlowAxes grid, a vertical time cursor sweeps forward from t_0 along the horizontal axis.",
+              "start_time": 57.22,
+              "end_time": 59.63,
+              "duration": 2.41,
+              "motion_time": 1.81,
+              "hold_time": 0.6
+            },
+            {
+              "sub_beat_id": "9.2",
+              "narration_anchor": "the magnetic flux penetrating the metal spikes from zero ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "flux_curve",
+                "graph_origin"
+              ],
+              "visual_action": "A vibrant Coral curve (#FF6B6B) labeled '\u03a6_B(t)' shoots upward from the origin (0,0), pulling a filled gradient under its rising trajectory.",
+              "start_time": 59.63,
+              "end_time": 62.98,
+              "duration": 3.35,
+              "motion_time": 2.51,
+              "hold_time": 0.84
+            },
+            {
+              "sub_beat_id": "9.3",
+              "narration_anchor": "into a steep exponential climb.",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "tangent_slope_vector",
+                "flux_curve"
+              ],
+              "visual_action": "The curve arches into near-vertical exponential ascent; an attached tangent slope VectorArrow (#FFAA00) rotates sharply upward, signaling an extreme rate of change 'd\u03a6/dt'.",
+              "start_time": 62.98,
+              "end_time": 65.48,
+              "duration": 2.5,
+              "motion_time": 1.88,
+              "hold_time": 0.62
+            }
+          ],
+          "start_time": 57.22,
+          "end_time": 65.48,
+          "duration": 8.26
+        },
+        {
+          "beat_id": 10,
+          "full_sentence": "This sudden change in flux triggers the fundamental law of electromagnetic induction.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "10.1",
+              "narration_anchor": "This sudden change in flux ",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "derivative_indicator",
+                "flux_curve"
+              ],
+              "visual_action": "The steep slope of the curve flashes into an intense Warm Amber (#FFAA00) bracket highlighting the rapid delta interval '\u0394\u03a6 / \u0394t'.",
+              "start_time": 65.48,
+              "end_time": 67.24,
+              "duration": 1.76,
+              "motion_time": 1.32,
+              "hold_time": 0.44
+            },
+            {
+              "sub_beat_id": "10.2",
+              "narration_anchor": "triggers the fundamental law of electromagnetic induction.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "faraday_equation_typography",
+                "induction_pulse"
+              ],
+              "visual_action": "Unboxed editorial typography appears directly on the grid: 'ELECTROMAGNETIC INDUCTION', emitting a concentric ripple pulse across the FlowAxes coordinate plane.",
+              "start_time": 67.24,
+              "end_time": 70.58,
+              "duration": 3.34,
+              "motion_time": 2.51,
+              "hold_time": 0.83
+            }
+          ],
+          "start_time": 65.48,
+          "end_time": 70.58,
+          "duration": 5.1
+        },
+        {
+          "beat_id": 11,
+          "full_sentence": "Faraday discovered that any conductor subjected to a shifting magnetic field generates an internal electromotive force.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "11.1",
+              "narration_anchor": "Faraday discovered that any conductor subjected to a shifting magnetic field ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "copper_profile",
+                "dynamic_flux_bands"
+              ],
+              "visual_action": "The copper wall profile highlights in Muted Teal (#4ECDC4) as fluctuating flux bands weave dynamically across its geometric thickness.",
+              "start_time": 70.58,
+              "end_time": 74.72,
+              "duration": 4.14,
+              "motion_time": 3.31,
+              "hold_time": 0.83
+            },
+            {
+              "sub_beat_id": "11.2",
+              "narration_anchor": "generates an internal electromotive force.",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "emf_potential_ring",
+                "tangential_force_vectors"
+              ],
+              "visual_action": "A circular electromotive force loop illuminates within the wall circumference, surrounded by tangential VectorArrows (#3B82F6) labeled 'EMF (\u2130 = -d\u03a6/dt)'.",
+              "start_time": 74.72,
+              "end_time": 77.94,
+              "duration": 3.22,
+              "motion_time": 2.41,
+              "hold_time": 0.81
+            }
+          ],
+          "start_time": 70.58,
+          "end_time": 77.94,
+          "duration": 7.36
+        }
+      ],
+      "audio_start_time": 49.17,
+      "audio_end_time": 77.94,
+      "total_duration": 28.77
+    },
+    {
+      "scene_id": "scene_04",
+      "title": "Lenz's Counter-Force and Electromagnetic Cushion",
+      "environment": "SurfaceGround",
+      "environment_intent": "Macro perspective along the horizontal SurfaceGround rail (#2B2D42). Illustrates the electrodynamic collision between the incoming permanent magnet and the induced electromagnetic counter-field formed at the entrance of the copper pipe.",
+      "beats": [
+        {
+          "beat_id": 12,
+          "full_sentence": "But Lenz\u2019s law reveals nature's immediate defiance: the induced current must flow in a direction that opposes the very motion creating it.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "12.1",
+              "narration_anchor": "But Lenz\u2019s law reveals nature's immediate defiance: ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "editorial_title",
+                "copper_entrance"
+              ],
+              "visual_action": "Bold unboxed typography 'LENZ\u2019S LAW: OPPOSITION' anchors directly above the pipe mouth; the rim of the copper cylinder pulses with a warning Coral (#FF6B6B) outline.",
+              "start_time": 77.94,
+              "end_time": 81.9,
+              "duration": 3.96,
+              "motion_time": 3.17,
+              "hold_time": 0.79
+            },
+            {
+              "sub_beat_id": "12.2",
+              "narration_anchor": "the induced current must flow in a direction ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "induced_current_ring",
+                "copper_rim"
+              ],
+              "visual_action": "Circumferential current ribbons (#FF6B6B) whip into clockwise rotation along the rim of the copper opening, tracing high-velocity orbital loops.",
+              "start_time": 81.9,
+              "end_time": 84.98,
+              "duration": 3.08,
+              "motion_time": 2.31,
+              "hold_time": 0.77
+            },
+            {
+              "sub_beat_id": "12.3",
+              "narration_anchor": "that opposes the very motion creating it.",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "counter_b_field",
+                "opposing_vector"
+              ],
+              "visual_action": "The swirling current loop produces its own counter-magnetic field; a thick opposing VectorArrow (#FF6B6B) deploys backward directly against the incoming magnet's trajectory.",
+              "start_time": 84.98,
+              "end_time": 88.25,
+              "duration": 3.27,
+              "motion_time": 2.45,
+              "hold_time": 0.82
+            }
+          ],
+          "start_time": 77.94,
+          "end_time": 88.25,
+          "duration": 10.31
+        },
+        {
+          "beat_id": 13,
+          "full_sentence": "The approaching north pole induces a matching north magnetic field right at the entrance of the copper pipe.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "13.1",
+              "narration_anchor": "The approaching north pole induces a matching north magnetic field ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "projectile_north_pole",
+                "pipe_induced_north_pole"
+              ],
+              "visual_action": "The magnet's oncoming face displays its bold Warm Amber 'N' pole; simultaneously, an identical virtual 'N' pole symbol ignites in bright Amber (#FFAA00) at the opening of the copper pipe.",
+              "start_time": 88.25,
+              "end_time": 92.46,
+              "duration": 4.21,
+              "motion_time": 3.37,
+              "hold_time": 0.84
+            },
+            {
+              "sub_beat_id": "13.2",
+              "narration_anchor": "right at the entrance of the copper pipe.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "entrance_barrier_line",
+                "leader_callout_pole"
+              ],
+              "visual_action": "A planar magnetic boundary line (#FFAA00) establishes itself at the rim, tagged with an unboxed LeaderCallout 'INDUCED NORTH POLE'.",
+              "start_time": 92.46,
+              "end_time": 94.48,
+              "duration": 2.02,
+              "motion_time": 1.51,
+              "hold_time": 0.51
+            }
+          ],
+          "start_time": 88.25,
+          "end_time": 94.48,
+          "duration": 6.23
+        },
+        {
+          "beat_id": 14,
+          "full_sentence": "Like two identical repelling poles thrust against one another, an invisible electromagnetic cushion pushes back against the projectile, instantly choking its forward momentum.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "14.1",
+              "narration_anchor": "Like two identical repelling poles thrust against one another, ",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "repulsion_field_lines",
+                "north_pole_pair"
+              ],
+              "visual_action": "The magnetic field lines between the two identical North poles bend and flare outward tangentially at 90 degrees, forming an intense hyperbolic compression cusp in Warm Amber (#FFAA00) and Coral (#FF6B6B).",
+              "start_time": 94.48,
+              "end_time": 98.83,
+              "duration": 4.35,
+              "motion_time": 3.48,
+              "hold_time": 0.87
+            },
+            {
+              "sub_beat_id": "14.2",
+              "narration_anchor": "an invisible electromagnetic cushion pushes back against the projectile, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "lorentz_force_vectors",
+                "magnetic_cushion"
+              ],
+              "visual_action": "A volumetric compression buffer (#4ECDC4) expands between the bodies; counter-acting Lorentz VectorArrows (#FF6B6B) press firmly against the forward face of the magnet.",
+              "start_time": 98.83,
+              "end_time": 102.8,
+              "duration": 3.97,
+              "motion_time": 3.18,
+              "hold_time": 0.79
+            },
+            {
+              "sub_beat_id": "14.3",
+              "narration_anchor": "instantly choking its forward momentum.",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "velocity_vector",
+                "deceleration_readout"
+              ],
+              "visual_action": "The magnet's forward velocity arrow (#3B82F6) shrinks abruptly by 80%; the cylinder visibly pitches back against the invisible cushion as forward momentum collapses.",
+              "start_time": 102.8,
+              "end_time": 105.29,
+              "duration": 2.49,
+              "motion_time": 1.87,
+              "hold_time": 0.62
+            }
+          ],
+          "start_time": 94.48,
+          "end_time": 105.29,
+          "duration": 10.81
+        }
+      ],
+      "audio_start_time": 77.94,
+      "audio_end_time": 105.29,
+      "total_duration": 27.35
+    },
+    {
+      "scene_id": "scene_05",
+      "title": "Microscopic Eddy Currents and Joule Heating",
+      "environment": "ParticleField",
+      "environment_intent": "Sub-atomic coordinate space inside the copper wall. An infinite crystalline lattice of copper ions (#2B2D42) on canvas (#F8F9FA), populated by energetic delocalized electrons (#3B82F6) and thermal vibrational envelopes (#FF6B6B).",
+      "beats": [
+        {
+          "beat_id": 15,
+          "full_sentence": "Inside the solid copper wall, free electrons are driven into swirling microscopic whirlpools known as eddy currents.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "15.1",
+              "narration_anchor": "Inside the solid copper wall, ",
+              "kinetic_archetype": "Morph / Scale Shift",
+              "actors_involved": [
+                "macro_wall",
+                "atomic_lattice"
+              ],
+              "visual_action": "The camera zooms deep into the copper shell into a clean face-centered cubic lattice of copper atomic cores rendered as dark slate circles (#2B2D42) with faint neutral orbital halos.",
+              "start_time": 105.29,
+              "end_time": 107.63,
+              "duration": 2.34,
+              "motion_time": 1.76,
+              "hold_time": 0.58
+            },
+            {
+              "sub_beat_id": "15.2",
+              "narration_anchor": "free electrons are driven into swirling microscopic whirlpools ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "conduction_electrons",
+                "vortex_paths"
+              ],
+              "visual_action": "A dense swarm of conduction electrons (#3B82F6) departs from random thermal drift, organizing into synchronized circular spiral streamlines that churn vigorously between the lattice nodes.",
+              "start_time": 107.63,
+              "end_time": 111.78,
+              "duration": 4.15,
+              "motion_time": 3.32,
+              "hold_time": 0.83
+            },
+            {
+              "sub_beat_id": "15.3",
+              "narration_anchor": "known as eddy currents.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "eddy_vortex_rings",
+                "editorial_label_eddy"
+              ],
+              "visual_action": "The circulating vortex rings coalesce into nested concentric closed loops; unboxed typography 'EDDY CURRENTS (FOUCAULT CURRENTS)' aligns cleanly above the whirlpool axis.",
+              "start_time": 111.78,
+              "end_time": 113.41,
+              "duration": 1.63,
+              "motion_time": 1.22,
+              "hold_time": 0.41
+            }
+          ],
+          "start_time": 105.29,
+          "end_time": 113.41,
+          "duration": 8.12
+        },
+        {
+          "beat_id": 16,
+          "full_sentence": "Instead of escaping along a wire, these massive closed-loop currents circulate within the metal's internal crystal matrix.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "16.1",
+              "narration_anchor": "Instead of escaping along a wire, ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "boundary_walls",
+                "free_electrons"
+              ],
+              "visual_action": "The electron whirlpools deflect smoothly off the copper outer boundary edges (#2B2D42), unable to exit into free air due to the absence of an external conductor wire.",
+              "start_time": 113.41,
+              "end_time": 115.67,
+              "duration": 2.26,
+              "motion_time": 1.7,
+              "hold_time": 0.56
+            },
+            {
+              "sub_beat_id": "16.2",
+              "narration_anchor": "these massive closed-loop currents circulate ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "macro_eddy_loops",
+                "amperage_indicators"
+              ],
+              "visual_action": "The whirlpools expand in diameter, forming colossal circulating macro-rings of electric charge with accelerating orbital velocity.",
+              "start_time": 115.67,
+              "end_time": 118.82,
+              "duration": 3.15,
+              "motion_time": 2.36,
+              "hold_time": 0.79
+            },
+            {
+              "sub_beat_id": "16.3",
+              "narration_anchor": "within the metal's internal crystal matrix.",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "crystal_matrix_grid",
+                "eddy_rings"
+              ],
+              "visual_action": "The swirling rings loop continuously through hundreds of interlinked unit cells within the dark slate copper crystal lattice.",
+              "start_time": 118.82,
+              "end_time": 121.37,
+              "duration": 2.55,
+              "motion_time": 1.91,
+              "hold_time": 0.64
+            }
+          ],
+          "start_time": 113.41,
+          "end_time": 121.37,
+          "duration": 7.96
+        },
+        {
+          "beat_id": 17,
+          "full_sentence": "Because every real conductor possesses electrical resistance, the flowing electrons continually collide with lattice atoms.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "17.1",
+              "narration_anchor": "Because every real conductor possesses electrical resistance, ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "lattice_nodes",
+                "resistance_symbol"
+              ],
+              "visual_action": "Resistance glyphs and an unboxed editorial label 'INTERNAL RESISTANCE [R > 0]' appear anchored to each copper atom node in Muted Teal (#4ECDC4).",
+              "start_time": 121.37,
+              "end_time": 125.31,
+              "duration": 3.94,
+              "motion_time": 3.15,
+              "hold_time": 0.79
+            },
+            {
+              "sub_beat_id": "17.2",
+              "narration_anchor": "the flowing electrons continually collide with lattice atoms.",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "flowing_electrons",
+                "copper_ions",
+                "scattering_flashes"
+              ],
+              "visual_action": "High-speed electrons (#3B82F6) slam into the fixed copper nuclei; upon impact, bright Coral (#FF6B6B) scattering flashes ignite as momentum transfers into the atomic lattice.",
+              "start_time": 125.31,
+              "end_time": 128.96,
+              "duration": 3.65,
+              "motion_time": 2.92,
+              "hold_time": 0.73
+            }
+          ],
+          "start_time": 121.37,
+          "end_time": 128.96,
+          "duration": 7.59
+        },
+        {
+          "beat_id": 18,
+          "full_sentence": "Through Joule heating, mechanical kinetic energy is siphoned out of the moving magnet and converted directly into chaotic thermal vibrations.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "18.1",
+              "narration_anchor": "Through Joule heating, ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "joule_heating_label",
+                "energy_equation"
+              ],
+              "visual_action": "Direct unboxed typography 'JOULE HEATING: P = I\u00b2R' renders in Deep Indigo (#4D44B5) across the upper coordinate space.",
+              "start_time": 128.96,
+              "end_time": 130.57,
+              "duration": 1.61,
+              "motion_time": 1.21,
+              "hold_time": 0.4
+            },
+            {
+              "sub_beat_id": "18.2",
+              "narration_anchor": "mechanical kinetic energy is siphoned out of the moving magnet ",
+              "kinetic_archetype": "Morph / Scale Shift",
+              "actors_involved": [
+                "kinetic_energy_stream",
+                "moving_magnet_silhouette"
+              ],
+              "visual_action": "A stream of cobalt kinetic energy lines draining from the macro magnet flows directly down into the microscopic lattice.",
+              "start_time": 130.57,
+              "end_time": 134.08,
+              "duration": 3.51,
+              "motion_time": 2.81,
+              "hold_time": 0.7
+            },
+            {
+              "sub_beat_id": "18.3",
+              "narration_anchor": "and converted directly into chaotic thermal vibrations.",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "lattice_ions",
+                "thermal_vibration_rings"
+              ],
+              "visual_action": "The copper lattice ions vibrate frantically in place with expanding Warm Amber (#FFAA00) and Coral (#FF6B6B) agitation halos, dissipating ordered mechanical energy as atomic heat.",
+              "start_time": 134.08,
+              "end_time": 137.9,
+              "duration": 3.82,
+              "motion_time": 3.06,
+              "hold_time": 0.76
+            }
+          ],
+          "start_time": 128.96,
+          "end_time": 137.9,
+          "duration": 8.94
+        }
+      ],
+      "audio_start_time": 105.29,
+      "audio_end_time": 137.9,
+      "total_duration": 32.61
+    },
+    {
+      "scene_id": "scene_06",
+      "title": "The Silent Arrest and Energy Continuum",
+      "environment": "SurfaceGround",
+      "environment_intent": "Macro staging returning to the frictionless baseline (#2B2D42) on canvas (#F8F9FA). Concludes the sequence by showing the motionless magnet suspended smoothly at the copper entrance, followed by an unboxed visual energy balance continuum illustrating conservation.",
+      "beats": [
+        {
+          "beat_id": 19,
+          "full_sentence": "Within inches of entering the pipe, the magnet glides to an eerily smooth, silent stop.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "19.1",
+              "narration_anchor": "Within inches of entering the pipe, ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "magnetic_cylinder",
+                "copper_pipe_entrance",
+                "dimension_ruler"
+              ],
+              "visual_action": "The camera pulls back to the SurfaceGround track. The magnetic cylinder hovers barely inside the mouth of the copper cylinder, measured by a subtle DimensionRuler (#2B2D42).",
+              "start_time": 137.9,
+              "end_time": 140.24,
+              "duration": 2.34,
+              "motion_time": 1.76,
+              "hold_time": 0.58
+            },
+            {
+              "sub_beat_id": "19.2",
+              "narration_anchor": "the magnet glides to an eerily smooth, silent stop.",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "magnetic_cylinder",
+                "velocity_indicator"
+              ],
+              "visual_action": "The magnet's final crawl gently decelerates to exactly zero with zero bounce or recoil, floating in equilibrium as the velocity vector vanishes completely.",
+              "start_time": 140.24,
+              "end_time": 144.46,
+              "duration": 4.22,
+              "motion_time": 3.38,
+              "hold_time": 0.84
+            }
+          ],
+          "start_time": 137.9,
+          "end_time": 144.46,
+          "duration": 6.56
+        },
+        {
+          "beat_id": 20,
+          "full_sentence": "There were no brakes, no friction, and no physical impacts.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "20.1",
+              "narration_anchor": "There were no brakes, ",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "brake_absence_marker",
+                "null_cross_01"
+              ],
+              "visual_action": "A crisp dark slate null mark (#2B2D42) strikes across an unboxed label 'NO MECHANICAL BRAKES' hovering above the runway.",
+              "start_time": 144.46,
+              "end_time": 146.15,
+              "duration": 1.69,
+              "motion_time": 1.27,
+              "hold_time": 0.42
+            },
+            {
+              "sub_beat_id": "20.2",
+              "narration_anchor": "no friction, ",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "friction_absence_marker",
+                "null_cross_02"
+              ],
+              "visual_action": "A second null mark strikes across 'NO SURFACE FRICTION' directly below the floating cylinder baseline.",
+              "start_time": 146.15,
+              "end_time": 147.38,
+              "duration": 1.23,
+              "motion_time": 0.88,
+              "hold_time": 0.35
+            },
+            {
+              "sub_beat_id": "20.3",
+              "narration_anchor": "and no physical impacts.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "impact_absence_marker",
+                "null_cross_03"
+              ],
+              "visual_action": "A third null mark strikes across 'NO PHYSICAL CONTACT', highlighting the untouched clearance gap between the magnet and copper surface.",
+              "start_time": 147.38,
+              "end_time": 149.7,
+              "duration": 2.32,
+              "motion_time": 1.74,
+              "hold_time": 0.58
+            }
+          ],
+          "start_time": 144.46,
+          "end_time": 149.7,
+          "duration": 5.24
+        },
+        {
+          "beat_id": 21,
+          "full_sentence": "What began as directional kinetic momentum transformed into shifting magnetic flux,",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "21.1",
+              "narration_anchor": "What began as directional kinetic momentum ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "kinetic_momentum_bar",
+                "energy_continuum_track"
+              ],
+              "visual_action": "An unboxed energy continuum bar establishes on the stage: segment one glows in Soft Cobalt (#3B82F6) labeled 'KINETIC ENERGY (\u00bdmv\u00b2)'.",
+              "start_time": 149.7,
+              "end_time": 152.5,
+              "duration": 2.8,
+              "motion_time": 2.1,
+              "hold_time": 0.7
+            },
+            {
+              "sub_beat_id": "21.2",
+              "narration_anchor": "transformed into shifting magnetic flux,",
+              "kinetic_archetype": "Morph / Scale Shift",
+              "actors_involved": [
+                "magnetic_flux_segment",
+                "energy_flow_connector"
+              ],
+              "visual_action": "The cobalt energy volume morphs seamlessly into a glowing Teal (#4ECDC4) segment labeled 'DYNAMIC MAGNETIC FLUX (d\u03a6/dt)'.",
+              "start_time": 152.5,
+              "end_time": 155.18,
+              "duration": 2.68,
+              "motion_time": 2.01,
+              "hold_time": 0.67
+            }
+          ],
+          "start_time": 149.7,
+          "end_time": 155.18,
+          "duration": 5.48
+        },
+        {
+          "beat_id": 22,
+          "full_sentence": "converted into circulating eddy currents, and dissipated safely as microscopic heat.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "22.1",
+              "narration_anchor": "converted into circulating eddy currents, ",
+              "kinetic_archetype": "Morph / Scale Shift",
+              "actors_involved": [
+                "eddy_current_segment",
+                "energy_flow_connector"
+              ],
+              "visual_action": "The flux segment deforms into a rotating Deep Indigo (#4D44B5) circular segment labeled 'INDUCED EDDY CURRENTS (I)'.",
+              "start_time": 155.18,
+              "end_time": 158.11,
+              "duration": 2.93,
+              "motion_time": 2.2,
+              "hold_time": 0.73
+            },
+            {
+              "sub_beat_id": "22.2",
+              "narration_anchor": "and dissipated safely as microscopic heat.",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "thermal_heat_segment",
+                "heat_dissipation_waves"
+              ],
+              "visual_action": "The indigo segment blooms outward into gentle Coral (#FF6B6B) and Amber (#FFAA00) thermal wavelets labeled 'THERMAL ENERGY (Q)' dispersing into ambient space.",
+              "start_time": 158.11,
+              "end_time": 161.34,
+              "duration": 3.23,
+              "motion_time": 2.42,
+              "hold_time": 0.81
+            }
+          ],
+          "start_time": 155.18,
+          "end_time": 161.34,
+          "duration": 6.16
+        },
+        {
+          "beat_id": 23,
+          "full_sentence": "From mechanical motion to electromagnetic resistance, the continuum of energy conservation remains unbroken.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "23.1",
+              "narration_anchor": "From mechanical motion to electromagnetic resistance, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "full_energy_continuum",
+                "transformation_vectors"
+              ],
+              "visual_action": "A sweeping bracket encloses the entire transformation chain, linked by smooth VectorArrows connecting motion, electromagnetism, and thermal dissipation.",
+              "start_time": 161.34,
+              "end_time": 164.67,
+              "duration": 3.33,
+              "motion_time": 2.5,
+              "hold_time": 0.83
+            },
+            {
+              "sub_beat_id": "23.2",
+              "narration_anchor": "the continuum of energy conservation remains unbroken.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "conservation_law_typography",
+                "balance_rule"
+              ],
+              "visual_action": "A solid dark slate baseline locks beneath the diagram supporting unboxed editorial typography: 'TOTAL ENERGY CONSERVED: \u0394E = 0', bathed in a warm off-white canvas resolution glow.",
+              "start_time": 164.67,
+              "end_time": 168.61,
+              "duration": 3.94,
+              "motion_time": 3.15,
+              "hold_time": 0.79
+            }
+          ],
+          "start_time": 161.34,
+          "end_time": 168.61,
+          "duration": 7.27
+        }
+      ],
+      "audio_start_time": 137.9,
+      "audio_end_time": 168.61,
+      "total_duration": 30.71
+    }
+  ],
+  "master_audio_total_duration": 168.61
+}

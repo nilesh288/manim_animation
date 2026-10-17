@@ -1,0 +1,25 @@
+Manim Community v0.22.0
+
+Animation 0: FadeIn(Text('ENGINE TEST')), etc.:   0%|          | 0/15 [00:00<?, ?it/s]Animation 0: FadeIn(Text('ENGINE TEST')), etc.:  93%|█████████▎| 14/15 [00:00<00:00, 137.58it/s]                                                                                                [10/13/26 15:18:14] INFO     Animation 0 : Partial movie file written in scene_file_writer.py:173
+                             '/dev/shm/manim_pipeline_v022/run_j30RD4/vi                         
+                             deos/engine_smoke_test/480p15/partial_movie                         
+                             _files/EngineSmokeTest/6056cb2f6fa58f978b87                         
+                             71b9faf3f3884cce43c071cadcd6878c65e5016e130                         
+                             d.mp4'                                                              
+                    INFO     Animation 1 : Partial movie file written in scene_file_writer.py:173
+                             '/dev/shm/manim_pipeline_v022/run_j30RD4/vi                         
+                             deos/engine_smoke_test/480p15/partial_movie                         
+                             _files/EngineSmokeTest/14a940789e4c5b1813d6                         
+                             6893c14c534d3c15d70becfc2b941d4ab209c9d3590                         
+                             4.mp4'                                                              
+
+🔒 [PERFECT DURATION LOCK] Rendered: 2.00s == Target: 2.00s
+                    INFO     Combining to Movie file.                    scene_file_writer.py:877
+                    INFO                                                 scene_file_writer.py:999
+                             File ready at                                                       
+                             '/dev/shm/manim_pipeline_v022/run_j30RD4/vi                         
+                             deos/engine_smoke_test/480p15/EngineSmokeTe                         
+                             st.mp4'                                                             
+                                                                                                 
+                    INFO     Rendered EngineSmokeTest                              manager.py:226
+                             Played 2 animations                                                 

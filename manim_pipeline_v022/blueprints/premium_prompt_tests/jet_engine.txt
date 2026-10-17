@@ -1,0 +1,1 @@
+A jet engine draws air into its front fan and sends it through successive compressor stages. Fuel burns in the combustion chamber, adding energy to the moving gas. The turbine extracts some of that energy to drive the compressor, while the exhaust produces thrust.

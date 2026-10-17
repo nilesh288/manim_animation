@@ -1,0 +1,23 @@
+Every mechanical braking system in our everyday world relies on direct friction:
+physical pads grinding against steel to scrub away momentum.
+But what if an object moving at high velocity could be brought to a dead stop without a single atom ever touching?
+On a frictionless conductive runway, an isolated magnetic cylinder glides forward in an uninterrupted state of inertial drift.
+Its velocity vector remains completely constant, carrying linear momentum and a silent, surrounding cloud of magnetic flux across space.
+Downstream on the track sits an open chamber forged from pure copper: a metal that is completely non-magnetic to static touch.
+As the traveling magnet approaches the entrance, the distance between the two bodies collapses toward zero.
+As the magnet closes the gap, the invisible lines of magnetic field begin to slice directly through the conductive copper walls.
+In that brief fraction of a second, the magnetic flux penetrating the metal spikes from zero into a steep exponential climb.
+This sudden change in flux triggers the fundamental law of electromagnetic induction.
+Faraday discovered that any conductor subjected to a shifting magnetic field generates an internal electromotive force.
+But Lenz’s law reveals nature's immediate defiance: the induced current must flow in a direction that opposes the very motion creating it.
+The approaching north pole induces a matching north magnetic field right at the entrance of the copper pipe.
+Like two identical repelling poles thrust against one another, an invisible electromagnetic cushion pushes back against the projectile, instantly choking its forward momentum.
+Inside the solid copper wall, free electrons are driven into swirling microscopic whirlpools known as eddy currents.
+Instead of escaping along a wire, these massive closed-loop currents circulate within the metal's internal crystal matrix.
+Because every real conductor possesses electrical resistance, the flowing electrons continually collide with lattice atoms.
+Through Joule heating, mechanical kinetic energy is siphoned out of the moving magnet and converted directly into chaotic thermal vibrations.
+Within inches of entering the pipe, the magnet glides to an eerily smooth, silent stop.
+There were no brakes, no friction, and no physical impacts.
+What began as directional kinetic momentum transformed into shifting magnetic flux,
+converted into circulating eddy currents, and dissipated safely as microscopic heat.
+From mechanical motion to electromagnetic resistance, the continuum of energy conservation remains unbroken.

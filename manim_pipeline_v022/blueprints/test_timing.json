@@ -1,0 +1,37 @@
+{
+  "master_audio_total_duration": 4.0,
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "audio_start_time": 0.0,
+      "audio_end_time": 4.0,
+      "total_duration": 4.0,
+      "beats": [
+        {
+          "beat_id": "beat_01",
+          "start_time": 0.0,
+          "end_time": 4.0,
+          "duration": 4.0,
+          "sub_beats": [
+            {
+              "sub_beat_id": "sub_beat_01",
+              "start_time": 0.0,
+              "end_time": 2.0,
+              "duration": 2.0,
+              "motion_time": 1.5,
+              "hold_time": 0.5
+            },
+            {
+              "sub_beat_id": "sub_beat_02",
+              "start_time": 2.0,
+              "end_time": 4.0,
+              "duration": 2.0,
+              "motion_time": 1.4,
+              "hold_time": 0.6
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

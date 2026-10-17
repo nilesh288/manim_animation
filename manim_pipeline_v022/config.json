@@ -1,0 +1,47 @@
+{
+  "project": {
+    "name": "Manim Pipeline v0.22.0",
+    "manim_version": "0.22.0",
+    "python_version": "3.11"
+  },
+  "paths": {
+    "prompts": "prompts",
+    "blueprints": "blueprints",
+    "audio": "audio",
+    "scripts": "scripts",
+    "scenes": "scenes",
+    "engine": "engine",
+    "render_output": "render_output",
+    "logs": "logs",
+    "temporary_render": "/dev/shm/manim_pipeline_v022"
+  },
+  "timing": {
+    "duration_tolerance_seconds": 0.15,
+    "usual_hold_min_seconds": 0.3,
+    "usual_hold_max_seconds": 0.8,
+    "long_hold_warning_seconds": 2.0,
+    "allow_long_holds_with_reason": true,
+    "require_motion_hold_conservation": true,
+    "require_beat_duration_conservation": true,
+    "require_scene_duration_conservation": true
+  },
+  "render": {
+    "preview": {
+      "quality": "low",
+      "fps": 15,
+      "resolution": "854x480"
+    },
+    "final": {
+      "quality": "high",
+      "fps": 30,
+      "resolution": "1920x1080"
+    },
+    "use_temporary_storage": true
+  },
+  "validation": {
+    "check_python_syntax": true,
+    "check_timing": true,
+    "check_rendered_duration": true,
+    "warn_on_long_holds": true
+  }
+}

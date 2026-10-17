@@ -1,0 +1,107 @@
+{
+"project": "Satellite_Tracking_And_Prediction",
+"total_scenes": 1,
+"scenes": [
+{
+"scene_id": "scene_01",
+"title": "Orbital Measurements",
+"environment": "MacroHorizon",
+"environment_intent": "An expansive open canvas representing planetary orbit, focusing on precise geometric vectors, distances, and future trajectories over a minimalist Earth curvature.",
+"beats": [
+{
+"beat_id": "beat_01",
+"full_sentence": "A satellite circles Earth at incredible speed.",
+"visual_sub_beats": [
+{
+"sub_beat_id": "sub_beat_01_a",
+"narration_anchor": "A satellite circles Earth ",
+"kinetic_archetype": "Establishment",
+"actors_involved": [
+"earth_curvature",
+"orbital_track",
+"satellite_geometry"
+],
+"visual_action": "A dark slate arc representing the Earth's surface anchors the bottom of the frame. Above it, a dashed circular orbital track is established, with a simplified geometric satellite positioned on the track."
+},
+{
+"sub_beat_id": "sub_beat_01_b",
+"narration_anchor": "at incredible speed.",
+"kinetic_archetype": "Continuous Physics",
+"actors_involved": [
+"satellite_geometry",
+"orbital_track"
+],
+"visual_action": "The satellite accelerates, sweeping rapidly along the dashed orbital track from left to right."
+}
+]
+},
+{
+"beat_id": "beat_02",
+"full_sentence": "Its onboard instruments continuously measure its position and velocity.",
+"visual_sub_beats": [
+{
+"sub_beat_id": "sub_beat_02_a",
+"narration_anchor": "Its onboard instruments continuously measure ",
+"kinetic_archetype": "Establishment",
+"actors_involved": [
+"satellite_geometry",
+"local_coordinate_frame"
+],
+"visual_action": "Thin, faint structural lines project outward from the moving satellite, forming a localized crosshair coordinate frame centered on the craft."
+},
+{
+"sub_beat_id": "sub_beat_02_b",
+"narration_anchor": "its position ",
+"kinetic_archetype": "Telemetry Lock",
+"actors_involved": [
+"earth_center",
+"satellite_geometry",
+"position_vector",
+"position_label"
+],
+"visual_action": "A muted teal vector arrow extends outward from the implied center of the Earth directly to the satellite. A small, dynamic text label locks to the center of this vector, updating as the satellite moves."
+},
+{
+"sub_beat_id": "sub_beat_02_c",
+"narration_anchor": "and velocity.",
+"kinetic_archetype": "Telemetry Lock",
+"actors_involved": [
+"satellite_geometry",
+"velocity_vector",
+"velocity_label"
+],
+"visual_action": "A coral-colored vector arrow extends forward tangentially from the satellite's center along the flight path, accompanied by a changing numerical velocity label."
+}
+]
+},
+{
+"beat_id": "beat_03",
+"full_sentence": "These measurements help mission controllers understand its orbit and predict where it will travel next.",
+"visual_sub_beats": [
+{
+"sub_beat_id": "sub_beat_03_a",
+"narration_anchor": "These measurements help mission controllers understand its orbit ",
+"kinetic_archetype": "Focal Resolution",
+"actors_involved": [
+"position_vector",
+"velocity_vector",
+"orbital_track"
+],
+"visual_action": "The camera perspective slightly widens. The position vector, velocity vector, and the established dashed orbital track briefly pulse with a warm amber accent, visually linking the measurements to the orbit's geometric shape."
+},
+{
+"sub_beat_id": "sub_beat_03_b",
+"narration_anchor": "and predict where it will travel next.",
+"kinetic_archetype": "Continuous Physics",
+"actors_involved": [
+"satellite_geometry",
+"future_trajectory"
+],
+"visual_action": "A solid, soft cobalt line extends forward from the tip of the velocity vector, drawing out a smooth, extended arc along the future path of the orbit ahead of the moving satellite."
+}
+]
+}
+]
+}
+]
+}

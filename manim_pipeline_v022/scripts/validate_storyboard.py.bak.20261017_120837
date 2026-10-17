@@ -1,0 +1,158 @@
+import json
+import sys
+from pathlib import Path
+
+path = Path(
+    sys.argv[1] if len(sys.argv) > 1
+    else "blueprints/test_satellite_storyboard.json"
+)
+
+errors = []
+warnings = []
+
+try:
+    data = json.loads(path.read_text(encoding="utf-8"))
+except (OSError, json.JSONDecodeError) as exc:
+    print(f"FAIL: Cannot read valid JSON: {exc}")
+    raise SystemExit(1)
+
+if not isinstance(data, dict):
+    print("FAIL: Root JSON value must be an object.")
+    raise SystemExit(1)
+
+scenes = data.get("scenes")
+if not isinstance(scenes, list):
+    errors.append("'scenes' must be an array.")
+    scenes = []
+
+if data.get("total_scenes") != len(scenes):
+    errors.append("'total_scenes' does not match scenes array length.")
+
+allowed_environments = {
+    "SurfaceGround", "MacroHorizon", "ParticleField", "FlowAxes"
+}
+allowed_archetypes = {
+    "Establishment", "Continuous Physics", "Morph / Scale Shift",
+    "Physical Reaction / Resonance", "Telemetry Lock", "Focal Resolution"
+}
+
+scene_ids = set()
+beat_count = 0
+subbeat_count = 0
+
+for si, scene in enumerate(scenes, 1):
+    prefix = f"scene[{si}]"
+
+    if not isinstance(scene, dict):
+        errors.append(f"{prefix} must be an object.")
+        continue
+
+    scene_id = scene.get("scene_id")
+    if not isinstance(scene_id, str) or not scene_id:
+        errors.append(f"{prefix}: missing valid scene_id.")
+    elif scene_id in scene_ids:
+        errors.append(f"{prefix}: duplicate scene_id {scene_id!r}.")
+    else:
+        scene_ids.add(scene_id)
+
+    if scene.get("environment") not in allowed_environments:
+        errors.append(f"{prefix}: invalid environment.")
+
+    beats = scene.get("beats")
+    if not isinstance(beats, list) or not beats:
+        errors.append(f"{prefix}: beats must be a non-empty array.")
+        continue
+
+    beat_ids = set()
+
+    for bi, beat in enumerate(beats, 1):
+        beat_count += 1
+        bp = f"{prefix}.beat[{bi}]"
+
+        if not isinstance(beat, dict):
+            errors.append(f"{bp} must be an object.")
+            continue
+
+        beat_id = beat.get("beat_id")
+        if not isinstance(beat_id, (str, int)) or isinstance(beat_id, bool):
+            errors.append(f"{bp}: invalid beat_id.")
+        elif str(beat_id) in beat_ids:
+            errors.append(f"{bp}: duplicate beat_id {beat_id!r}.")
+        else:
+            beat_ids.add(str(beat_id))
+
+        sentence = beat.get("full_sentence")
+        subbeats = beat.get("visual_sub_beats")
+
+        if not isinstance(sentence, str) or not sentence:
+            errors.append(f"{bp}: full_sentence must be a non-empty string.")
+            sentence = ""
+
+        if not isinstance(subbeats, list) or not subbeats:
+            errors.append(f"{bp}: visual_sub_beats must be non-empty.")
+            continue
+
+        anchors = []
+        subbeat_ids = set()
+
+        for ui, subbeat in enumerate(subbeats, 1):
+            subbeat_count += 1
+            up = f"{bp}.visual_sub_beats[{ui}]"
+
+            if not isinstance(subbeat, dict):
+                errors.append(f"{up} must be an object.")
+                continue
+
+            sub_id = subbeat.get("sub_beat_id")
+            if not isinstance(sub_id, str) or not sub_id:
+                errors.append(f"{up}: invalid sub_beat_id.")
+            elif sub_id in subbeat_ids:
+                errors.append(f"{up}: duplicate sub_beat_id {sub_id!r}.")
+            else:
+                subbeat_ids.add(sub_id)
+
+            anchor = subbeat.get("narration_anchor")
+            if not isinstance(anchor, str):
+                errors.append(f"{up}: narration_anchor must be a string.")
+            else:
+                anchors.append(anchor)
+
+            if subbeat.get("kinetic_archetype") not in allowed_archetypes:
+                errors.append(f"{up}: invalid kinetic_archetype.")
+
+            actors = subbeat.get("actors_involved")
+            if not isinstance(actors, list) or not all(
+                isinstance(actor, str) for actor in actors
+            ):
+                errors.append(f"{up}: actors_involved must be an array of strings.")
+
+            if not isinstance(subbeat.get("visual_action"), str) or not subbeat.get("visual_action", "").strip():
+                errors.append(f"{up}: visual_action must be a non-empty string.")
+
+        reconstructed = "".join(anchors)
+        if reconstructed != sentence:
+            errors.append(
+                f"{bp}: narration anchors do not reconstruct full_sentence exactly."
+            )
+
+if not scenes:
+    errors.append("Storyboard must contain at least one scene.")
+
+print(f"File: {path}")
+print(f"Scenes: {len(scenes)}")
+print(f"Beats: {beat_count}")
+print(f"Visual sub-beats: {subbeat_count}")
+print(f"Errors: {len(errors)}")
+print(f"Warnings: {len(warnings)}")
+
+for error in errors:
+    print(f"ERROR: {error}")
+
+for warning in warnings:
+    print(f"WARNING: {warning}")
+
+if errors:
+    print("RESULT: FAIL")
+    raise SystemExit(1)
+
+print("RESULT: PASS")
