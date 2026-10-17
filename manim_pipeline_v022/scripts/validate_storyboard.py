@@ -1,12 +1,30 @@
+import argparse
 import json
 import re
 import sys
 from pathlib import Path
 
-path = Path(
-    sys.argv[1] if len(sys.argv) > 1
-    else "blueprints/test_satellite_storyboard.json"
+parser = argparse.ArgumentParser(
+    description="Validate storyboard JSON structure and narration-anchor integrity."
 )
+parser.add_argument(
+    "storyboard",
+    nargs="?",
+    default="blueprints/test_satellite_storyboard.json",
+    help="Path to storyboard JSON."
+)
+parser.add_argument(
+    "--require-premium",
+    action="store_true",
+    help="Require the complete premium Visual Director schema; do not accept legacy storyboards."
+)
+parser.add_argument(
+    "--untimed",
+    action="store_true",
+    help="Reject timing fields; use this for Master Prompt 1 output before audio alignment."
+)
+args = parser.parse_args()
+path = Path(args.storyboard)
 
 errors = []
 warnings = []
@@ -78,11 +96,35 @@ required_subbeat_fields = {
 }
 snake_case = re.compile(r"^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$")
 
-is_premium = any(
+is_premium = args.require_premium or any(
     isinstance(scene, dict) and bool(premium_scene_fields & scene.keys())
     for scene in scenes
 )
-mode = "premium" if is_premium else "legacy-compatible"
+mode = "premium-required" if args.require_premium else (
+    "premium" if is_premium else "legacy-compatible"
+)
+
+if args.untimed:
+    timing_fields = {
+        "master_audio_total_duration", "audio_start_time", "audio_end_time",
+        "total_duration", "start_time", "end_time", "duration",
+        "motion_time", "hold_time",
+    }
+
+    def find_timing_fields(value, location="$"):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                child_location = f"{location}.{key}"
+                if key in timing_fields:
+                    errors.append(
+                        f"{child_location}: timing field is not allowed in untimed storyboard output."
+                    )
+                find_timing_fields(child, child_location)
+        elif isinstance(value, list):
+            for index, child in enumerate(value):
+                find_timing_fields(child, f"{location}[{index}]")
+
+    find_timing_fields(data)
 
 if not scenes:
     errors.append("Storyboard must contain at least one scene.")
