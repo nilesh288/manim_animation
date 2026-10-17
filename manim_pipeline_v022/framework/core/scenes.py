@@ -13,15 +13,17 @@ class Technical2DScene(TimingContractMixin, MovingCameraScene):
         self.camera.background_color = background_color
         self.initialize_timing_contract()
 
-    def zoom_camera(self, factor, run_time=0.8, point=None, rate_func=None):
-        """Animate a 2D camera-frame zoom; this method is not for 3D scenes."""
+    def zoom_camera(
+        self, factor, run_time=0.8, point=None, rate_func=None, added_anims=None
+    ):
+        """Animate a 2D camera-frame zoom, optionally with parallel animations."""
         animation = self.camera.frame.animate.scale(factor)
         if point is not None:
             animation = animation.move_to(point)
         play_kwargs = {"run_time": run_time}
         if rate_func is not None:
             play_kwargs["rate_func"] = rate_func
-        self.play(animation, **play_kwargs)
+        self.play(animation, *(added_anims or []), **play_kwargs)
 
 
 class Technical3DScene(TimingContractMixin, ThreeDScene):
@@ -53,8 +55,9 @@ class Technical3DScene(TimingContractMixin, ThreeDScene):
         frame_center=None,
         run_time=0.8,
         rate_func=None,
+        added_anims=None,
     ):
-        """Move a ThreeDScene camera. Never uses MovingCameraScene.frame."""
+        """Move a ThreeDScene camera, optionally with parallel animations."""
         kwargs = {"run_time": run_time}
         if rate_func is not None:
             kwargs["rate_func"] = rate_func
@@ -65,5 +68,6 @@ class Technical3DScene(TimingContractMixin, ThreeDScene):
             zoom=zoom,
             focal_distance=focal_distance,
             frame_center=frame_center,
+            added_anims=added_anims or [],
             **kwargs,
         )
