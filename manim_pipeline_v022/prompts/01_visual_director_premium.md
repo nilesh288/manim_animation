@@ -646,7 +646,12 @@ with a single object or string.
 * Preserve exact field spelling, capitalization, and data types.
 * Allowed environments: "SurfaceGround", "MacroHorizon",
   "ParticleField", "FlowAxes".
+* Allowed rendering_mode values are exactly "2D", "3D", and "Hybrid".
 * Use only the exact visual strategy names defined in this prompt.
+* The required palette object must contain every exact color-role key from
+  the Output JSON Contract; singular roles are six-digit hex strings and
+  primary_object_colors / secondary_object_colors are non-empty arrays of
+  six-digit hex strings.
 * Allowed kinetic_archetype values, character-for-character:
   "Establishment"
   "Continuous Physics"
