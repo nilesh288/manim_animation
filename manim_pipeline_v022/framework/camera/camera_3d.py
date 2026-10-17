@@ -12,8 +12,9 @@ def move_3d_camera(
     frame_center=None,
     run_time=0.8,
     rate_func=None,
+    added_anims=None,
 ):
-    """Animate a Manim CE ThreeDScene camera move."""
+    """Animate a Manim CE ThreeDScene camera move with optional parallel animations."""
     kwargs = {"run_time": run_time}
     if rate_func is not None:
         kwargs["rate_func"] = rate_func
@@ -24,5 +25,6 @@ def move_3d_camera(
         zoom=zoom,
         focal_distance=focal_distance,
         frame_center=frame_center,
+        added_anims=added_anims or [],
         **kwargs,
     )
