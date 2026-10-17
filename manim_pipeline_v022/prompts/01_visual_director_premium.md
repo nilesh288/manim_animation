@@ -245,6 +245,10 @@ that treatment clearly in visual_style and visual_rationale.
 For every scene, define:
 
 - visual_strategy: one exact strategy name from the list above.
+- rendering_mode: exactly one of "2D", "3D", or "Hybrid". Select the actual
+  implementation dimension explicitly; do not expect the compiler to infer
+  it from visual_strategy alone. Use "Hybrid" when the scene intentionally
+  combines spatial 3D content with explanatory 2D graphics or overlays.
 - visual_rationale: why this strategy best explains this scene's topic.
 - learning_goal: the specific relationship, mechanism, or conclusion the
   viewer should understand by the end of the scene.
@@ -689,6 +693,7 @@ Use exactly this structure:
       "environment": "SurfaceGround",
       "environment_intent": "Describe the environment, composition, and explanatory purpose.",
       "visual_strategy": "Cinematic 3D Reveal",
+      "rendering_mode": "3D",
       "visual_rationale": "Explain why this visual approach best communicates the scene.",
       "learning_goal": "State what the viewer should understand by the end of the scene.",
       "visual_style": "Describe how the palette, depth cues, materials, and typography should be used.",
@@ -740,6 +745,7 @@ Schema requirements:
   or FlowAxes.
 - environment_intent: string.
 - visual_strategy: one of the defined visual strategies.
+- rendering_mode: exactly "2D", "3D", or "Hybrid".
 - visual_rationale: string explaining the strategy choice.
 - learning_goal: string stating the scene's intended understanding.
 - visual_style: string describing how the chosen visual identity is applied.
@@ -771,7 +777,8 @@ Before returning the JSON, verify:
 - scenes, beats, visual_sub_beats, and actors_involved must always be arrays.
 - All required fields must have the correct JSON types.
 - total_scenes must be an integer matching the scenes array length.
-- Every scene uses an allowed environment and exactly one defined visual strategy.
+- Every scene uses an allowed environment, exactly one defined visual strategy,
+  and an explicit rendering_mode of "2D", "3D", or "Hybrid".
 - Every scene includes all required scene-level visual-plan fields, including
   a structured palette object with exact keys and valid hex-color values.
 - Visual strategies are chosen for explanatory value, topic fit, accuracy,
