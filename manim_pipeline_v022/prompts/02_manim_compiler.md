@@ -129,6 +129,10 @@ Do not treat a symbolic color as a literal physical property.
 - Include camera motion in the action's time budget. Calls to
   self.move_camera_to(...), move_3d_camera(...), self.zoom_camera(...), and
   any other helper that invokes self.play(...) consume animation time.
+- For an action that combines camera movement and object movement, pass the
+  object animations through the camera helper's added_anims parameter, or use
+  the corresponding Manim camera method with added_anims. Do not run two
+  separate play calls concurrently or accidentally exceed motion_time.
 - Do not call self.wait() inside an action. self.beat allocates hold time.
 - For motion_time equal to zero, use only instantaneous scene updates; do not
   call a positive-duration animation.
@@ -147,7 +151,11 @@ warnings to ignore.
 - Convert sub_beat_id into a valid Python identifier, replacing periods,
   hyphens, and other separators with underscores (e.g. sub_beat_1.2 becomes
   act_sub_beat_1_2).
-- Each action function must call self.play(...) directly in its body.
+- Each action function must call self.play(...) directly for ordinary
+  animation operations. A camera-only action may use the verified
+  self.zoom_camera(...), self.move_camera_to(...), or move_3d_camera(...)
+  helper because that helper performs the timed play operation internally.
+  For combined camera/object motion, use the helper's added_anims parameter.
 - Do not create custom sequencing wrappers such as seq(...).
 - Use rate_func values available in Manim CE v0.22.0, such as smooth,
   linear, rush_into, rush_from, or ease_in_out_sine.
