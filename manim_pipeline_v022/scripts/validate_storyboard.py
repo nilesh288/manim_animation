@@ -81,12 +81,12 @@ allowed_strategies = {
 }
 premium_scene_fields = {
     "visual_strategy", "visual_rationale", "learning_goal", "visual_style",
-    "composition_plan", "camera_language", "transition_in", "transition_out",
+    "palette", "composition_plan", "camera_language", "transition_in", "transition_out",
 }
 required_scene_fields = {
     "scene_id", "title", "environment", "environment_intent",
     "visual_strategy", "visual_rationale", "learning_goal", "visual_style",
-    "composition_plan", "camera_language", "transition_in", "transition_out",
+    "palette", "composition_plan", "camera_language", "transition_in", "transition_out",
     "beats",
 }
 required_beat_fields = {"beat_id", "full_sentence", "visual_sub_beats"}
@@ -95,6 +95,19 @@ required_subbeat_fields = {
     "actors_involved", "visual_action",
 }
 snake_case = re.compile(r"^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$")
+palette_string_fields = {
+    "background_color", "primary_text_color", "secondary_text_color",
+    "accent_color", "motion_or_signal_color", "highlight_color",
+    "muted_or_inactive_color", "outline_and_annotation_color",
+}
+palette_array_fields = {"primary_object_colors", "secondary_object_colors"}
+
+
+def valid_hex_color(value):
+    return (
+        isinstance(value, str)
+        and re.fullmatch(r"#[0-9A-Fa-f]{6}", value) is not None
+    )
 
 is_premium = args.require_premium or any(
     isinstance(scene, dict) and bool(premium_scene_fields & scene.keys())
@@ -162,8 +175,10 @@ for si, scene in enumerate(scenes, 1):
         errors.append(f"{prefix}: invalid environment.")
 
     if is_premium:
-        for field in required_scene_fields - {"scene_id", "title", "environment",
-                                              "environment_intent", "beats"}:
+        for field in required_scene_fields - {
+            "scene_id", "title", "environment", "environment_intent", "beats",
+            "palette",
+        }:
             if field in scene and (
                 not isinstance(scene[field], str) or not scene[field].strip()
             ):
@@ -171,6 +186,33 @@ for si, scene in enumerate(scenes, 1):
 
         if scene.get("visual_strategy") not in allowed_strategies:
             errors.append(f"{prefix}: invalid visual_strategy.")
+
+        palette = scene.get("palette")
+        if not isinstance(palette, dict):
+            errors.append(f"{prefix}: palette must be an object.")
+        else:
+            required_palette_fields = palette_string_fields | palette_array_fields
+            missing_palette_fields = required_palette_fields - palette.keys()
+            for field in sorted(missing_palette_fields):
+                errors.append(f"{prefix}.palette: missing required field {field!r}.")
+
+            for field in sorted(palette_string_fields & palette.keys()):
+                if not valid_hex_color(palette[field]):
+                    errors.append(
+                        f"{prefix}.palette.{field}: must be a six-digit hex color."
+                    )
+
+            for field in sorted(palette_array_fields & palette.keys()):
+                colors = palette[field]
+                if (
+                    not isinstance(colors, list)
+                    or not colors
+                    or not all(valid_hex_color(color) for color in colors)
+                ):
+                    errors.append(
+                        f"{prefix}.palette.{field}: must be a non-empty array "
+                        "of six-digit hex colors."
+                    )
 
     beats = scene.get("beats")
     if not isinstance(beats, list) or not beats:
