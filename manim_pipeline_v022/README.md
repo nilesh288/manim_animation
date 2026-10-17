@@ -17,12 +17,15 @@ Turn an approved technical narration into a scientifically clear, visually rich 
 - Premium untimed storyboard prompt with strict JSON contract.
 - Storyboard structure and narration-anchor validator.
 - Audio alignment and timing validator.
-- Manim Community v0.22.0 2D engine and scene/render examples.
+- Existing v0.22.0 2D engine and scene/render examples.
+- Initial separate framework package with strict-timing 2D/3D scene bases,
+  2D technical graphics, 3D world/HUD labels, camera helpers, and semantic palettes.
+- A 2D/3D smoke-test runner that renders to `/dev/shm` and checks output duration.
 - Preview rendering to temporary storage under `/dev/shm` to reduce microSD writes.
 
 ## Important status
 
-This branch is an in-progress implementation, not yet a complete automated production pipeline. In particular, a reusable 3D framework, end-to-end code-generation/repair orchestration, rendered-video visual QA, and final assembly orchestration still require implementation and testing. Do not treat prompt/schema validation or a successful render as proof of visual quality.
+This branch is an in-progress implementation, not yet a complete automated production pipeline. The new 2D/3D framework is an initial implementation and has NOT yet been confirmed by smoke renders on the Raspberry Pi. End-to-end code-generation/repair orchestration, rendered-video visual QA, and final assembly orchestration still require implementation and testing. Do not treat prompt/schema validation or a successful render as proof of visual quality.
 
 ## Target settings
 
@@ -31,6 +34,24 @@ This branch is an in-progress implementation, not yet a complete automated produ
 - Runtime: Manim Community Edition v0.22.0.
 - Target development environment: Raspberry Pi 5, 8 GB RAM.
 - No Ollama dependency.
+
+## First framework test
+
+From the project directory on the Raspberry Pi, run:
+
+```bash
+bash scripts/test_framework_smoke.sh
+```
+
+The script syntax-checks and renders the 2D and 3D smoke scenes into `/dev/shm`,
+then checks their rendered durations. This test has not been run remotely; treat
+the framework as provisional until the command passes on the target environment.
+
+For Master Prompt 1 output before audio alignment, validate with:
+
+```bash
+python scripts/validate_storyboard.py blueprints/your_storyboard.json --require-premium --untimed
+```
 
 ## Acceptance topics
 
