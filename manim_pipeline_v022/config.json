@@ -13,13 +13,14 @@
     "engine": "engine",
     "render_output": "render_output",
     "logs": "logs",
-    "temporary_render": "/dev/shm/manim_pipeline_v022"
+    "temporary_render": "/dev/shm/manim_pipeline_v022",
+    "framework": "framework"
   },
   "timing": {
     "duration_tolerance_seconds": 0.15,
     "usual_hold_min_seconds": 0.3,
     "usual_hold_max_seconds": 0.8,
-    "long_hold_warning_seconds": 2.0,
+    "long_hold_warning_seconds": 2,
     "allow_long_holds_with_reason": true,
     "require_motion_hold_conservation": true,
     "require_beat_duration_conservation": true,
