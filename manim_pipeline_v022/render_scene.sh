@@ -85,6 +85,10 @@ print(f"PASS: Python syntax is valid: {scene_path}")
 PYTHON
 
 echo
+echo "===== STORYBOARD STRUCTURE VALIDATION ====="
+python scripts/validate_storyboard.py "$STORYBOARD"
+
+echo
 echo "===== STORYBOARD TIMING VALIDATION ====="
 python scripts/validate_timing.py "$STORYBOARD" \
     --tolerance "$TOLERANCE" --long-hold "$LONG_HOLD"
@@ -118,7 +122,7 @@ echo "Mode: $MODE (${WIDTH}x${HEIGHT} @ ${FPS} FPS)"
 echo
 echo "===== RENDER TO TEMPORARY STORAGE ====="
 set +e
-PYTHONPATH="$ROOT/engine${PYTHONPATH:+:$PYTHONPATH}" \
+PYTHONPATH="$ROOT:$ROOT/engine${PYTHONPATH:+:$PYTHONPATH}" \
     manim "$SCENE_FILE" "$CLASS_NAME" \
     --media_dir "$RUN_DIR" \
     --resolution "${WIDTH},${HEIGHT}" \
