@@ -318,7 +318,8 @@ for each video and refine it for individual scenes when necessary.
 
 ### 2. Define the Palette Before Shot Planning
 
-For each scene, specify:
+For each scene, populate the structured "palette" object required by the
+Output JSON Contract. It contains these exact roles:
 - background_color
 - primary_text_color
 - secondary_text_color
@@ -330,7 +331,13 @@ For each scene, specify:
 - muted_or_inactive_color
 - outline_and_annotation_color
 
-Use valid, explicit hex colors where the storyboard schema permits them.
+All singular color roles must be valid six-digit hex strings such as "#07111F".
+The primary_object_colors and secondary_object_colors fields must be non-empty
+arrays of valid six-digit hex strings. Do not put these roles only in prose,
+rename them, or add them as unrelated scene-level properties. The visual_style
+field remains a concise prose description of how the palette, material
+hierarchy, depth, and typography should be used.
+
 Ensure the chosen colors can be implemented using the available rendering
 engine. Do not invent engine palette keys or assume an unsupported material
 or lighting effect exists.
@@ -684,7 +691,19 @@ Use exactly this structure:
       "visual_strategy": "Cinematic 3D Reveal",
       "visual_rationale": "Explain why this visual approach best communicates the scene.",
       "learning_goal": "State what the viewer should understand by the end of the scene.",
-      "visual_style": "Describe the topic-appropriate palette, depth cues, materials, and typography.",
+      "visual_style": "Describe how the palette, depth cues, materials, and typography should be used.",
+      "palette": {
+        "background_color": "#07111F",
+        "primary_text_color": "#F3F6FA",
+        "secondary_text_color": "#B8C6D4",
+        "primary_object_colors": ["#71899D"],
+        "secondary_object_colors": ["#344556"],
+        "accent_color": "#55C7E8",
+        "motion_or_signal_color": "#55C7E8",
+        "highlight_color": "#F7E36D",
+        "muted_or_inactive_color": "#344556",
+        "outline_and_annotation_color": "#D5DEE7"
+      },
       "composition_plan": "Describe the focal subject, layout, spatial hierarchy, and supporting elements.",
       "camera_language": "Describe purposeful camera behavior and how it supports the explanation.",
       "transition_in": "Describe the visual connection from the previous scene or opening reveal.",
@@ -723,7 +742,10 @@ Schema requirements:
 - visual_strategy: one of the defined visual strategies.
 - visual_rationale: string explaining the strategy choice.
 - learning_goal: string stating the scene's intended understanding.
-- visual_style: string describing the chosen visual identity.
+- visual_style: string describing how the chosen visual identity is applied.
+- palette: object containing the ten exact semantic color roles. All single
+  color values are valid hex strings; the two object-color values are non-empty
+  arrays of valid hex strings.
 - composition_plan: string describing spatial hierarchy and layout.
 - camera_language: string describing purposeful camera behavior.
 - transition_in: string describing entry continuity or opening reveal.
@@ -750,7 +772,8 @@ Before returning the JSON, verify:
 - All required fields must have the correct JSON types.
 - total_scenes must be an integer matching the scenes array length.
 - Every scene uses an allowed environment and exactly one defined visual strategy.
-- Every scene includes all required scene-level visual-plan fields.
+- Every scene includes all required scene-level visual-plan fields, including
+  a structured palette object with exact keys and valid hex-color values.
 - Visual strategies are chosen for explanatory value, topic fit, accuracy,
   readability, cinematic potential, and implementation feasibility.
 - Camera behavior and transitions serve the explanation rather than decoration.
