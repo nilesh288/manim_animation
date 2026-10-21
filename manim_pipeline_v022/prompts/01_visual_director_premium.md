@@ -322,25 +322,21 @@ for each video and refine it for individual scenes when necessary.
 
 ### 2. Define the Palette Before Shot Planning
 
-For each scene, populate the structured "palette" object required by the
-Output JSON Contract. It contains these exact roles:
+For each scene, populate the structured "palette" object using these six
+semantic roles:
 - background_color
 - primary_text_color
-- secondary_text_color
-- primary_object_colors
-- secondary_object_colors
+- object_colors
 - accent_color
 - motion_or_signal_color
-- highlight_color
-- muted_or_inactive_color
 - outline_and_annotation_color
 
-All singular color roles must be valid six-digit hex strings such as "#07111F".
-The primary_object_colors and secondary_object_colors fields must be non-empty
-arrays of valid six-digit hex strings. Do not put these roles only in prose,
-rename them, or add them as unrelated scene-level properties. The visual_style
-field remains a concise prose description of how the palette, material
-hierarchy, depth, and typography should be used.
+All roles except object_colors must be valid six-digit hex strings such as
+"#07111F". object_colors must be a non-empty array of valid six-digit hex
+strings for the principal materials and objects in the scene. Use the same
+keys for every scene; vary their values when the explanation requires it.
+Do not add redundant color-role fields. The visual_style field describes how
+the palette, materials, depth, contrast, and typography should be applied.
 
 Ensure the chosen colors can be implemented using the available rendering
 engine. Do not invent engine palette keys or assume an unsupported material
@@ -648,10 +644,9 @@ with a single object or string.
   "ParticleField", "FlowAxes".
 * Allowed rendering_mode values are exactly "2D", "3D", and "Hybrid".
 * Use only the exact visual strategy names defined in this prompt.
-* The required palette object must contain every exact color-role key from
-  the Output JSON Contract; singular roles are six-digit hex strings and
-  primary_object_colors / secondary_object_colors are non-empty arrays of
-  six-digit hex strings.
+* The palette object must contain exactly the six defined semantic roles;
+  object_colors is a non-empty array of six-digit hex strings, and the other
+  five roles are six-digit hex strings.
 * Allowed kinetic_archetype values, character-for-character:
   "Establishment"
   "Continuous Physics"
@@ -705,13 +700,9 @@ Use exactly this structure:
       "palette": {
         "background_color": "#07111F",
         "primary_text_color": "#F3F6FA",
-        "secondary_text_color": "#B8C6D4",
-        "primary_object_colors": ["#71899D"],
-        "secondary_object_colors": ["#344556"],
+        "object_colors": ["#71899D", "#344556"],
         "accent_color": "#55C7E8",
         "motion_or_signal_color": "#55C7E8",
-        "highlight_color": "#F7E36D",
-        "muted_or_inactive_color": "#344556",
         "outline_and_annotation_color": "#D5DEE7"
       },
       "composition_plan": "Describe the focal subject, layout, spatial hierarchy, and supporting elements.",
@@ -754,9 +745,8 @@ Schema requirements:
 - visual_rationale: string explaining the strategy choice.
 - learning_goal: string stating the scene's intended understanding.
 - visual_style: string describing how the chosen visual identity is applied.
-- palette: object containing the ten exact semantic color roles. All single
-  color values are valid hex strings; the two object-color values are non-empty
-  arrays of valid hex strings.
+- palette: object containing exactly six semantic roles. Five values are
+  valid hex strings; object_colors is a non-empty array of valid hex strings.
 - composition_plan: string describing spatial hierarchy and layout.
 - camera_language: string describing purposeful camera behavior.
 - transition_in: string describing entry continuity or opening reveal.
@@ -785,7 +775,7 @@ Before returning the JSON, verify:
 - Every scene uses an allowed environment, exactly one defined visual strategy,
   and an explicit rendering_mode of "2D", "3D", or "Hybrid".
 - Every scene includes all required scene-level visual-plan fields, including
-  a structured palette object with exact keys and valid hex-color values.
+  the six-role structured palette with valid hex-color values.
 - Visual strategies are chosen for explanatory value, topic fit, accuracy,
   readability, cinematic potential, and implementation feasibility.
 - Camera behavior and transitions serve the explanation rather than decoration.

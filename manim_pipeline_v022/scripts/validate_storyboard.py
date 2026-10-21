@@ -98,11 +98,10 @@ required_subbeat_fields = {
 }
 snake_case = re.compile(r"^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$")
 palette_string_fields = {
-    "background_color", "primary_text_color", "secondary_text_color",
-    "accent_color", "motion_or_signal_color", "highlight_color",
-    "muted_or_inactive_color", "outline_and_annotation_color",
+    "background_color", "primary_text_color", "accent_color",
+    "motion_or_signal_color", "outline_and_annotation_color",
 }
-palette_array_fields = {"primary_object_colors", "secondary_object_colors"}
+palette_array_fields = {"object_colors"}
 
 
 def valid_hex_color(value):
@@ -200,8 +199,12 @@ for si, scene in enumerate(scenes, 1):
         else:
             required_palette_fields = palette_string_fields | palette_array_fields
             missing_palette_fields = required_palette_fields - palette.keys()
+            extra_palette_fields = palette.keys() - required_palette_fields
+
             for field in sorted(missing_palette_fields):
                 errors.append(f"{prefix}.palette: missing required field {field!r}.")
+            for field in sorted(extra_palette_fields):
+                errors.append(f"{prefix}.palette: unexpected field {field!r}.")
 
             for field in sorted(palette_string_fields & palette.keys()):
                 if not valid_hex_color(palette[field]):

@@ -92,27 +92,25 @@ through the new framework. The old engine remains a separate legacy reference.
 
 ## 4. Structured palette contract
 
-Each scene has a structured palette object. Copy its values into a small
-Python dictionary without changing the hex values:
+Each scene has a compact six-role palette. Copy its values into a Python
+dictionary without changing the hex values:
 
     palette = {
         "background_color": "...",
         "primary_text_color": "...",
-        "secondary_text_color": "...",
-        "primary_object_colors": ["..."],
-        "secondary_object_colors": ["..."],
+        "object_colors": ["...", "..."],
         "accent_color": "...",
         "motion_or_signal_color": "...",
-        "highlight_color": "...",
-        "muted_or_inactive_color": "...",
         "outline_and_annotation_color": "...",
     }
 
-Set self.camera.background_color from background_color. Use the remaining
-roles consistently according to the storyboard's visual_style and
-composition_plan. For object-color arrays, use the listed colors in order
-and add no new color unless the storyboard's visual action requires it.
-Do not treat a symbolic color as a literal physical property.
+Set self.camera.background_color from background_color. Use primary_text_color
+for primary typography, object_colors for principal materials, accent_color
+for explanatory emphasis, motion_or_signal_color for flow or movement, and
+outline_and_annotation_color for technical labels and outlines. Follow the
+storyboard's visual_style and composition_plan. Use listed object colors in
+order; add a color only when the visual action requires it. Do not treat a
+symbolic color as a literal physical property.
 
 ## 5. Timing conservation — strict
 
@@ -229,7 +227,7 @@ For every mode:
 Verify that:
 - the Python file parses;
 - the class base matches rendering_mode;
-- the background and semantic colors match the structured palette;
+- the background and semantic colors match the six-role structured palette;
 - every timed sub-beat appears exactly once and in order;
 - all action runtimes conserve motion_time;
 - camera movement uses the correct 2D or 3D API;

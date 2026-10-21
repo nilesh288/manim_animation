@@ -15,17 +15,12 @@
       "palette": {
         "background_color": "#101923",
         "primary_text_color": "#F3F6FA",
-        "secondary_text_color": "#D5DEE7",
-        "primary_object_colors": [
-          "#71899D"
-        ],
-        "secondary_object_colors": [
+        "object_colors": [
+          "#71899D",
           "#182635"
         ],
         "accent_color": "#55C7E8",
         "motion_or_signal_color": "#55C7E8",
-        "highlight_color": "#55C7E8",
-        "muted_or_inactive_color": "#344556",
         "outline_and_annotation_color": "#D5DEE7"
       },
       "composition_plan": "Keep the engine axis horizontal from left to right. Place the fan at the front on the left and compressor stages progressively toward the right. Use a partial cutaway to expose internal components while retaining enough outer casing to identify the complete engine. Show cyan airflow moving through the visible passage without obscuring blades or labels.",
@@ -66,17 +61,12 @@
       "palette": {
         "background_color": "#101923",
         "primary_text_color": "#F3F6FA",
-        "secondary_text_color": "#D5DEE7",
-        "primary_object_colors": [
-          "#71899D"
-        ],
-        "secondary_object_colors": [
+        "object_colors": [
+          "#71899D",
           "#182635"
         ],
         "accent_color": "#F3A64A",
         "motion_or_signal_color": "#55C7E8",
-        "highlight_color": "#F3A64A",
-        "muted_or_inactive_color": "#344556",
         "outline_and_annotation_color": "#D5DEE7"
       },
       "composition_plan": "Continue the engine's left-to-right axis. Keep the upstream compressor section partially visible on the left and bring the combustion chamber into focus near the center. Indicate fuel entering the chamber with restrained markers and use amber visual emphasis inside the chamber. Show the gas continuing downstream rather than presenting combustion as a separate disconnected object.",
@@ -117,17 +107,12 @@
       "palette": {
         "background_color": "#101923",
         "primary_text_color": "#F3F6FA",
-        "secondary_text_color": "#D5DEE7",
-        "primary_object_colors": [
-          "#71899D"
-        ],
-        "secondary_object_colors": [
+        "object_colors": [
+          "#71899D",
           "#182635"
         ],
         "accent_color": "#F16D4F",
         "motion_or_signal_color": "#55C7E8",
-        "highlight_color": "#FFD28A",
-        "muted_or_inactive_color": "#344556",
         "outline_and_annotation_color": "#D5DEE7"
       },
       "composition_plan": "Maintain the engine's horizontal left-to-right axis. Show the turbine downstream of the combustion chamber and the shaft mechanically connecting the turbine to the compressor. Highlight the shaft in pale gold, then reveal the exhaust nozzle and a coral exhaust stream moving to the right. If a thrust vector is shown, point it forward to the left, opposite the exhaust flow, and label it clearly.",
