@@ -2,7 +2,7 @@
 
 import math
 
-from manim import Animation
+from manim import Animation, config
 
 
 class TimingContractMixin:
@@ -100,14 +100,23 @@ class TimingContractMixin:
                 "storyboard before calling finalize()."
             )
 
-        actual = float(self.time)
         target = float(target)
+        frame_rate = float(config.frame_rate)
+        frame_tolerance = (1.0 / frame_rate + 0.001) if frame_rate > 0 else 0.0
+        actual = float(self.time)
         difference = actual - target
-        if abs(difference) > self.timing_tolerance:
+
+        # Correct a one-frame shortfall instead of merely accepting it.
+        if difference < -0.001 and difference >= -frame_tolerance:
+            self.wait(-difference)
+            actual = float(self.time)
+            difference = actual - target
+
+        if abs(difference) > 0.001:
             raise RuntimeError(
-                "FINAL TIMING MISMATCH: rendered scene time is "
-                f"{actual:.3f}s; storyboard target is {target:.3f}s "
-                f"(difference {difference:+.3f}s)."
+                "FINAL TIMING MISMATCH after frame correction: rendered "
+                f"scene time is {actual:.3f}s; storyboard target is "
+                f"{target:.3f}s (difference {difference:+.3f}s)."
             )
 
         print(
