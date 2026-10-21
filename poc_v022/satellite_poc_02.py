@@ -1,0 +1,338 @@
+from manim import *
+import numpy as np
+import random
+
+
+class SatellitePOC02(ThreeDScene):
+    def construct(self):
+        random.seed(42)
+        np.random.seed(42)
+
+        # Dark cinematic space environment
+        self.camera.background_color = "#020610"
+        self.set_camera_orientation(
+            phi=70 * DEGREES,
+            theta=-45 * DEGREES,
+            zoom=1.0,
+        )
+
+        earth_center = np.array([-2.35, 0.0, 0.0])
+        earth_radius = 1.30
+
+        # --------------------------------------------------
+        # 1. Deep-space starfield
+        # --------------------------------------------------
+        stars = VGroup()
+        for _ in range(180):
+            point = np.array([
+                random.uniform(-7.2, 7.2),
+                random.uniform(-4.0, 4.0),
+                random.uniform(-2.8, 2.8),
+            ])
+            dot = Dot3D(
+                point=point,
+                radius=random.uniform(0.009, 0.022),
+                color=random.choice([
+                    "#FFFFFF", "#9BD8FF", "#4B8FC7"
+                ]),
+            )
+            dot.set_opacity(random.uniform(0.25, 0.85))
+            stars.add(dot)
+
+        self.add(stars)
+        self.wait(0.7)
+
+        # --------------------------------------------------
+        # 2. Three-dimensional Earth
+        # --------------------------------------------------
+        earth = Sphere(
+            center=earth_center,
+            radius=earth_radius,
+            resolution=(24, 48),
+        )
+        earth.set_color("#07509A")
+        earth.set_opacity(1)
+        earth.set_stroke(
+            color="#48B8FF",
+            width=0.5,
+            opacity=0.65,
+        )
+
+        atmosphere = Sphere(
+            center=earth_center,
+            radius=earth_radius * 1.055,
+            resolution=(20, 40),
+        )
+        atmosphere.set_color("#168BFF")
+        atmosphere.set_opacity(0.12)
+        atmosphere.set_stroke(
+            color="#4BC8FF",
+            width=1.4,
+            opacity=0.8,
+        )
+
+        self.play(
+            FadeIn(earth),
+            run_time=1.8,
+        )
+        self.play(
+            FadeIn(atmosphere),
+            run_time=0.7,
+        )
+
+        # --------------------------------------------------
+        # 3. Latitude and longitude curves
+        # --------------------------------------------------
+        globe_lines = VGroup()
+
+        for latitude in [-55, -28, 0, 28, 55]:
+            angle = latitude * DEGREES
+            radius = earth_radius * np.cos(angle)
+            height = earth_radius * np.sin(angle)
+
+            curve = ParametricFunction(
+                lambda t, r=radius, z=height: (
+                    earth_center
+                    + np.array([
+                        r * np.cos(t),
+                        r * np.sin(t),
+                        z,
+                    ])
+                ),
+                t_range=[0, TAU],
+                color="#55BFFF",
+                stroke_width=0.75,
+            )
+            curve.set_opacity(0.48)
+            globe_lines.add(curve)
+
+        for longitude in [-60, -30, 0, 30, 60]:
+            angle = longitude * DEGREES
+
+            curve = ParametricFunction(
+                lambda t, a=angle: (
+                    earth_center
+                    + earth_radius * np.array([
+                        np.cos(t) * np.cos(a),
+                        np.cos(t) * np.sin(a),
+                        np.sin(t),
+                    ])
+                ),
+                t_range=[0, TAU],
+                color="#55BFFF",
+                stroke_width=0.75,
+            )
+            curve.set_opacity(0.48)
+            globe_lines.add(curve)
+
+        self.play(
+            Create(globe_lines),
+            run_time=1.3,
+        )
+
+
+        # --------------------------------------------------
+        # 4. Thin, single-line 3D orbital trajectory
+        # --------------------------------------------------
+        def orbit_position(t):
+            return earth_center + np.array([
+                3.05 * np.cos(t),
+                1.75 * np.sin(t),
+                0.35 * np.sin(t),
+            ])
+
+        orbit = ParametricFunction(
+            orbit_position,
+            t_range=[0, TAU],
+            color="#FFD166",
+            stroke_width=1.2,
+            use_smoothing=False,
+        )
+        orbit.set_fill(opacity=0)
+        orbit.set_stroke(
+            color="#FFD166",
+            width=1.2,
+            opacity=0.9,
+        )
+
+        self.play(
+            Create(orbit),
+            run_time=1.4,
+        )
+
+
+        # --------------------------------------------------
+        # 5. Build a detailed satellite from Manim geometry
+        # --------------------------------------------------
+        body = Cube(
+            side_length=0.34,
+            fill_color="#B8D5E8",
+            fill_opacity=1,
+            stroke_color="#EAF7FF",
+            stroke_width=1.0,
+        )
+
+        left_panel = Cube(
+            side_length=0.1,
+            fill_color="#123B73",
+            fill_opacity=1,
+            stroke_color="#45C7F4",
+            stroke_width=0.8,
+        )
+        left_panel.stretch(4.0, dim=0)
+        left_panel.stretch(0.9, dim=1)
+        left_panel.stretch(0.16, dim=2)
+        left_panel.move_to([-0.42, 0, 0])
+
+        right_panel = Cube(
+            side_length=0.1,
+            fill_color="#123B73",
+            fill_opacity=1,
+            stroke_color="#45C7F4",
+            stroke_width=0.8,
+        )
+        right_panel.stretch(4.0, dim=0)
+        right_panel.stretch(0.9, dim=1)
+        right_panel.stretch(0.16, dim=2)
+        right_panel.move_to([0.42, 0, 0])
+
+        panel_details = VGroup()
+        for x in [-0.42, 0.42]:
+            for offset in [-0.13, 0.13]:
+                panel_details.add(
+                    Line(
+                        [x + offset, -0.19, 0.02],
+                        [x + offset, 0.19, 0.02],
+                        color="#7DD7FF",
+                        stroke_width=0.8,
+                    )
+                )
+
+        antenna = Line(
+            [0, 0.15, 0.12],
+            [0, 0.55, 0.12],
+            color="#FFFFFF",
+            stroke_width=2,
+        )
+
+        antenna_tip = Dot3D(
+            point=[0, 0.55, 0.12],
+            radius=0.045,
+            color="#7BEAFF",
+        )
+
+        satellite = VGroup(
+            left_panel,
+            right_panel,
+            panel_details,
+            body,
+            antenna,
+            antenna_tip,
+        )
+
+        satellite.move_to(orbit_position(0))
+
+        self.play(
+            FadeIn(satellite),
+            run_time=0.8,
+        )
+
+        # --------------------------------------------------
+        # 6. Satellite travels along the 3D orbit
+        # --------------------------------------------------
+        self.play(
+            MoveAlongPath(
+                satellite,
+                orbit,
+                rate_func=linear,
+            ),
+            run_time=5.8,
+        )
+
+        # Subtle camera movement to add depth
+        self.move_camera(
+            theta=-32 * DEGREES,
+            run_time=1.5,
+        )
+
+        # --------------------------------------------------
+        # 7. Communication beam and moving signal pulses
+        # --------------------------------------------------
+        signal_start = satellite.get_center()
+        signal_end = earth_center + np.array([0.65, 0.35, 0.0])
+
+        signal_path = Line(
+            signal_start,
+            signal_end,
+            color="#FFB547",
+            stroke_width=2.2,
+        )
+        signal_path.set_opacity(0.9)
+
+        self.play(
+            Create(signal_path),
+            run_time=0.45,
+        )
+
+        for _ in range(3):
+            pulse = Dot3D(
+                point=signal_start,
+                radius=0.065,
+                color="#FFF0A6",
+            )
+            self.add(pulse)
+            self.play(
+                MoveAlongPath(
+                    pulse,
+                    signal_path,
+                    rate_func=linear,
+                ),
+                run_time=0.48,
+            )
+            self.remove(pulse)
+
+        self.play(
+            FadeOut(signal_path),
+            run_time=0.2,
+        )
+
+        # --------------------------------------------------
+        # 8. Fixed documentary title overlay
+        # --------------------------------------------------
+        title = Text(
+            "SATELLITE",
+            font_size=43,
+            weight=BOLD,
+            color="#F4FAFF",
+        )
+        title.move_to([3.35, 0.45, 0])
+
+        accent = Line(
+            title.get_left(),
+            title.get_left() + RIGHT * 1.15,
+            color="#28BFFF",
+            stroke_width=4,
+        ).next_to(title, DOWN, aligned_edge=LEFT, buff=0.16)
+
+        subtitle = Text(
+            "CONNECTING OUR WORLD",
+            font_size=14,
+            color="#8BD7FF",
+        ).next_to(accent, DOWN, aligned_edge=LEFT, buff=0.18)
+
+        self.add_fixed_in_frame_mobjects(
+            title, accent, subtitle
+        )
+
+        title.set_opacity(0)
+        accent.set_opacity(0)
+        subtitle.set_opacity(0)
+
+        self.play(
+            title.animate.set_opacity(1),
+            accent.animate.set_opacity(1),
+            subtitle.animate.set_opacity(1),
+            run_time=1.1,
+        )
+
+        self.wait(1.5)
