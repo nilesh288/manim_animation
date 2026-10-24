@@ -1,0 +1,2229 @@
+{
+  "project": "Continuum_Kinematics_To_Covalent_Bonds",
+  "total_scenes": 6,
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "title": "Kinematic Genesis & Mechanical Work",
+      "environment": "SurfaceGround",
+      "environment_intent": "A calibrated linear baseline in #2B2D42 spans horizontally across an infinite #F8F9FA canvas, punctuated by subtle metric subdivisions and Cartesian ticks without enclosing frames.",
+      "beats": [
+        {
+          "beat_id": 1,
+          "full_sentence": "Every physical transformation in our universe, from the orbit of celestial bodies to the synthesis of complex molecules, begins with a fundamental concept: motion.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "1.1",
+              "narration_anchor": "Every physical transformation in our universe, ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "canvas_grid",
+                "surface_baseline"
+              ],
+              "visual_action": "A wide #2B2D42 horizontal runway draws across the lower third of the #F8F9FA plane, calibrated with faint isometric ticks.",
+              "start_time": 0.0,
+              "end_time": 2.69,
+              "duration": 2.69,
+              "motion_time": 2.02,
+              "hold_time": 0.67
+            },
+            {
+              "sub_beat_id": "1.2",
+              "narration_anchor": "from the orbit of celestial bodies to the synthesis of complex molecules, ",
+              "kinetic_archetype": "Morph / Scale Shift",
+              "actors_involved": [
+                "macro_orbit_trace",
+                "atomic_bond_pair"
+              ],
+              "visual_action": "A faint #4D44B5 elliptical orbit sweeps across the upper canvas, seamlessly collapsing inward to form two tiny counter-rotating point masses linked by a dashed #4ECDC4 vector.",
+              "start_time": 2.69,
+              "end_time": 7.27,
+              "duration": 4.58,
+              "motion_time": 3.66,
+              "hold_time": 0.92
+            },
+            {
+              "sub_beat_id": "1.3",
+              "narration_anchor": "begins with a fundamental concept: motion.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "motion_editorial_label",
+                "initial_velocity_vector"
+              ],
+              "visual_action": "Unboxed editorial text 'MOTION' snaps onto the grid in #2B2D42, underlined by a sharp #FF6B6B VectorArrow extending along the baseline.",
+              "start_time": 7.27,
+              "end_time": 10.84,
+              "duration": 3.57,
+              "motion_time": 2.86,
+              "hold_time": 0.71
+            }
+          ],
+          "start_time": 0.0,
+          "end_time": 10.84,
+          "duration": 10.84
+        },
+        {
+          "beat_id": 2,
+          "full_sentence": "In classical mechanics, an isolated object resting on a frictionless plane remains motionless.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "2.1",
+              "narration_anchor": "In classical mechanics, ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "coordinate_ticks",
+                "runway_plane"
+              ],
+              "visual_action": "The camera shifts into a strict orthographic profile of the #2B2D42 baseline, illuminating zero-friction hashmarks.",
+              "start_time": 10.84,
+              "end_time": 12.5,
+              "duration": 1.66,
+              "motion_time": 1.24,
+              "hold_time": 0.42
+            },
+            {
+              "sub_beat_id": "2.2",
+              "narration_anchor": "an isolated object resting on a frictionless plane ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "primary_mass_block"
+              ],
+              "visual_action": "A solid circular disc in #2B2D42 with a crisp #4D44B5 core drops precisely onto the runway, settling with zero oscillation.",
+              "start_time": 12.5,
+              "end_time": 15.26,
+              "duration": 2.76,
+              "motion_time": 2.07,
+              "hold_time": 0.69
+            },
+            {
+              "sub_beat_id": "2.3",
+              "narration_anchor": "remains motionless.",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "equilibrium_ring",
+                "status_callout"
+              ],
+              "visual_action": "A hairline ring in #2B2D42 pulses once around the mass, anchoring a static DimensionRuler pinned at origin position x = 0.",
+              "start_time": 15.26,
+              "end_time": 16.62,
+              "duration": 1.36,
+              "motion_time": 1.01,
+              "hold_time": 0.35
+            }
+          ],
+          "start_time": 10.84,
+          "end_time": 16.62,
+          "duration": 5.78
+        },
+        {
+          "beat_id": 3,
+          "full_sentence": "Its velocity is zero, and its linear momentum is non-existent.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "3.1",
+              "narration_anchor": "Its velocity is zero, ",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "velocity_readout"
+              ],
+              "visual_action": "Direct LeaderCallout extends upward to unboxed typography 'v = 0.0 m/s' in #2B2D42 with a dormant #3B82F6 origin dot.",
+              "start_time": 16.62,
+              "end_time": 18.22,
+              "duration": 1.6,
+              "motion_time": 1.2,
+              "hold_time": 0.4
+            },
+            {
+              "sub_beat_id": "3.2",
+              "narration_anchor": "and its linear momentum is non-existent.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "momentum_metric"
+              ],
+              "visual_action": "A secondary unboxed label 'p = 0' renders in #4D44B5 directly beneath the velocity stem, flashing an empty dashed vector box.",
+              "start_time": 18.22,
+              "end_time": 20.78,
+              "duration": 2.56,
+              "motion_time": 1.92,
+              "hold_time": 0.64
+            }
+          ],
+          "start_time": 16.62,
+          "end_time": 20.78,
+          "duration": 4.16
+        },
+        {
+          "beat_id": 4,
+          "full_sentence": "But the moment an unbalanced external force acts upon this mass, reality shifts into a dynamic state.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "4.1",
+              "narration_anchor": "But the moment an unbalanced external force acts upon this mass, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "force_vector_arrow",
+                "primary_mass_block"
+              ],
+              "visual_action": "A bold #FF6B6B VectorArrow strikes the rear perimeter of the resting disc, displaying a sharp compression highlight at point of contact.",
+              "start_time": 20.78,
+              "end_time": 25.13,
+              "duration": 4.35,
+              "motion_time": 3.48,
+              "hold_time": 0.87
+            },
+            {
+              "sub_beat_id": "4.2",
+              "narration_anchor": "reality shifts into a dynamic state.",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "canvas_grid",
+                "primary_mass_block"
+              ],
+              "visual_action": "Dynamic motion lines in #4ECDC4 streak backward across the baseline as the mass begins smooth lateral transit to the right.",
+              "start_time": 25.13,
+              "end_time": 28.04,
+              "duration": 2.91,
+              "motion_time": 2.18,
+              "hold_time": 0.73
+            }
+          ],
+          "start_time": 20.78,
+          "end_time": 28.04,
+          "duration": 7.26
+        },
+        {
+          "beat_id": 5,
+          "full_sentence": "Newton's second law dictates that force is an active vector imposing continuous acceleration upon mass.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "5.1",
+              "narration_anchor": "Newton's second law dictates that force is an active vector ",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "force_vector_arrow",
+                "newton_equation_label"
+              ],
+              "visual_action": "The #FF6B6B VectorArrow locks into dynamic tracking behind the disc, labeled directly above with unboxed text 'F = m \u00b7 a'.",
+              "start_time": 28.04,
+              "end_time": 32.15,
+              "duration": 4.11,
+              "motion_time": 3.29,
+              "hold_time": 0.82
+            },
+            {
+              "sub_beat_id": "5.2",
+              "narration_anchor": "imposing continuous acceleration upon mass.",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "acceleration_indicator",
+                "primary_mass_block"
+              ],
+              "visual_action": "A double-chevron accent in #FFAA00 deploys in front of the disc, spacing wider as the object's translational speed increases.",
+              "start_time": 32.15,
+              "end_time": 35.03,
+              "duration": 2.88,
+              "motion_time": 2.16,
+              "hold_time": 0.72
+            }
+          ],
+          "start_time": 28.04,
+          "end_time": 35.03,
+          "duration": 6.99
+        },
+        {
+          "beat_id": 6,
+          "full_sentence": "As this force acts across distance, it performs mechanical work that accumulates directly within the moving body as kinetic energy.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "6.1",
+              "narration_anchor": "As this force acts across distance, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "displacement_ruler",
+                "surface_baseline"
+              ],
+              "visual_action": "A horizontal DimensionRuler in #2B2D42 expands along the runway between initial position and the moving disc, labeled '\u0394x'.",
+              "start_time": 35.03,
+              "end_time": 37.39,
+              "duration": 2.36,
+              "motion_time": 1.77,
+              "hold_time": 0.59
+            },
+            {
+              "sub_beat_id": "6.2",
+              "narration_anchor": "it performs mechanical work ",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "work_integral_ribbon"
+              ],
+              "visual_action": "A shaded translucent band in #3B82F6 fills between the displacement axis and force vector, sweeping 'W = \u222b F dx'.",
+              "start_time": 37.39,
+              "end_time": 39.14,
+              "duration": 1.75,
+              "motion_time": 1.31,
+              "hold_time": 0.44
+            },
+            {
+              "sub_beat_id": "6.3",
+              "narration_anchor": "that accumulates directly within the moving body as kinetic energy.",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "primary_mass_block",
+                "kinetic_energy_glow"
+              ],
+              "visual_action": "A radiant concentric halo in #4ECDC4 blooms inside the traveling disc, expanding in diameter as mechanical work is absorbed.",
+              "start_time": 39.14,
+              "end_time": 43.11,
+              "duration": 3.97,
+              "motion_time": 3.18,
+              "hold_time": 0.79
+            }
+          ],
+          "start_time": 35.03,
+          "end_time": 43.11,
+          "duration": 8.08
+        },
+        {
+          "beat_id": 7,
+          "full_sentence": "The longer the force is applied, the higher the velocity climbs, and the greater the momentum becomes.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "7.1",
+              "narration_anchor": "The longer the force is applied, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "force_vector_arrow",
+                "primary_mass_block"
+              ],
+              "visual_action": "The #FF6B6B VectorArrow sustains its continuous push against the mass across consecutive baseline metric increments.",
+              "start_time": 43.11,
+              "end_time": 44.68,
+              "duration": 1.57,
+              "motion_time": 1.18,
+              "hold_time": 0.39
+            },
+            {
+              "sub_beat_id": "7.2",
+              "narration_anchor": "the higher the velocity climbs, ",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "velocity_readout",
+                "velocity_vector"
+              ],
+              "visual_action": "A forward-facing #3B82F6 vector elongates rapidly from the core of the disc while its floating numeric readout increments in real time.",
+              "start_time": 44.68,
+              "end_time": 46.45,
+              "duration": 1.77,
+              "motion_time": 1.33,
+              "hold_time": 0.44
+            },
+            {
+              "sub_beat_id": "7.3",
+              "narration_anchor": "and the greater the momentum becomes.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "momentum_telemetry_bar",
+                "primary_mass_block"
+              ],
+              "visual_action": "A heavy #4D44B5 vector arrow extends beneath the disc, thickening in stroke weight to symbolize expanding linear momentum.",
+              "start_time": 46.45,
+              "end_time": 48.5,
+              "duration": 2.05,
+              "motion_time": 1.54,
+              "hold_time": 0.51
+            }
+          ],
+          "start_time": 43.11,
+          "end_time": 48.5,
+          "duration": 5.39
+        }
+      ],
+      "audio_start_time": 0.0,
+      "audio_end_time": 48.5,
+      "total_duration": 48.5
+    },
+    {
+      "scene_id": "scene_02",
+      "title": "Impending Trajectory & Vector Convergence",
+      "environment": "SurfaceGround",
+      "environment_intent": "The frictionless track broadens into a two-body interaction corridor with parallel telemetry tracks on the #F8F9FA ground plane.",
+      "beats": [
+        {
+          "beat_id": 1,
+          "full_sentence": "Linear momentum is the measure of an object's resistance to stopping once set in motion.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "1.1",
+              "narration_anchor": "Linear momentum is the measure of an object's resistance to stopping ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "primary_mass_block",
+                "retardation_phantom_barrier"
+              ],
+              "visual_action": "Dashed vertical threshold lines in #2B2D42 appear on the runway; the speeding disc blasts through them without dropping velocity.",
+              "start_time": 48.5,
+              "end_time": 52.22,
+              "duration": 3.72,
+              "motion_time": 2.98,
+              "hold_time": 0.74
+            },
+            {
+              "sub_beat_id": "1.2",
+              "narration_anchor": "once set in motion.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "inertia_tail_streamers"
+              ],
+              "visual_action": "Fine kinetic streamers in #4D44B5 trail behind the mass, holding rigid parallelism along the baseline track.",
+              "start_time": 52.22,
+              "end_time": 53.53,
+              "duration": 1.31,
+              "motion_time": 0.96,
+              "hold_time": 0.35
+            }
+          ],
+          "start_time": 48.5,
+          "end_time": 53.53,
+          "duration": 5.03
+        },
+        {
+          "beat_id": 2,
+          "full_sentence": "It is the direct product of mass and instantaneous velocity.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "2.1",
+              "narration_anchor": "It is the direct product ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "formula_anchor"
+              ],
+              "visual_action": "Unboxed typography 'p =' anchors directly above the traveling body in bold #2B2D42.",
+              "start_time": 53.53,
+              "end_time": 54.88,
+              "duration": 1.35,
+              "motion_time": 1.0,
+              "hold_time": 0.35
+            },
+            {
+              "sub_beat_id": "2.2",
+              "narration_anchor": "of mass and instantaneous velocity.",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "mass_dimension_tag",
+                "velocity_dimension_tag"
+              ],
+              "visual_action": "Terms 'm' in #4D44B5 and 'v' in #3B82F6 glide horizontally into place, bracketed by a live multiplying multiplier dot.",
+              "start_time": 54.88,
+              "end_time": 57.26,
+              "duration": 2.38,
+              "motion_time": 1.78,
+              "hold_time": 0.6
+            }
+          ],
+          "start_time": 53.53,
+          "end_time": 57.26,
+          "duration": 3.73
+        },
+        {
+          "beat_id": 3,
+          "full_sentence": "When we observe an accelerating object, we watch a directional vector carry physical influence across space.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "3.1",
+              "narration_anchor": "When we observe an accelerating object, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "primary_mass_block",
+                "surface_baseline"
+              ],
+              "visual_action": "The camera pans laterally, tracking the accelerating mass at high speed as background grid hashmarks blur in #2B2D42.",
+              "start_time": 57.26,
+              "end_time": 59.86,
+              "duration": 2.6,
+              "motion_time": 1.95,
+              "hold_time": 0.65
+            },
+            {
+              "sub_beat_id": "3.2",
+              "narration_anchor": "we watch a directional vector carry physical influence across space.",
+              "kinetic_archetype": "Morph / Scale Shift",
+              "actors_involved": [
+                "influence_corridor_field",
+                "primary_mass_block"
+              ],
+              "visual_action": "A translucent directional corridor in #4ECDC4 projects forward from the mass, illuminating the empty track ahead.",
+              "start_time": 59.86,
+              "end_time": 63.96,
+              "duration": 4.1,
+              "motion_time": 3.28,
+              "hold_time": 0.82
+            }
+          ],
+          "start_time": 57.26,
+          "end_time": 63.96,
+          "duration": 6.7
+        },
+        {
+          "beat_id": 4,
+          "full_sentence": "If a second, stationary object sits directly along that trajectory, an interaction is inevitable.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "4.1",
+              "narration_anchor": "If a second, stationary object sits directly along that trajectory, ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "target_mass_block",
+                "surface_baseline"
+              ],
+              "visual_action": "An identical disc rendered in #2B2D42 with a hollow core manifests at rest downstream on the baseline.",
+              "start_time": 63.96,
+              "end_time": 68.21,
+              "duration": 4.25,
+              "motion_time": 3.4,
+              "hold_time": 0.85
+            },
+            {
+              "sub_beat_id": "4.2",
+              "narration_anchor": "an interaction is inevitable.",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "projected_trajectory_ray",
+                "target_mass_block"
+              ],
+              "visual_action": "A straight dashed VectorArrow in #FF6B6B extends from the projectile disc and locks directly into the center of the target disc.",
+              "start_time": 68.21,
+              "end_time": 70.21,
+              "duration": 2.0,
+              "motion_time": 1.5,
+              "hold_time": 0.5
+            }
+          ],
+          "start_time": 63.96,
+          "end_time": 70.21,
+          "duration": 6.25
+        },
+        {
+          "beat_id": 5,
+          "full_sentence": "As the distance between the two bodies closes to zero, the moving mass carries an entire reservoir of directional energy.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "5.1",
+              "narration_anchor": "As the distance between the two bodies closes to zero, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "inter_body_dimension_ruler",
+                "primary_mass_block"
+              ],
+              "visual_action": "A dynamic DimensionRuler between the two discs rapidly compresses from '\u0394x' toward zero as the projectile hurtles forward.",
+              "start_time": 70.21,
+              "end_time": 73.44,
+              "duration": 3.23,
+              "motion_time": 2.42,
+              "hold_time": 0.81
+            },
+            {
+              "sub_beat_id": "5.2",
+              "narration_anchor": "the moving mass carries an entire reservoir of directional energy.",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "energy_reservoir_gauge",
+                "primary_mass_block"
+              ],
+              "visual_action": "A radial energy gauge in #FFAA00 wraps around the projectile disc, glowing with maximum saturation.",
+              "start_time": 73.44,
+              "end_time": 77.54,
+              "duration": 4.1,
+              "motion_time": 3.28,
+              "hold_time": 0.82
+            }
+          ],
+          "start_time": 70.21,
+          "end_time": 77.54,
+          "duration": 7.33
+        },
+        {
+          "beat_id": 6,
+          "full_sentence": "This impending contact point is where classical physics reveals one of its most elegant laws: the conservation of linear momentum.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "6.1",
+              "narration_anchor": "This impending contact point is where classical physics reveals one of its most elegant laws: ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "contact_crosshair_marker"
+              ],
+              "visual_action": "A high-precision hairline reticle in #FF6B6B snaps onto the exact tangent boundary where the two perimeters will touch.",
+              "start_time": 77.54,
+              "end_time": 82.95,
+              "duration": 5.41,
+              "motion_time": 4.33,
+              "hold_time": 1.08
+            },
+            {
+              "sub_beat_id": "6.2",
+              "narration_anchor": "the conservation of linear momentum.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "conservation_law_title",
+                "momentum_balance_vector"
+              ],
+              "visual_action": "Unboxed editorial header '\u03a3p_initial = \u03a3p_final' draws in #4D44B5 directly centered above the contact boundary.",
+              "start_time": 82.95,
+              "end_time": 85.64,
+              "duration": 2.69,
+              "motion_time": 2.02,
+              "hold_time": 0.67
+            }
+          ],
+          "start_time": 77.54,
+          "end_time": 85.64,
+          "duration": 8.1
+        }
+      ],
+      "audio_start_time": 48.5,
+      "audio_end_time": 85.64,
+      "total_duration": 37.14
+    },
+    {
+      "scene_id": "scene_03",
+      "title": "The Millisecond of Impact & Momentum Transfer",
+      "environment": "SurfaceGround",
+      "environment_intent": "Ultra-close orthographic framing on the impact plane, converting linear kinematic motion into impulse vectors and kinetic handoff.",
+      "beats": [
+        {
+          "beat_id": 1,
+          "full_sentence": "The millisecond of impact is governed by the laws of impulse and energy transfer.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "1.1",
+              "narration_anchor": "The millisecond of impact ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "time_dilation_grid",
+                "contact_plane"
+              ],
+              "visual_action": "Visual tempo slows; subtle vertical time-dilation lines in #2B2D42 radiate from the meeting point.",
+              "start_time": 85.64,
+              "end_time": 87.22,
+              "duration": 1.58,
+              "motion_time": 1.18,
+              "hold_time": 0.4
+            },
+            {
+              "sub_beat_id": "1.2",
+              "narration_anchor": "is governed by the laws of impulse and energy transfer.",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "impulse_integral_symbol",
+                "transfer_field"
+              ],
+              "visual_action": "Direct callout typography 'J = \u222b F dt' emerges in #FF6B6B with directional energy flux lines bridging the boundary.",
+              "start_time": 87.22,
+              "end_time": 90.48,
+              "duration": 3.26,
+              "motion_time": 2.44,
+              "hold_time": 0.82
+            }
+          ],
+          "start_time": 85.64,
+          "end_time": 90.48,
+          "duration": 4.84
+        },
+        {
+          "beat_id": 2,
+          "full_sentence": "In an idealized elastic collision, the total momentum and kinetic energy of the system remain strictly conserved.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "2.1",
+              "narration_anchor": "In an idealized elastic collision, ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "elastic_boundary_rings"
+              ],
+              "visual_action": "Fine spring-like geometric rings in #4ECDC4 envelop both contact interfaces with mathematical perfection.",
+              "start_time": 90.48,
+              "end_time": 92.79,
+              "duration": 2.31,
+              "motion_time": 1.73,
+              "hold_time": 0.58
+            },
+            {
+              "sub_beat_id": "2.2",
+              "narration_anchor": "the total momentum and kinetic energy of the system remain strictly conserved.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "system_energy_bar",
+                "total_momentum_ticker"
+              ],
+              "visual_action": "Twin horizontal telemetry meters above the stage ('E_k' in #4ECDC4 and 'P' in #4D44B5) lock at 100% without fluctuation.",
+              "start_time": 92.79,
+              "end_time": 97.53,
+              "duration": 4.74,
+              "motion_time": 3.79,
+              "hold_time": 0.95
+            }
+          ],
+          "start_time": 90.48,
+          "end_time": 97.53,
+          "duration": 7.05
+        },
+        {
+          "beat_id": 3,
+          "full_sentence": "The incoming projectile mass decelerates with extreme rapidity, exerting an equal and opposite reaction force against itself while driving an enormous forward impulse into the stationary target.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "3.1",
+              "narration_anchor": "The incoming projectile mass decelerates with extreme rapidity, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "primary_mass_block",
+                "deceleration_vector"
+              ],
+              "visual_action": "The forward vector of the incoming mass violently contracts into a rearward-pointing #FF6B6B braking arrow.",
+              "start_time": 97.53,
+              "end_time": 101.52,
+              "duration": 3.99,
+              "motion_time": 3.19,
+              "hold_time": 0.8
+            },
+            {
+              "sub_beat_id": "3.2",
+              "narration_anchor": "exerting an equal and opposite reaction force against itself ",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "reaction_force_arrow",
+                "action_force_arrow"
+              ],
+              "visual_action": "Opposing vector arrows in #FF6B6B ('-F') and #3B82F6 ('+F') erupt outward from the point of contact in Newton-third equilibrium.",
+              "start_time": 101.52,
+              "end_time": 104.74,
+              "duration": 3.22,
+              "motion_time": 2.42,
+              "hold_time": 0.8
+            },
+            {
+              "sub_beat_id": "3.3",
+              "narration_anchor": "while driving an enormous forward impulse into the stationary target.",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "forward_impulse_pulse",
+                "target_mass_block"
+              ],
+              "visual_action": "A compressive kinetic stress wave in #4ECDC4 punches horizontally through the diameter of the stationary target.",
+              "start_time": 104.74,
+              "end_time": 108.65,
+              "duration": 3.91,
+              "motion_time": 3.13,
+              "hold_time": 0.78
+            }
+          ],
+          "start_time": 97.53,
+          "end_time": 108.65,
+          "duration": 11.12
+        },
+        {
+          "beat_id": 4,
+          "full_sentence": "In a fraction of a second, the velocity vector is transferred.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "4.1",
+              "narration_anchor": "In a fraction of a second, ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "contact_seam"
+              ],
+              "visual_action": "A razor-thin vertical flash in #4ECDC4 illuminates the tangent seam between both bodies.",
+              "start_time": 108.65,
+              "end_time": 110.18,
+              "duration": 1.53,
+              "motion_time": 1.15,
+              "hold_time": 0.38
+            },
+            {
+              "sub_beat_id": "4.2",
+              "narration_anchor": "the velocity vector is transferred.",
+              "kinetic_archetype": "Morph / Scale Shift",
+              "actors_involved": [
+                "primary_velocity_vector",
+                "target_velocity_vector"
+              ],
+              "visual_action": "The #3B82F6 velocity vector slides seamlessly out of the projectile body and anchors into the target body.",
+              "start_time": 110.18,
+              "end_time": 112.37,
+              "duration": 2.19,
+              "motion_time": 1.64,
+              "hold_time": 0.55
+            }
+          ],
+          "start_time": 108.65,
+          "end_time": 112.37,
+          "duration": 3.72
+        },
+        {
+          "beat_id": 5,
+          "full_sentence": "The original body comes to an abrupt halt, while the target mass launches forward along the runway, inheriting the momentum and continuing across space.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "5.1",
+              "narration_anchor": "The original body comes to an abrupt halt, ",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "primary_mass_block",
+                "inertial_anchor_dots"
+              ],
+              "visual_action": "The first mass freezes in place; its internal kinetic glow dissolves to neutral #2B2D42 contour.",
+              "start_time": 112.37,
+              "end_time": 114.9,
+              "duration": 2.53,
+              "motion_time": 1.9,
+              "hold_time": 0.63
+            },
+            {
+              "sub_beat_id": "5.2",
+              "narration_anchor": "while the target mass launches forward along the runway, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "target_mass_block",
+                "surface_baseline"
+              ],
+              "visual_action": "The target mass instantly accelerates down the #2B2D42 runway, pushed by the acquired forward momentum.",
+              "start_time": 114.9,
+              "end_time": 118.27,
+              "duration": 3.37,
+              "motion_time": 2.53,
+              "hold_time": 0.84
+            },
+            {
+              "sub_beat_id": "5.3",
+              "narration_anchor": "inheriting the momentum and continuing across space.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "target_mass_block",
+                "target_momentum_vector"
+              ],
+              "visual_action": "A bold #4D44B5 momentum vector tracks smoothly under the target mass as it recedes into the coordinate distance.",
+              "start_time": 118.27,
+              "end_time": 121.6,
+              "duration": 3.33,
+              "motion_time": 2.5,
+              "hold_time": 0.83
+            }
+          ],
+          "start_time": 112.37,
+          "end_time": 121.6,
+          "duration": 9.23
+        }
+      ],
+      "audio_start_time": 85.64,
+      "audio_end_time": 121.6,
+      "total_duration": 35.96
+    },
+    {
+      "scene_id": "scene_04",
+      "title": "Inelastic Dissipation & The Atomic Transition",
+      "environment": "ParticleField",
+      "environment_intent": "Continuous topological zoom through the solid boundary of colliding bodies into an interior matrix of vibrating lattice atoms on #F8F9FA.",
+      "beats": [
+        {
+          "beat_id": 1,
+          "full_sentence": "Yet, in the physical world, collisions are rarely perfectly elastic.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "1.1",
+              "narration_anchor": "Yet, in the physical world, ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "macroscopic_collision_pair"
+              ],
+              "visual_action": "Two realistic structural bodies collide on the runway under harsher, imperfect mechanical contact lines.",
+              "start_time": 121.6,
+              "end_time": 123.85,
+              "duration": 2.25,
+              "motion_time": 1.69,
+              "hold_time": 0.56
+            },
+            {
+              "sub_beat_id": "1.2",
+              "narration_anchor": "collisions are rarely perfectly elastic.",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "contact_perimeter_distortion"
+              ],
+              "visual_action": "The ideal geometric perimeters buckle with microscopic asymmetric notches in dark #2B2D42.",
+              "start_time": 123.85,
+              "end_time": 126.18,
+              "duration": 2.33,
+              "motion_time": 1.75,
+              "hold_time": 0.58
+            }
+          ],
+          "start_time": 121.6,
+          "end_time": 126.18,
+          "duration": 4.58
+        },
+        {
+          "beat_id": 2,
+          "full_sentence": "When macroscopic objects slam together, not all of that mechanical work translates into forward motion.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "2.1",
+              "narration_anchor": "When macroscopic objects slam together, ",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "impact_compression_zone"
+              ],
+              "visual_action": "A violent mechanical shockwave ring in #FF6B6B radiates from the contact interface.",
+              "start_time": 126.18,
+              "end_time": 128.56,
+              "duration": 2.38,
+              "motion_time": 1.78,
+              "hold_time": 0.6
+            },
+            {
+              "sub_beat_id": "2.2",
+              "narration_anchor": "not all of that mechanical work translates into forward motion.",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "transmitted_momentum_vector",
+                "efficiency_loss_tag"
+              ],
+              "visual_action": "The exit velocity vector deploys noticeably shorter in #3B82F6, while an unboxed label '\u0394E_loss' indicates missing mechanical energy.",
+              "start_time": 128.56,
+              "end_time": 132.64,
+              "duration": 4.08,
+              "motion_time": 3.26,
+              "hold_time": 0.82
+            }
+          ],
+          "start_time": 126.18,
+          "end_time": 132.64,
+          "duration": 6.46
+        },
+        {
+          "beat_id": 3,
+          "full_sentence": "A portion of kinetic energy is absorbed internally, deforming structures and generating stress waves.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "3.1",
+              "narration_anchor": "A portion of kinetic energy is absorbed internally, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "internal_absorption_grid"
+              ],
+              "visual_action": "The camera pushes into the interior volume of the material, revealing an interconnected lattice network.",
+              "start_time": 132.64,
+              "end_time": 135.99,
+              "duration": 3.35,
+              "motion_time": 2.51,
+              "hold_time": 0.84
+            },
+            {
+              "sub_beat_id": "3.2",
+              "narration_anchor": "deforming structures and generating stress waves.",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "lattice_stress_ripples"
+              ],
+              "visual_action": "High-frequency ripples in #FFAA00 surge across lattice bonds, warping the equilibrium spacing.",
+              "start_time": 135.99,
+              "end_time": 138.79,
+              "duration": 2.8,
+              "motion_time": 2.1,
+              "hold_time": 0.7
+            }
+          ],
+          "start_time": 132.64,
+          "end_time": 138.79,
+          "duration": 6.15
+        },
+        {
+          "beat_id": 4,
+          "full_sentence": "But energy can never be destroyed.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "4.1",
+              "narration_anchor": "But energy ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "conservation_axiom_anchor"
+              ],
+              "visual_action": "A constant numeric indicator 'E_total = const' anchors in #2B2D42 across the upper stage.",
+              "start_time": 138.79,
+              "end_time": 139.62,
+              "duration": 0.83,
+              "motion_time": 0.48,
+              "hold_time": 0.35
+            },
+            {
+              "sub_beat_id": "4.2",
+              "narration_anchor": "can never be destroyed.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "conservation_energy_shield"
+              ],
+              "visual_action": "A protective enclosing halo in #4ECDC4 pulses outward, showing zero leakage across system boundaries.",
+              "start_time": 139.62,
+              "end_time": 140.97,
+              "duration": 1.35,
+              "motion_time": 1.0,
+              "hold_time": 0.35
+            }
+          ],
+          "start_time": 138.79,
+          "end_time": 140.97,
+          "duration": 2.18
+        },
+        {
+          "beat_id": 5,
+          "full_sentence": "That lost mechanical energy degrades into chaotic microscopic vibrations.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "5.1",
+              "narration_anchor": "That lost mechanical energy ",
+              "kinetic_archetype": "Morph / Scale Shift",
+              "actors_involved": [
+                "ordered_vector_stream"
+              ],
+              "visual_action": "The straight forward-pointing #3B82F6 vector shatters into thousands of micro-vectors.",
+              "start_time": 140.97,
+              "end_time": 142.72,
+              "duration": 1.75,
+              "motion_time": 1.31,
+              "hold_time": 0.44
+            },
+            {
+              "sub_beat_id": "5.2",
+              "narration_anchor": "degrades into chaotic microscopic vibrations.",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "lattice_nodes"
+              ],
+              "visual_action": "Individual lattice nodes oscillate rapidly in random angular directions, vibrating in jagged patterns.",
+              "start_time": 142.72,
+              "end_time": 145.93,
+              "duration": 3.21,
+              "motion_time": 2.41,
+              "hold_time": 0.8
+            }
+          ],
+          "start_time": 140.97,
+          "end_time": 145.93,
+          "duration": 4.96
+        },
+        {
+          "beat_id": 6,
+          "full_sentence": "The uniform forward velocity of billions of atoms is suddenly scrambled into random thermal oscillations.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "6.1",
+              "narration_anchor": "The uniform forward velocity of billions of atoms ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "ordered_atomic_row"
+              ],
+              "visual_action": "A structured array of atomic circles initially moves in unison along parallel linear paths in #4D44B5.",
+              "start_time": 145.93,
+              "end_time": 148.84,
+              "duration": 2.91,
+              "motion_time": 2.18,
+              "hold_time": 0.73
+            },
+            {
+              "sub_beat_id": "6.2",
+              "narration_anchor": "is suddenly scrambled into random thermal oscillations.",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "chaotic_thermal_vectors"
+              ],
+              "visual_action": "The aligned velocity arrows instantaneously scatter into frantic, multi-directional jiggles in #FFAA00 and #FF6B6B.",
+              "start_time": 148.84,
+              "end_time": 152.12,
+              "duration": 3.28,
+              "motion_time": 2.46,
+              "hold_time": 0.82
+            }
+          ],
+          "start_time": 145.93,
+          "end_time": 152.12,
+          "duration": 6.19
+        },
+        {
+          "beat_id": 7,
+          "full_sentence": "Macroscopic motion converts directly into heat.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "7.1",
+              "narration_anchor": "Macroscopic motion ",
+              "kinetic_archetype": "Morph / Scale Shift",
+              "actors_involved": [
+                "macro_motion_line"
+              ],
+              "visual_action": "A single bold translational track fades out in #2B2D42.",
+              "start_time": 152.12,
+              "end_time": 153.24,
+              "duration": 1.12,
+              "motion_time": 0.77,
+              "hold_time": 0.35
+            },
+            {
+              "sub_beat_id": "7.2",
+              "narration_anchor": "converts directly into heat.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "thermal_radiance_field",
+                "thermal_callout"
+              ],
+              "visual_action": "A warm thermal field in #FFAA00 diffuses across the particle matrix with an unboxed label 'THERMAL ENERGY'.",
+              "start_time": 153.24,
+              "end_time": 154.94,
+              "duration": 1.7,
+              "motion_time": 1.28,
+              "hold_time": 0.42
+            }
+          ],
+          "start_time": 152.12,
+          "end_time": 154.94,
+          "duration": 2.82
+        },
+        {
+          "beat_id": 8,
+          "full_sentence": "To understand heat and chemical reactions, we must peer into the atom itself.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "8.1",
+              "narration_anchor": "To understand heat and chemical reactions, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "diffuse_particle_sea"
+              ],
+              "visual_action": "The background vibrating particles gently drift outward, clearing the central stage.",
+              "start_time": 154.94,
+              "end_time": 157.6,
+              "duration": 2.66,
+              "motion_time": 2.0,
+              "hold_time": 0.66
+            },
+            {
+              "sub_beat_id": "8.2",
+              "narration_anchor": "we must peer into the atom itself.",
+              "kinetic_archetype": "Morph / Scale Shift",
+              "actors_involved": [
+                "single_atom_target",
+                "camera_zoom"
+              ],
+              "visual_action": "The camera dives into a single vibrating node, expanding it into an enormous orbital sphere.",
+              "start_time": 157.6,
+              "end_time": 160.48,
+              "duration": 2.88,
+              "motion_time": 2.16,
+              "hold_time": 0.72
+            }
+          ],
+          "start_time": 154.94,
+          "end_time": 160.48,
+          "duration": 5.54
+        }
+      ],
+      "audio_start_time": 121.6,
+      "audio_end_time": 160.48,
+      "total_duration": 38.88
+    },
+    {
+      "scene_id": "scene_05",
+      "title": "Atomic Architecture & The Activation Barrier",
+      "environment": "ParticleField",
+      "environment_intent": "Quantum-scale electrostatic coordinate space; precise concentric orbital shells and Coulomb repulsion fields rendered in sharp vector geometry.",
+      "beats": [
+        {
+          "beat_id": 1,
+          "full_sentence": "Beneath the surface of every physical material lies a microscopic world governed by electrostatics.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "1.1",
+              "narration_anchor": "Beneath the surface of every physical material ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "atomic_void_canvas"
+              ],
+              "visual_action": "The background settles to clean #F8F9FA, inscribed with concentric electrostatic potential rings in #2B2D42.",
+              "start_time": 160.48,
+              "end_time": 163.24,
+              "duration": 2.76,
+              "motion_time": 2.07,
+              "hold_time": 0.69
+            },
+            {
+              "sub_beat_id": "1.2",
+              "narration_anchor": "lies a microscopic world governed by electrostatics.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "coulomb_field_lines"
+              ],
+              "visual_action": "Delicate radial field lines in #3B82F6 expand outwards, illustrating the invisible electrostatic landscape.",
+              "start_time": 163.24,
+              "end_time": 166.92,
+              "duration": 3.68,
+              "motion_time": 2.94,
+              "hold_time": 0.74
+            }
+          ],
+          "start_time": 160.48,
+          "end_time": 166.92,
+          "duration": 6.44
+        },
+        {
+          "beat_id": 2,
+          "full_sentence": "In the Bohr atomic model, every chemical element is built around a dense, positively charged nucleus surrounded by concentric electron shells.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "2.1",
+              "narration_anchor": "In the Bohr atomic model, ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "bohr_coordinate_center"
+              ],
+              "visual_action": "A central spatial anchor initializes with clean Cartesian coordinate crosshairs in #2B2D42.",
+              "start_time": 166.92,
+              "end_time": 168.66,
+              "duration": 1.74,
+              "motion_time": 1.3,
+              "hold_time": 0.44
+            },
+            {
+              "sub_beat_id": "2.2",
+              "narration_anchor": "every chemical element is built around a dense, positively charged nucleus ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "atomic_nucleus"
+              ],
+              "visual_action": "A tightly clustered nucleus of positive spheres draws at the origin, glowing in bold #FF6B6B with '+e' charge markers.",
+              "start_time": 168.66,
+              "end_time": 172.85,
+              "duration": 4.19,
+              "motion_time": 3.35,
+              "hold_time": 0.84
+            },
+            {
+              "sub_beat_id": "2.3",
+              "narration_anchor": "surrounded by concentric electron shells.",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "concentric_shells"
+              ],
+              "visual_action": "Concentric hairline circles in #2B2D42 sweep outward at radii r1, r2, and r3 like celestial tracks.",
+              "start_time": 172.85,
+              "end_time": 175.38,
+              "duration": 2.53,
+              "motion_time": 1.9,
+              "hold_time": 0.63
+            }
+          ],
+          "start_time": 166.92,
+          "end_time": 175.38,
+          "duration": 8.46
+        },
+        {
+          "beat_id": 3,
+          "full_sentence": "Orbiting within these shells are negatively charged electrons, maintaining precise quantum distances from the core.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "3.1",
+              "narration_anchor": "Orbiting within these shells are negatively charged electrons, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "orbiting_electrons",
+                "orbital_tracks"
+              ],
+              "visual_action": "Small, vibrant #3B82F6 dots race along the circular tracks, trailing fine arc paths.",
+              "start_time": 175.38,
+              "end_time": 178.68,
+              "duration": 3.3,
+              "motion_time": 2.48,
+              "hold_time": 0.82
+            },
+            {
+              "sub_beat_id": "3.2",
+              "narration_anchor": "maintaining precise quantum distances from the core.",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "bohr_radius_ruler"
+              ],
+              "visual_action": "A radial DimensionRuler extends from the nucleus to the innermost track, displaying 'r_0 = 52.9 pm'.",
+              "start_time": 178.68,
+              "end_time": 181.65,
+              "duration": 2.97,
+              "motion_time": 2.23,
+              "hold_time": 0.74
+            }
+          ],
+          "start_time": 175.38,
+          "end_time": 181.65,
+          "duration": 6.27
+        },
+        {
+          "beat_id": 4,
+          "full_sentence": "In reactive elements like hydrogen, the outermost valence shell contains unpaired electrons.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "4.1",
+              "narration_anchor": "In reactive elements like hydrogen, ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "hydrogen_symbol_label"
+              ],
+              "visual_action": "An unboxed label '\u00b9H' types onto the canvas in #2B2D42 beside the simplified single-proton core.",
+              "start_time": 181.65,
+              "end_time": 183.68,
+              "duration": 2.03,
+              "motion_time": 1.52,
+              "hold_time": 0.51
+            },
+            {
+              "sub_beat_id": "4.2",
+              "narration_anchor": "the outermost valence shell contains unpaired electrons.",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "valence_electron_solo"
+              ],
+              "visual_action": "A single lone electron in #4ECDC4 orbits along the outer rim, highlighted by an open targeting ring.",
+              "start_time": 183.68,
+              "end_time": 186.96,
+              "duration": 3.28,
+              "motion_time": 2.46,
+              "hold_time": 0.82
+            }
+          ],
+          "start_time": 181.65,
+          "end_time": 186.96,
+          "duration": 5.31
+        },
+        {
+          "beat_id": 5,
+          "full_sentence": "As they spin in rapid orbital paths, these valence electrons generate an outward electrostatic shield.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "5.1",
+              "narration_anchor": "As they spin in rapid orbital paths, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "valence_electron_trail"
+              ],
+              "visual_action": "The orbiting electron accelerates, leaving a continuous luminous trail that closes into a coherent ring.",
+              "start_time": 186.96,
+              "end_time": 189.26,
+              "duration": 2.3,
+              "motion_time": 1.73,
+              "hold_time": 0.57
+            },
+            {
+              "sub_beat_id": "5.2",
+              "narration_anchor": "these valence electrons generate an outward electrostatic shield.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "electrostatic_shield_halo"
+              ],
+              "visual_action": "A translucent negative potential shell in #3B82F6 expands outward, forming a spherical protective boundary.",
+              "start_time": 189.26,
+              "end_time": 193.67,
+              "duration": 4.41,
+              "motion_time": 3.53,
+              "hold_time": 0.88
+            }
+          ],
+          "start_time": 186.96,
+          "end_time": 193.67,
+          "duration": 6.71
+        },
+        {
+          "beat_id": 6,
+          "full_sentence": "Because every atom is cloaked in this negative cloud, two independent atoms floating in space do not simply merge when they meet.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "6.1",
+              "narration_anchor": "Because every atom is cloaked in this negative cloud, ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "dual_atom_pair"
+              ],
+              "visual_action": "A second identical hydrogen atom enters from the right, both enveloped in matching #3B82F6 negative clouds.",
+              "start_time": 193.67,
+              "end_time": 196.62,
+              "duration": 2.95,
+              "motion_time": 2.21,
+              "hold_time": 0.74
+            },
+            {
+              "sub_beat_id": "6.2",
+              "narration_anchor": "two independent atoms floating in space do not simply merge when they meet.",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "dual_atom_drift"
+              ],
+              "visual_action": "Both atoms drift toward each other along a central axis, slowing down as their outer perimeter clouds near.",
+              "start_time": 196.62,
+              "end_time": 201.34,
+              "duration": 4.72,
+              "motion_time": 3.78,
+              "hold_time": 0.94
+            }
+          ],
+          "start_time": 193.67,
+          "end_time": 201.34,
+          "duration": 7.67
+        },
+        {
+          "beat_id": 7,
+          "full_sentence": "Negative charges naturally repel negative charges.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "7.1",
+              "narration_anchor": "Negative charges naturally ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "negative_polarity_tags"
+              ],
+              "visual_action": "Prominent '-' charge symbols illuminate in #3B82F6 on the facing boundaries of both electron clouds.",
+              "start_time": 201.34,
+              "end_time": 202.82,
+              "duration": 1.48,
+              "motion_time": 1.11,
+              "hold_time": 0.37
+            },
+            {
+              "sub_beat_id": "7.2",
+              "narration_anchor": "repel negative charges.",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "mutual_repulsion_vectors"
+              ],
+              "visual_action": "Diverging vector arrows in #FF6B6B snap into existence between the clouds, pointing aggressively away from each other.",
+              "start_time": 202.82,
+              "end_time": 204.5,
+              "duration": 1.68,
+              "motion_time": 1.26,
+              "hold_time": 0.42
+            }
+          ],
+          "start_time": 201.34,
+          "end_time": 204.5,
+          "duration": 3.16
+        },
+        {
+          "beat_id": 8,
+          "full_sentence": "As two atoms drift toward one another, their electron clouds experience mutual Coulomb repulsion.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "8.1",
+              "narration_anchor": "As two atoms drift toward one another, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "drifting_atoms_motion"
+              ],
+              "visual_action": "The atoms close the distance to within a fraction of an atomic diameter.",
+              "start_time": 204.5,
+              "end_time": 207.22,
+              "duration": 2.72,
+              "motion_time": 2.04,
+              "hold_time": 0.68
+            },
+            {
+              "sub_beat_id": "8.2",
+              "narration_anchor": "their electron clouds experience mutual Coulomb repulsion.",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "coulomb_law_formula",
+                "field_compression"
+              ],
+              "visual_action": "Electrostatic field lines between them compress and distort outward; unboxed text 'F_c \u221d 1/r\u00b2' flashes in #FF6B6B.",
+              "start_time": 207.22,
+              "end_time": 210.99,
+              "duration": 3.77,
+              "motion_time": 3.02,
+              "hold_time": 0.75
+            }
+          ],
+          "start_time": 204.5,
+          "end_time": 210.99,
+          "duration": 6.49
+        },
+        {
+          "beat_id": 9,
+          "full_sentence": "Under low-energy conditions, this repulsive force acts like an invisible spring, deflecting the atoms away before their nuclei can get close.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "9.1",
+              "narration_anchor": "Under low-energy conditions, ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "low_energy_indicator"
+              ],
+              "visual_action": "Low-velocity indicators ('v_initial \u2248 0') float above both nuclei in subdued #2B2D42.",
+              "start_time": 210.99,
+              "end_time": 212.77,
+              "duration": 1.78,
+              "motion_time": 1.34,
+              "hold_time": 0.44
+            },
+            {
+              "sub_beat_id": "9.2",
+              "narration_anchor": "this repulsive force acts like an invisible spring, ",
+              "kinetic_archetype": "Morph / Scale Shift",
+              "actors_involved": [
+                "electrostatic_spring_metaphor"
+              ],
+              "visual_action": "A stylized geometric spring in #FFAA00 appears compressed between the two approaching clouds.",
+              "start_time": 212.77,
+              "end_time": 215.9,
+              "duration": 3.13,
+              "motion_time": 2.35,
+              "hold_time": 0.78
+            },
+            {
+              "sub_beat_id": "9.3",
+              "narration_anchor": "deflecting the atoms away before their nuclei can get close.",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "deflected_atoms_rebound"
+              ],
+              "visual_action": "The virtual spring releases, bouncing both hydrogen atoms apart along their incoming paths.",
+              "start_time": 215.9,
+              "end_time": 219.57,
+              "duration": 3.67,
+              "motion_time": 2.94,
+              "hold_time": 0.73
+            }
+          ],
+          "start_time": 210.99,
+          "end_time": 219.57,
+          "duration": 8.58
+        },
+        {
+          "beat_id": 10,
+          "full_sentence": "This electrostatic resistance is known as the activation energy barrier.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "10.1",
+              "narration_anchor": "This electrostatic resistance ",
+              "kinetic_archetype": "Morph / Scale Shift",
+              "actors_involved": [
+                "potential_energy_hill"
+              ],
+              "visual_action": "A smooth potential energy curve in #2B2D42 elevates between the atoms, forming a steep potential hill.",
+              "start_time": 219.57,
+              "end_time": 221.52,
+              "duration": 1.95,
+              "motion_time": 1.46,
+              "hold_time": 0.49
+            },
+            {
+              "sub_beat_id": "10.2",
+              "narration_anchor": "is known as the activation energy barrier.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "activation_energy_crest",
+                "barrier_label"
+              ],
+              "visual_action": "A vertical DimensionRuler crowns the peak of the curve, labeled with editorial typography 'E_a: ACTIVATION BARRIER' in #FF6B6B.",
+              "start_time": 221.52,
+              "end_time": 224.24,
+              "duration": 2.72,
+              "motion_time": 2.04,
+              "hold_time": 0.68
+            }
+          ],
+          "start_time": 219.57,
+          "end_time": 224.24,
+          "duration": 4.67
+        },
+        {
+          "beat_id": 11,
+          "full_sentence": "Without sufficient initial momentum, no chemical bond can form.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "11.1",
+              "narration_anchor": "Without sufficient initial momentum, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "exhausted_momentum_vector"
+              ],
+              "visual_action": "A small momentum vector in #4D44B5 rolls halfway up the slope, halts, and slides back down.",
+              "start_time": 224.24,
+              "end_time": 226.28,
+              "duration": 2.04,
+              "motion_time": 1.53,
+              "hold_time": 0.51
+            },
+            {
+              "sub_beat_id": "11.2",
+              "narration_anchor": "no chemical bond can form.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "null_bond_indicator"
+              ],
+              "visual_action": "A dashed link between the two atoms breaks apart with a crisp dissolution effect in #2B2D42.",
+              "start_time": 226.28,
+              "end_time": 228.45,
+              "duration": 2.17,
+              "motion_time": 1.63,
+              "hold_time": 0.54
+            }
+          ],
+          "start_time": 224.24,
+          "end_time": 228.45,
+          "duration": 4.21
+        }
+      ],
+      "audio_start_time": 160.48,
+      "audio_end_time": 228.45,
+      "total_duration": 67.97
+    },
+    {
+      "scene_id": "scene_06",
+      "title": "Orbital Overlap & The Conservation Continuum",
+      "environment": "FlowAxes",
+      "environment_intent": "A synthesis plane linking dynamic coordinate grids with quantum electron restructuring and global energy balance.",
+      "beats": [
+        {
+          "beat_id": 1,
+          "full_sentence": "This is precisely where macroscopic kinematics bridges directly into molecular chemistry.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "1.1",
+              "narration_anchor": "This is precisely where macroscopic kinematics ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "split_screen_kinematic_track"
+              ],
+              "visual_action": "On the left side of the stage, the macroscopic cart runway in #2B2D42 re-emerges in miniature.",
+              "start_time": 228.45,
+              "end_time": 231.36,
+              "duration": 2.91,
+              "motion_time": 2.18,
+              "hold_time": 0.73
+            },
+            {
+              "sub_beat_id": "1.2",
+              "narration_anchor": "bridges directly into molecular chemistry.",
+              "kinetic_archetype": "Morph / Scale Shift",
+              "actors_involved": [
+                "conceptual_bridge_vectors"
+              ],
+              "visual_action": "A luminous #4ECDC4 flow line connects the cart collision track directly into the atomic coordinate grid on the right.",
+              "start_time": 231.36,
+              "end_time": 234.37,
+              "duration": 3.01,
+              "motion_time": 2.26,
+              "hold_time": 0.75
+            }
+          ],
+          "start_time": 228.45,
+          "end_time": 234.37,
+          "duration": 5.92
+        },
+        {
+          "beat_id": 2,
+          "full_sentence": "How do we overcome this electrostatic barrier?",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "2.1",
+              "narration_anchor": "How do we overcome ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "barrier_crosshair"
+              ],
+              "visual_action": "The tall potential energy hill 'E_a' centers on the canvas, pulsing in warning coral #FF6B6B.",
+              "start_time": 234.37,
+              "end_time": 235.98,
+              "duration": 1.61,
+              "motion_time": 1.21,
+              "hold_time": 0.4
+            },
+            {
+              "sub_beat_id": "2.2",
+              "narration_anchor": "this electrostatic barrier?",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "query_vector_bracket"
+              ],
+              "visual_action": "Dashed query brackets enclose the barrier apex with unboxed editorial text '? ' in #2B2D42.",
+              "start_time": 235.98,
+              "end_time": 237.91,
+              "duration": 1.93,
+              "motion_time": 1.45,
+              "hold_time": 0.48
+            }
+          ],
+          "start_time": 234.37,
+          "end_time": 237.91,
+          "duration": 3.54
+        },
+        {
+          "beat_id": 3,
+          "full_sentence": "By injecting kinetic energy.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "3.1",
+              "narration_anchor": "By injecting ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "energy_injection_stream"
+              ],
+              "visual_action": "A vibrant energy beam in #FFAA00 injects from off-screen into the atoms' motion vectors.",
+              "start_time": 237.91,
+              "end_time": 239.52,
+              "duration": 1.61,
+              "motion_time": 1.21,
+              "hold_time": 0.4
+            },
+            {
+              "sub_beat_id": "3.2",
+              "narration_anchor": "kinetic energy.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "kinetic_energy_surge_label"
+              ],
+              "visual_action": "Bold typography '\u0394E_k >> E_a' ignites in #4ECDC4, lighting up the atomic velocity indicators.",
+              "start_time": 239.52,
+              "end_time": 240.74,
+              "duration": 1.22,
+              "motion_time": 0.87,
+              "hold_time": 0.35
+            }
+          ],
+          "start_time": 237.91,
+          "end_time": 240.74,
+          "duration": 2.83
+        },
+        {
+          "beat_id": 4,
+          "full_sentence": "If we accelerate atoms toward each other at high velocities, their linear momentum overpowers the repulsive resistance.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "4.1",
+              "narration_anchor": "If we accelerate atoms toward each other at high velocities, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "accelerating_atomic_nuclei"
+              ],
+              "visual_action": "Both hydrogen atoms hurtle inward at blistering speed, propelled by elongating #3B82F6 velocity vectors.",
+              "start_time": 240.74,
+              "end_time": 244.02,
+              "duration": 3.28,
+              "motion_time": 2.46,
+              "hold_time": 0.82
+            },
+            {
+              "sub_beat_id": "4.2",
+              "narration_anchor": "their linear momentum overpowers the repulsive resistance.",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "momentum_overpower_wave"
+              ],
+              "visual_action": "Heavy #4D44B5 momentum vectors pierce straight through the glowing Coulomb repulsion field lines.",
+              "start_time": 244.02,
+              "end_time": 247.58,
+              "duration": 3.56,
+              "motion_time": 2.85,
+              "hold_time": 0.71
+            }
+          ],
+          "start_time": 240.74,
+          "end_time": 247.58,
+          "duration": 6.84
+        },
+        {
+          "beat_id": 5,
+          "full_sentence": "Just like accelerating physical carts on a track, the incoming atoms carry enough momentum to crash through the activation energy threshold.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "5.1",
+              "narration_anchor": "Just like accelerating physical carts on a track, ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "ghost_cart_overlay"
+              ],
+              "visual_action": "Translucent kinematic cart outlines momentarily overlay the speeding atoms, matching their exact acceleration profile.",
+              "start_time": 247.58,
+              "end_time": 250.87,
+              "duration": 3.29,
+              "motion_time": 2.47,
+              "hold_time": 0.82
+            },
+            {
+              "sub_beat_id": "5.2",
+              "narration_anchor": "the incoming atoms carry enough momentum to crash through the activation energy threshold.",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "barrier_penetration_burst"
+              ],
+              "visual_action": "The atomic pair surges directly over the crest of the potential energy curve, shattering the barrier marker into expanding #4ECDC4 fragments.",
+              "start_time": 250.87,
+              "end_time": 256.44,
+              "duration": 5.57,
+              "motion_time": 4.46,
+              "hold_time": 1.11
+            }
+          ],
+          "start_time": 247.58,
+          "end_time": 256.44,
+          "duration": 8.86
+        },
+        {
+          "beat_id": 6,
+          "full_sentence": "The kinetic impact forces their outer orbital shells into direct, physical overlap.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "6.1",
+              "narration_anchor": "The kinetic impact forces their outer orbital shells ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "colliding_valence_shells"
+              ],
+              "visual_action": "The circular valence perimeters meet, flattening upon impact under extreme forward momentum.",
+              "start_time": 256.44,
+              "end_time": 259.76,
+              "duration": 3.32,
+              "motion_time": 2.49,
+              "hold_time": 0.83
+            },
+            {
+              "sub_beat_id": "6.2",
+              "narration_anchor": "into direct, physical overlap.",
+              "kinetic_archetype": "Morph / Scale Shift",
+              "actors_involved": [
+                "orbital_intersection_zone"
+              ],
+              "visual_action": "The two outer circular boundaries intersect, forming a shared lens of intersection highlighted in #4ECDC4.",
+              "start_time": 259.76,
+              "end_time": 262.12,
+              "duration": 2.36,
+              "motion_time": 1.77,
+              "hold_time": 0.59
+            }
+          ],
+          "start_time": 256.44,
+          "end_time": 262.12,
+          "duration": 5.68
+        },
+        {
+          "beat_id": 7,
+          "full_sentence": "Once outer electron clouds are forced into overlap, a radical physical restructuring takes place.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "7.1",
+              "narration_anchor": "Once outer electron clouds are forced into overlap, ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "overlapping_cloud_boundary"
+              ],
+              "visual_action": "The two individual circular boundaries fade their inner dividing walls into a single outer contour.",
+              "start_time": 262.12,
+              "end_time": 265.42,
+              "duration": 3.3,
+              "motion_time": 2.48,
+              "hold_time": 0.82
+            },
+            {
+              "sub_beat_id": "7.2",
+              "narration_anchor": "a radical physical restructuring takes place.",
+              "kinetic_archetype": "Morph / Scale Shift",
+              "actors_involved": [
+                "topological_reconfiguration"
+              ],
+              "visual_action": "The circular shells smoothly morph into an elongated, continuous peanut-shaped organic envelope in dark #2B2D42.",
+              "start_time": 265.42,
+              "end_time": 268.02,
+              "duration": 2.6,
+              "motion_time": 1.95,
+              "hold_time": 0.65
+            }
+          ],
+          "start_time": 262.12,
+          "end_time": 268.02,
+          "duration": 5.9
+        },
+        {
+          "beat_id": 8,
+          "full_sentence": "Valence electrons are no longer confined to orbiting a single nucleus.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "8.1",
+              "narration_anchor": "Valence electrons are no longer confined ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "free_valence_electrons"
+              ],
+              "visual_action": "The two electrons break free from their rigid circular Bohr paths, their trajectories expanding outward.",
+              "start_time": 268.02,
+              "end_time": 270.68,
+              "duration": 2.66,
+              "motion_time": 2.0,
+              "hold_time": 0.66
+            },
+            {
+              "sub_beat_id": "8.2",
+              "narration_anchor": "to orbiting a single nucleus.",
+              "kinetic_archetype": "Morph / Scale Shift",
+              "actors_involved": [
+                "monocentric_orbits"
+              ],
+              "visual_action": "The old concentric orbital rings dissolve into faint dashed memory lines in #2B2D42.",
+              "start_time": 270.68,
+              "end_time": 272.74,
+              "duration": 2.06,
+              "motion_time": 1.54,
+              "hold_time": 0.52
+            }
+          ],
+          "start_time": 268.02,
+          "end_time": 272.74,
+          "duration": 4.72
+        },
+        {
+          "beat_id": 9,
+          "full_sentence": "Instead, they feel the attractive pull of both positively charged nuclei simultaneously.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "9.1",
+              "narration_anchor": "Instead, they feel the attractive pull ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "electron_attraction_lines"
+              ],
+              "visual_action": "Dual attractive force vectors in #3B82F6 shoot from each traveling electron toward both central nuclei.",
+              "start_time": 272.74,
+              "end_time": 275.56,
+              "duration": 2.82,
+              "motion_time": 2.12,
+              "hold_time": 0.7
+            },
+            {
+              "sub_beat_id": "9.2",
+              "narration_anchor": "of both positively charged nuclei simultaneously.",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "dual_nuclei_attraction_field"
+              ],
+              "visual_action": "Both red nuclei '+e' pulse simultaneously; electrostatic vector lines weave an intricate interference pattern between them.",
+              "start_time": 275.56,
+              "end_time": 278.68,
+              "duration": 3.12,
+              "motion_time": 2.34,
+              "hold_time": 0.78
+            }
+          ],
+          "start_time": 272.74,
+          "end_time": 278.68,
+          "duration": 5.94
+        },
+        {
+          "beat_id": 10,
+          "full_sentence": "The valence shells merge, locking electrons into a shared molecular orbital.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "10.1",
+              "narration_anchor": "The valence shells merge, ",
+              "kinetic_archetype": "Morph / Scale Shift",
+              "actors_involved": [
+                "molecular_envelope"
+              ],
+              "visual_action": "The outer contour solidifies into a single continuous boundary in #4ECDC4.",
+              "start_time": 278.68,
+              "end_time": 280.3,
+              "duration": 1.62,
+              "motion_time": 1.22,
+              "hold_time": 0.4
+            },
+            {
+              "sub_beat_id": "10.2",
+              "narration_anchor": "locking electrons into a shared molecular orbital.",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "shared_molecular_orbital_path"
+              ],
+              "visual_action": "Both electrons trace a continuous figure-eight infinity path weaving symmetrically around both nuclei.",
+              "start_time": 280.3,
+              "end_time": 283.2,
+              "duration": 2.9,
+              "motion_time": 2.18,
+              "hold_time": 0.72
+            }
+          ],
+          "start_time": 278.68,
+          "end_time": 283.2,
+          "duration": 4.52
+        },
+        {
+          "beat_id": 11,
+          "full_sentence": "This is the birth of a covalent bond.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "11.1",
+              "narration_anchor": "This is the birth ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "bond_axis_line"
+              ],
+              "visual_action": "A central horizontal bond axis in #4D44B5 draws between the two locked nuclei.",
+              "start_time": 283.2,
+              "end_time": 284.2,
+              "duration": 1.0,
+              "motion_time": 0.65,
+              "hold_time": 0.35
+            },
+            {
+              "sub_beat_id": "11.2",
+              "narration_anchor": "of a covalent bond.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "covalent_bond_editorial_label"
+              ],
+              "visual_action": "Unboxed editorial typography 'COVALENT BOND' stamps directly above the shared electron density in #2B2D42.",
+              "start_time": 284.2,
+              "end_time": 285.71,
+              "duration": 1.51,
+              "motion_time": 1.13,
+              "hold_time": 0.38
+            }
+          ],
+          "start_time": 283.2,
+          "end_time": 285.71,
+          "duration": 2.51
+        },
+        {
+          "beat_id": 12,
+          "full_sentence": "By sharing outer electrons, both atoms achieve a stable, lower-energy configuration, locking two formerly independent bodies into a single cohesive molecule.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "12.1",
+              "narration_anchor": "By sharing outer electrons, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "shared_electron_pair"
+              ],
+              "visual_action": "The two electrons pass directly between the nuclei, shielding them from mutual positive repulsion.",
+              "start_time": 285.71,
+              "end_time": 287.74,
+              "duration": 2.03,
+              "motion_time": 1.52,
+              "hold_time": 0.51
+            },
+            {
+              "sub_beat_id": "12.2",
+              "narration_anchor": "both atoms achieve a stable, lower-energy configuration, ",
+              "kinetic_archetype": "Telemetry Lock",
+              "actors_involved": [
+                "potential_well_graph"
+              ],
+              "visual_action": "The potential energy plot plunges into a deep, stable potential well labeled '\u0394V < 0' in #4ECDC4.",
+              "start_time": 287.74,
+              "end_time": 291.38,
+              "duration": 3.64,
+              "motion_time": 2.91,
+              "hold_time": 0.73
+            },
+            {
+              "sub_beat_id": "12.3",
+              "narration_anchor": "locking two formerly independent bodies into a single cohesive molecule.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "h2_molecule_system"
+              ],
+              "visual_action": "An unboxed label 'H\u2082 MOLECULE' settles beneath the structure as the composite system moves as one unified body.",
+              "start_time": 291.38,
+              "end_time": 296.44,
+              "duration": 5.06,
+              "motion_time": 4.05,
+              "hold_time": 1.01
+            }
+          ],
+          "start_time": 285.71,
+          "end_time": 296.44,
+          "duration": 10.73
+        },
+        {
+          "beat_id": 13,
+          "full_sentence": "Because the synthesized molecule sits at a much lower potential energy state than the separated atoms, the surplus binding energy must be released.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "13.1",
+              "narration_anchor": "Because the synthesized molecule sits at a much lower potential energy state than the separated atoms, ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "energy_differential_ruler"
+              ],
+              "visual_action": "A vertical DimensionRuler in #FF6B6B measures the drop between initial separated energy and the molecular ground state.",
+              "start_time": 296.44,
+              "end_time": 302.22,
+              "duration": 5.78,
+              "motion_time": 4.62,
+              "hold_time": 1.16
+            },
+            {
+              "sub_beat_id": "13.2",
+              "narration_anchor": "the surplus binding energy must be released.",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "surplus_energy_reservoir"
+              ],
+              "visual_action": "The energy difference highlights in vibrant #FFAA00, pulsing with outward kinetic tension.",
+              "start_time": 302.22,
+              "end_time": 305.33,
+              "duration": 3.11,
+              "motion_time": 2.33,
+              "hold_time": 0.78
+            }
+          ],
+          "start_time": 296.44,
+          "end_time": 305.33,
+          "duration": 8.89
+        },
+        {
+          "beat_id": 14,
+          "full_sentence": "That excess energy is instantaneously discharged outward as a pulse of electromagnetic radiation and thermal vibration.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "14.1",
+              "narration_anchor": "That excess energy is instantaneously discharged outward ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "photon_emission_wave"
+              ],
+              "visual_action": "A sinusoidal wave packet in #FFAA00 flashes out from the bond center, traveling diagonally toward the canvas margin.",
+              "start_time": 305.33,
+              "end_time": 309.52,
+              "duration": 4.19,
+              "motion_time": 3.35,
+              "hold_time": 0.84
+            },
+            {
+              "sub_beat_id": "14.2",
+              "narration_anchor": "as a pulse of electromagnetic radiation and thermal vibration.",
+              "kinetic_archetype": "Physical Reaction / Resonance",
+              "actors_involved": [
+                "radiation_wavelet",
+                "thermal_recoil_ripple"
+              ],
+              "visual_action": "Concentric acoustic ripples in #FF6B6B pulse along the molecular bond axis accompanied by label 'h\u03bd (PHOTON)'.",
+              "start_time": 309.52,
+              "end_time": 313.67,
+              "duration": 4.15,
+              "motion_time": 3.32,
+              "hold_time": 0.83
+            }
+          ],
+          "start_time": 305.33,
+          "end_time": 313.67,
+          "duration": 8.34
+        },
+        {
+          "beat_id": 15,
+          "full_sentence": "What began as directional mechanical force pushing a mass across space has transformed into linear momentum, converted through collision into activation energy, and finally settled into the enduring stability of a chemical bond.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "15.1",
+              "narration_anchor": "What began as directional mechanical force pushing a mass across space ",
+              "kinetic_archetype": "Establishment",
+              "actors_involved": [
+                "stage_history_timeline"
+              ],
+              "visual_action": "A horizontal timeline rule in #2B2D42 unrolls across the base of the canvas with a marker highlighting 'MECHANICAL WORK'.",
+              "start_time": 313.67,
+              "end_time": 317.74,
+              "duration": 4.07,
+              "motion_time": 3.26,
+              "hold_time": 0.81
+            },
+            {
+              "sub_beat_id": "15.2",
+              "narration_anchor": "has transformed into linear momentum, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "timeline_marker_momentum"
+              ],
+              "visual_action": "A connecting VectorArrow in #4D44B5 extends to the next milestone marker labeled 'LINEAR MOMENTUM (p)'.",
+              "start_time": 317.74,
+              "end_time": 320.29,
+              "duration": 2.55,
+              "motion_time": 1.91,
+              "hold_time": 0.64
+            },
+            {
+              "sub_beat_id": "15.3",
+              "narration_anchor": "converted through collision into activation energy, ",
+              "kinetic_archetype": "Morph / Scale Shift",
+              "actors_involved": [
+                "timeline_marker_collision"
+              ],
+              "visual_action": "The vector arcs over an energy barrier icon in #FF6B6B tagged 'ACTIVATION THRESHOLD (E_a)'.",
+              "start_time": 320.29,
+              "end_time": 323.08,
+              "duration": 2.79,
+              "motion_time": 2.09,
+              "hold_time": 0.7
+            },
+            {
+              "sub_beat_id": "15.4",
+              "narration_anchor": "and finally settled into the enduring stability of a chemical bond.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "timeline_marker_bond"
+              ],
+              "visual_action": "The trajectory terminates in a locked covalent molecule icon in #4ECDC4 with an unboxed label 'STABLE BOND'.",
+              "start_time": 323.08,
+              "end_time": 327.73,
+              "duration": 4.65,
+              "motion_time": 3.72,
+              "hold_time": 0.93
+            }
+          ],
+          "start_time": 313.67,
+          "end_time": 327.73,
+          "duration": 14.06
+        },
+        {
+          "beat_id": 16,
+          "full_sentence": "From macroscopic physics to molecular chemistry, the continuum of energy conservation remains unbroken.",
+          "visual_sub_beats": [
+            {
+              "sub_beat_id": "16.1",
+              "narration_anchor": "From macroscopic physics to molecular chemistry, ",
+              "kinetic_archetype": "Continuous Physics",
+              "actors_involved": [
+                "full_scale_panoramic_axis"
+              ],
+              "visual_action": "The camera pulls out to a wide master view displaying the cart runway on the left and the H\u2082 molecule on the right, linked by unbroken coordinate lines.",
+              "start_time": 327.73,
+              "end_time": 330.71,
+              "duration": 2.98,
+              "motion_time": 2.24,
+              "hold_time": 0.74
+            },
+            {
+              "sub_beat_id": "16.2",
+              "narration_anchor": "the continuum of energy conservation remains unbroken.",
+              "kinetic_archetype": "Focal Resolution",
+              "actors_involved": [
+                "energy_conservation_master_rule",
+                "closing_editorial_title"
+              ],
+              "visual_action": "A single continuous line in #4ECDC4 threads through the entire stage beneath bold unboxed typography '\u0394E_UNIVERSE = 0'.",
+              "start_time": 330.71,
+              "end_time": 334.81,
+              "duration": 4.1,
+              "motion_time": 3.28,
+              "hold_time": 0.82
+            }
+          ],
+          "start_time": 327.73,
+          "end_time": 334.81,
+          "duration": 7.08
+        }
+      ],
+      "audio_start_time": 228.45,
+      "audio_end_time": 334.81,
+      "total_duration": 106.36
+    }
+  ],
+  "master_audio_total_duration": 334.81
+}

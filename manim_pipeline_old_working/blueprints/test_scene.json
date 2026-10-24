@@ -1,0 +1,80 @@
+{
+  "scene_id": "scene_01",
+  "total_duration": 10.0,
+  "elements": [
+    {
+      "id": "earth_arc",
+      "type": "ArcBoundary",
+      "position": [-1.0, -4.4, 0],
+      "props": {"radius": 6.2, "start_angle": 0.69, "angle": 1.5, "color": "stroke_light"}
+    },
+    {
+      "id": "sat_pt",
+      "type": "Point",
+      "position": [3.5, 2.0, 0],
+      "props": {"color": "indigo", "radius": 0.12}
+    },
+    {
+      "id": "sat_callout",
+      "type": "LeaderCallout",
+      "position": [3.5, 2.0, 0],
+      "props": {"title": "SAT_04", "subtitle": "ORBIT: 20,200 km"}
+    },
+    {
+      "id": "rec_pt",
+      "type": "Point",
+      "position": [-1.5, -0.8, 0],
+      "props": {"color": "coral", "radius": 0.09}
+    },
+    {
+      "id": "rec_callout",
+      "type": "LeaderCallout",
+      "position": [-1.5, -0.8, 0],
+      "props": {"title": "RECEIVER", "subtitle": "32.08 N, 74.12 E"}
+    },
+    {
+      "id": "ruler",
+      "type": "DimensionRuler",
+      "props": {
+        "start": [3.5, 2.0, 0],
+        "end": [-1.5, -0.8, 0],
+        "label": "dt = 67.4ms -> d = 20,200km",
+        "color": "amber"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "beat_id": 1,
+      "sentence": "Each GPS satellite orbits in a known high-altitude trajectory.",
+      "motion_time": 1.2,
+      "hold_time": 2.3,
+      "actions": [
+        {"verb": "CREATE", "targets": ["earth_arc"]},
+        {"verb": "FADE_IN", "targets": ["sat_pt"]},
+        {"verb": "WRITE", "targets": ["sat_callout"]}
+      ]
+    },
+    {
+      "beat_id": 2,
+      "sentence": "It continuously broadcasts an encoded timing beacon.",
+      "motion_time": 1.2,
+      "hold_time": 1.8,
+      "actions": [
+        {"verb": "WAVE_BURST", "center": [3.5, 2.0, 0], "count": 3, "radius": 4.5, "color": "indigo"},
+        {"verb": "FADE_IN", "targets": ["rec_pt"]},
+        {"verb": "WRITE", "targets": ["rec_callout"]}
+      ]
+    },
+    {
+      "beat_id": 3,
+      "sentence": "The delay allows your phone to calculate its exact distance.",
+      "motion_time": 1.2,
+      "hold_time": 2.3,
+      "actions": [
+        {"verb": "CREATE", "targets": ["ruler"]},
+        {"verb": "PULSE_RETICLE", "center": [-1.5, -0.8, 0], "color": "coral"}
+      ]
+    }
+  ]
+}

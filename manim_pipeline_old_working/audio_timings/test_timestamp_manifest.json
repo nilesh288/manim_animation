@@ -1,0 +1,448 @@
+{
+  "project": "test_timestamp",
+  "master_audio_total_duration": 335.0,
+  "total_scenes": 9,
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "title": "Inertia and Acceleration",
+      "audio_start_time": 0.0,
+      "audio_end_time": 48.0,
+      "total_duration": 48.0,
+      "beats": [
+        {
+          "beat_id": 1,
+          "sentence": "Every physical transformation in our universe, from the orbit of celestial bodies to the synthesis of complex molecules, begins with a fundamental concept: motion.",
+          "start": 0.0,
+          "line_duration": 11.0,
+          "motion_time": 1.2,
+          "hold_time": 9.8
+        },
+        {
+          "beat_id": 2,
+          "sentence": "In classical mechanics, an isolated object resting on a frictionless plane remains motionless. Its velocity is zero, and its linear momentum is non-existent.",
+          "start": 11.0,
+          "line_duration": 10.0,
+          "motion_time": 1.2,
+          "hold_time": 8.8
+        },
+        {
+          "beat_id": 3,
+          "sentence": "But the moment an unbalanced external force acts upon this mass, reality shifts into a dynamic state.",
+          "start": 21.0,
+          "line_duration": 7.0,
+          "motion_time": 1.2,
+          "hold_time": 5.8
+        },
+        {
+          "beat_id": 4,
+          "sentence": "Newton's second law dictates that force is an active vector imposing continuous acceleration upon mass.",
+          "start": 28.0,
+          "line_duration": 7.0,
+          "motion_time": 1.2,
+          "hold_time": 5.8
+        },
+        {
+          "beat_id": 5,
+          "sentence": "As this force acts across distance, it performs mechanical work that accumulates directly within the moving body as kinetic energy.",
+          "start": 35.0,
+          "line_duration": 8.0,
+          "motion_time": 1.2,
+          "hold_time": 6.8
+        },
+        {
+          "beat_id": 6,
+          "sentence": "The longer the force is applied, the higher the velocity climbs, and the greater the momentum becomes.",
+          "start": 43.0,
+          "line_duration": 5.0,
+          "motion_time": 1.2,
+          "hold_time": 3.8
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_02",
+      "title": "Impending Trajectory",
+      "audio_start_time": 48.0,
+      "audio_end_time": 86.0,
+      "total_duration": 38.0,
+      "beats": [
+        {
+          "beat_id": 1,
+          "sentence": "Linear momentum is the measure of an object's resistance to stopping once set in motion.",
+          "start": 48.0,
+          "line_duration": 6.0,
+          "motion_time": 1.2,
+          "hold_time": 4.8
+        },
+        {
+          "beat_id": 2,
+          "sentence": "It is the direct product of mass and instantaneous velocity.",
+          "start": 54.0,
+          "line_duration": 3.0,
+          "motion_time": 1.2,
+          "hold_time": 1.8
+        },
+        {
+          "beat_id": 3,
+          "sentence": "When we observe an accelerating object, we watch a directional vector carry physical influence across space.",
+          "start": 57.0,
+          "line_duration": 7.0,
+          "motion_time": 1.2,
+          "hold_time": 5.8
+        },
+        {
+          "beat_id": 4,
+          "sentence": "If a second, stationary object sits directly along that trajectory, an interaction is inevitable.",
+          "start": 64.0,
+          "line_duration": 6.0,
+          "motion_time": 1.2,
+          "hold_time": 4.8
+        },
+        {
+          "beat_id": 5,
+          "sentence": "As the distance between the two bodies closes to zero, the moving mass carries an entire reservoir of directional energy.",
+          "start": 70.0,
+          "line_duration": 8.0,
+          "motion_time": 1.2,
+          "hold_time": 6.8
+        },
+        {
+          "beat_id": 6,
+          "sentence": "This impending contact point is where classical physics reveals one of its most elegant laws: the conservation of linear momentum.",
+          "start": 78.0,
+          "line_duration": 8.0,
+          "motion_time": 1.2,
+          "hold_time": 6.8
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_03",
+      "title": "Elastic Momentum Transfer",
+      "audio_start_time": 86.0,
+      "audio_end_time": 122.0,
+      "total_duration": 36.0,
+      "beats": [
+        {
+          "beat_id": 1,
+          "sentence": "The millisecond of impact is governed by the laws of impulse and energy transfer.",
+          "start": 86.0,
+          "line_duration": 4.0,
+          "motion_time": 1.2,
+          "hold_time": 2.8
+        },
+        {
+          "beat_id": 2,
+          "sentence": "In an idealized elastic collision, the total momentum and kinetic energy of the system remain strictly conserved.",
+          "start": 90.0,
+          "line_duration": 8.0,
+          "motion_time": 1.2,
+          "hold_time": 6.8
+        },
+        {
+          "beat_id": 3,
+          "sentence": "The incoming projectile mass decelerates with extreme rapidity, exerting an equal and opposite reaction force against itself while driving an enormous forward impulse into the stationary target.",
+          "start": 98.0,
+          "line_duration": 11.0,
+          "motion_time": 1.2,
+          "hold_time": 9.8
+        },
+        {
+          "beat_id": 4,
+          "sentence": "In a fraction of a second, the velocity vector is transferred.",
+          "start": 109.0,
+          "line_duration": 3.0,
+          "motion_time": 1.2,
+          "hold_time": 1.8
+        },
+        {
+          "beat_id": 5,
+          "sentence": "The original body comes to an abrupt halt, while the target mass launches forward along the runway, inheriting the momentum and continuing across space.",
+          "start": 112.0,
+          "line_duration": 10.0,
+          "motion_time": 1.2,
+          "hold_time": 8.8
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_04",
+      "title": "Energy Dissipation into Heat",
+      "audio_start_time": 122.0,
+      "audio_end_time": 160.0,
+      "total_duration": 38.0,
+      "beats": [
+        {
+          "beat_id": 1,
+          "sentence": "Yet, in the physical world, collisions are rarely perfectly elastic.",
+          "start": 122.0,
+          "line_duration": 4.0,
+          "motion_time": 1.2,
+          "hold_time": 2.8
+        },
+        {
+          "beat_id": 2,
+          "sentence": "When macroscopic objects slam together, not all of that mechanical work translates into forward motion.",
+          "start": 126.0,
+          "line_duration": 7.0,
+          "motion_time": 1.2,
+          "hold_time": 5.8
+        },
+        {
+          "beat_id": 3,
+          "sentence": "A portion of kinetic energy is absorbed internally, deforming structures and generating stress waves. But energy can never be destroyed.",
+          "start": 133.0,
+          "line_duration": 8.0,
+          "motion_time": 1.2,
+          "hold_time": 6.8
+        },
+        {
+          "beat_id": 4,
+          "sentence": "That lost mechanical energy degrades into chaotic microscopic vibrations.",
+          "start": 141.0,
+          "line_duration": 5.0,
+          "motion_time": 1.2,
+          "hold_time": 3.8
+        },
+        {
+          "beat_id": 5,
+          "sentence": "The uniform forward velocity of billions of atoms is suddenly scrambled into random thermal oscillations.",
+          "start": 146.0,
+          "line_duration": 6.0,
+          "motion_time": 1.2,
+          "hold_time": 4.8
+        },
+        {
+          "beat_id": 6,
+          "sentence": "Macroscopic motion converts directly into heat. To understand heat and chemical reactions, we must peer into the atom itself.",
+          "start": 152.0,
+          "line_duration": 8.0,
+          "motion_time": 1.2,
+          "hold_time": 6.8
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_05",
+      "title": "Bohr Atom and Shield",
+      "audio_start_time": 160.0,
+      "audio_end_time": 194.0,
+      "total_duration": 34.0,
+      "beats": [
+        {
+          "beat_id": 1,
+          "sentence": "Beneath the surface of every physical material lies a microscopic world governed by electrostatics.",
+          "start": 160.0,
+          "line_duration": 7.0,
+          "motion_time": 1.2,
+          "hold_time": 5.8
+        },
+        {
+          "beat_id": 2,
+          "sentence": "In the Bohr atomic model, every chemical element is built around a dense, positively charged nucleus surrounded by concentric electron shells.",
+          "start": 167.0,
+          "line_duration": 8.0,
+          "motion_time": 1.2,
+          "hold_time": 6.8
+        },
+        {
+          "beat_id": 3,
+          "sentence": "Orbiting within these shells are negatively charged electrons, maintaining precise quantum distances from the core.",
+          "start": 175.0,
+          "line_duration": 7.0,
+          "motion_time": 1.2,
+          "hold_time": 5.8
+        },
+        {
+          "beat_id": 4,
+          "sentence": "In reactive elements like hydrogen, the outermost valence shell contains unpaired electrons.",
+          "start": 182.0,
+          "line_duration": 5.0,
+          "motion_time": 1.2,
+          "hold_time": 3.8
+        },
+        {
+          "beat_id": 5,
+          "sentence": "As they spin in rapid orbital paths, these valence electrons generate an outward electrostatic shield.",
+          "start": 187.0,
+          "line_duration": 7.0,
+          "motion_time": 1.2,
+          "hold_time": 5.8
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_06",
+      "title": "Coulomb Barrier",
+      "audio_start_time": 194.0,
+      "audio_end_time": 234.0,
+      "total_duration": 40.0,
+      "beats": [
+        {
+          "beat_id": 1,
+          "sentence": "Because every atom is cloaked in this negative cloud, two independent atoms floating in space do not simply merge when they meet.",
+          "start": 194.0,
+          "line_duration": 7.0,
+          "motion_time": 1.2,
+          "hold_time": 5.8
+        },
+        {
+          "beat_id": 2,
+          "sentence": "Negative charges naturally repel negative charges. As two atoms drift toward one another, their electron clouds experience mutual Coulomb repulsion.",
+          "start": 201.0,
+          "line_duration": 10.0,
+          "motion_time": 1.2,
+          "hold_time": 8.8
+        },
+        {
+          "beat_id": 3,
+          "sentence": "Under low-energy conditions, this repulsive force acts like an invisible spring, deflecting the atoms away before their nuclei can get close.",
+          "start": 211.0,
+          "line_duration": 9.0,
+          "motion_time": 1.2,
+          "hold_time": 7.8
+        },
+        {
+          "beat_id": 4,
+          "sentence": "This electrostatic resistance is known as the activation energy barrier.",
+          "start": 220.0,
+          "line_duration": 4.0,
+          "motion_time": 1.2,
+          "hold_time": 2.8
+        },
+        {
+          "beat_id": 5,
+          "sentence": "Without sufficient initial momentum, no chemical bond can form.",
+          "start": 224.0,
+          "line_duration": 4.0,
+          "motion_time": 1.2,
+          "hold_time": 2.8
+        },
+        {
+          "beat_id": 6,
+          "sentence": "This is precisely where macroscopic kinematics bridges directly into molecular chemistry.",
+          "start": 228.0,
+          "line_duration": 6.0,
+          "motion_time": 1.2,
+          "hold_time": 4.8
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_07",
+      "title": "Overcoming Barrier via Momentum",
+      "audio_start_time": 234.0,
+      "audio_end_time": 262.0,
+      "total_duration": 28.0,
+      "beats": [
+        {
+          "beat_id": 1,
+          "sentence": "How do we overcome this electrostatic barrier? By injecting kinetic energy. If we accelerate atoms toward each other at high velocities, their linear momentum overpowers the repulsive resistance.",
+          "start": 234.0,
+          "line_duration": 14.0,
+          "motion_time": 1.2,
+          "hold_time": 12.8
+        },
+        {
+          "beat_id": 2,
+          "sentence": "Just like accelerating physical carts on a track, the incoming atoms carry enough momentum to crash through the activation energy threshold.",
+          "start": 248.0,
+          "line_duration": 8.0,
+          "motion_time": 1.2,
+          "hold_time": 6.8
+        },
+        {
+          "beat_id": 3,
+          "sentence": "The kinetic impact forces their outer orbital shells into direct, physical overlap.",
+          "start": 256.0,
+          "line_duration": 6.0,
+          "motion_time": 1.2,
+          "hold_time": 4.8
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_08",
+      "title": "Covalent Bond Formation",
+      "audio_start_time": 262.0,
+      "audio_end_time": 296.0,
+      "total_duration": 34.0,
+      "beats": [
+        {
+          "beat_id": 1,
+          "sentence": "Once outer electron clouds are forced into overlap, a radical physical restructuring takes place.",
+          "start": 262.0,
+          "line_duration": 6.0,
+          "motion_time": 1.2,
+          "hold_time": 4.8
+        },
+        {
+          "beat_id": 2,
+          "sentence": "Valence electrons are no longer confined to orbiting a single nucleus. Instead, they feel the attractive pull of both positively charged nuclei simultaneously.",
+          "start": 268.0,
+          "line_duration": 11.0,
+          "motion_time": 1.2,
+          "hold_time": 9.8
+        },
+        {
+          "beat_id": 3,
+          "sentence": "The valence shells merge, locking electrons into a shared molecular orbital. This is the birth of a covalent bond.",
+          "start": 279.0,
+          "line_duration": 7.0,
+          "motion_time": 1.2,
+          "hold_time": 5.8
+        },
+        {
+          "beat_id": 4,
+          "sentence": "By sharing outer electrons, both atoms achieve a stable, lower-energy configuration, locking two formerly independent bodies into a single cohesive molecule.",
+          "start": 286.0,
+          "line_duration": 10.0,
+          "motion_time": 1.2,
+          "hold_time": 8.8
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_09",
+      "title": "Radiant Energy Release",
+      "audio_start_time": 296.0,
+      "audio_end_time": 335.0,
+      "total_duration": 39.0,
+      "beats": [
+        {
+          "beat_id": 1,
+          "sentence": "Because the synthesized molecule sits at a much lower potential energy state than the separated atoms, the surplus binding energy must be released.",
+          "start": 296.0,
+          "line_duration": 9.0,
+          "motion_time": 1.2,
+          "hold_time": 7.8
+        },
+        {
+          "beat_id": 2,
+          "sentence": "That excess energy is instantaneously discharged outward as a pulse of electromagnetic radiation and thermal vibration.",
+          "start": 305.0,
+          "line_duration": 9.0,
+          "motion_time": 1.2,
+          "hold_time": 7.8
+        },
+        {
+          "beat_id": 3,
+          "sentence": "What began as directional mechanical force pushing a mass across space has transformed into linear momentum, converted through collision into activation energy, and finally settled into the enduring stability of a chemical bond.",
+          "start": 314.0,
+          "line_duration": 14.0,
+          "motion_time": 1.2,
+          "hold_time": 12.8
+        },
+        {
+          "beat_id": 4,
+          "sentence": "From macroscopic physics to molecular chemistry, the continuum of energy conservation remains unbroken.",
+          "start": 328.0,
+          "line_duration": 7.0,
+          "motion_time": 1.2,
+          "hold_time": 5.8
+        }
+      ]
+    }
+  ]
+}
