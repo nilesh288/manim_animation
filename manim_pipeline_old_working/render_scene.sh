@@ -62,6 +62,11 @@ cleanup() {
 }
 trap cleanup EXIT
 
+# Automated Pre-Flight Sanitization
+if [[ -f "$REPO_DIR/sanitize_scene.py" ]]; then
+    "$PYTHON_BIN" "$REPO_DIR/sanitize_scene.py" "$SCENE_FILE"
+fi
+
 echo "🎬 Rendering $SCENE_CLASS from $(basename "$SCENE_FILE") (Flags: $QUALITY)..."
 PYTHONPATH="$REPO_DIR" "$MANIM_BIN" render $QUALITY \
     --media_dir "$MEDIA_DIR" \
