@@ -146,7 +146,19 @@ class InfographicScene(Scene):
             fill_c = PALETTE[fill_tok] if isinstance(fill_tok, str) else fill_tok
             border_tok = item.get("border_token", item.get("stroke_token", None))
             stroke_c = PALETTE[border_tok] if border_tok else fill_c
-            text_tok = item.get("text_color", item.get("color_token", "#FFFFFF"))
+
+            # Guaranteed contrast: light fills automatically get dark text, dark fills get white text
+            if "text_color" in item:
+                text_tok = item["text_color"]
+            elif "color_token" in item:
+                text_tok = item["color_token"]
+            else:
+                fill_str = str(fill_tok).lower()
+                if any(light in fill_str for light in ("amber", "mint", "yellow", "gold", "bg_subtle", "surface_card", "white", "#edf2f7", "#ffffff")):
+                    text_tok = PALETTE["text"]
+                else:
+                    text_tok = "#FFFFFF"
+
             text_c = PALETTE[text_tok] if isinstance(text_tok, str) else text_tok
 
             label_text = Text(

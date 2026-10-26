@@ -832,12 +832,23 @@ class MacOSPill(VGroup):
         font_size: int = 13,
         height: float = 0.42,
         padding: float = 0.26,
+        text_color=None,
         **kwargs
     ):
         super().__init__(**kwargs)
         col = color or PALETTE["blue"]
 
-        txt_col = PALETTE["white"] if is_solid else PALETTE["text"]
+        if text_color is not None:
+            txt_col = text_color
+        elif is_solid:
+            col_str = str(col).lower()
+            if any(light in col_str for light in ("amber", "yellow", "gold", "mint", "edf2f7", "f59e0b", "ed8936", "00c9a7", "white", "#fff")):
+                txt_col = PALETTE["text"]
+            else:
+                txt_col = PALETTE["white"]
+        else:
+            txt_col = PALETTE["text"]
+
         self.label = Text(
             text,
             font=FONTS["sans"],

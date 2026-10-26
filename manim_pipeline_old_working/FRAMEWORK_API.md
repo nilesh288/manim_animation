@@ -64,39 +64,70 @@ from engine_2d import (
 
 ## 2. Universal 5-Zone Canvas Spatial Matrix (Zero Collisions & Zero Occlusion)
 
-The 16:9 1080p canvas spans `x ∈ [-7.1, 7.1]` and `y ∈ [-4.0, 4.0]`. To guarantee that generated code for **ANY TOPIC** is visually balanced and 100% collision-free, all actors must be mapped to dedicated spatial zones:
+The 16:9 1080p canvas spans `x ∈ [-7.1, 7.1]` and `y ∈ [-4.0, 4.0]`. To guarantee that generated code for **ANY TOPIC** is visually balanced and 100% collision-free, all elements must map to dedicated spatial zones:
 
 ```
-+-------------------------------------------------------------------------+
-| ZONE 1: TOP PROGRESSION / ROADMAP ZONE (y = 2.4 to 3.2)                 |
-| [MilestoneTimeline(all_up=True), Topic Header Pills, Chapter Badges]    |
-+-------------------------------------------------------------------------+
-|                                                                         |
-| ZONE 2: MAIN STAGE / PHYSICAL ACTORS ZONE (y = -1.6 to 1.6)             |
-|                                                                         |
-|  [LAYOUT A: Single Subject]       Centered at [0.0, 0.0]                |
-|                                                                         |
-|  [LAYOUT B: Dual Subject / Split] Left: [-2.8, 0.0]  Right: [+2.8, 0.0] |
-|                                   (Min horizontal gap >= 1.2 units)     |
-|                                                                         |
-|  [LAYOUT C: 3-Stage Pipeline]     Left: [-3.5, 0.0]  Center: [0.0, 0.0] |
-|                                   Right: [+3.5, 0.0]                    |
-|                                                                         |
-+-------------------------------------------------------------------------+
-| ZONE 3: BOTTOM STATUS & TELEMETRY ZONE (y = -2.7 to -3.3)               |
-| [self.beat(..., transient=[{"type": "badge", "position": [0.0, -3.1]}])]|
-+-------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+| ZONE 1: TOP PROGRESSION / ROADMAP ZONE (y = 2.4 to 3.2)                                 |
+| [MilestoneTimeline(all_up=True), Topic Header Pills, Chapter Announcements]             |
++-----------------------------------------------------------------------------------------+
+|                                                                                         |
+| ZONE 2: MAIN STAGE / PHYSICAL ACTORS ZONE (y = -1.6 to 1.6, x = -5.5 to 5.5)            |
+|                                                                                         |
+|  [TEMPLATE A: Single Subject]       Centered at [0.0, 0.0, 0.0]                         |
+|                                                                                         |
+|  [TEMPLATE B: Dual Subject / Split] Left: [-2.6, 0.0, 0.0]    Right: [+2.6, 0.0, 0.0]   |
+|                                     (Horizontal clearance gap between actors >= 1.0)    |
+|                                                                                         |
+|  [TEMPLATE C: 3-Stage Pipeline]     Left: [-3.6, 0.0, 0.0]    Center: [0.0, 0.0, 0.0]   |
+|                                     Right: [+3.6, 0.0, 0.0]   (Stage width <= 2.2 each) |
+|                                                                                         |
+|  [TEMPLATE D: Container Sub-Stage]  Container (e.g. PCB) at [0.0, -0.6, 0.0]            |
+|                                     Internal Core at [0.0, -0.6, 0.0]                   |
+|                                     Left Peripheral at [-2.6, 0.4] / Right at [+2.7, -0.6]|
+|                                                                                         |
++-----------------------------------------------------------------------------------------+
+| ZONE 3: BOTTOM STATUS & TELEMETRY ZONE (y = -2.7 to -3.3)                               |
+| [self.beat(..., transient=[{"type": "badge", "position": [0.0, -3.1, 0.0]}])]           |
++-----------------------------------------------------------------------------------------+
 ```
 
 ### Strict Non-Occlusion Laws
-1. **Never Stack Cards Over Devices**: A `TechCard` (width 4.5) must NEVER be centered over a `MacBookDevice` (width 2.4). Use **Layout B (Split Screen)**: Laptop at `[-2.6, 0.0]`, Terminal Card at `[+2.4, 0.0]`.
+1. **Never Stack Cards Over Devices**: A `TechCard` (width 4.5) must NEVER be centered over a `MacBookDevice` (width 2.4). Use **Template B (Dual Subject / Split)**: Device on left at `[-2.6, 0.0]`, Card on right at `[+2.4, 0.0]`. The center-to-center distance must be at least `(w1 + w2) / 2 + 0.6`.
 2. **Never Move an Actor Onto an Occupied Coordinate**: If Actor A is at `[-1.8, 0.0]`, NEVER move Actor B to `[-1.8, 0.0]` without first fading out Actor A (`FadeOut(actor_a)`).
 3. **Container Actor Rule**: If using a container like `MotherboardSection`, `ServerRackActor`, or `ModernRouter`, do NOT drop duplicate external sub-actors (e.g. `CapacitorBank`, `ATX24PinConnector`) directly on top of it. Place external components in clear peripheral zones with connecting conduits.
 4. **Timelines Must Use `all_up=True`**: When instantiating `MilestoneTimeline(...)` near the top of the screen (`y >= 2.2`), ALWAYS set `all_up=True`. This forces all milestone ticks and labels upward into the top margin, preventing collisions with stage actors below.
+5. **Callout Clearance**: Callouts over conduits/bus lines must maintain vertical clearance `buff >= 0.6` from the conduit and must never overlap connected hardware endpoints.
 
 ---
 
-## 3. Scene Architecture & Scoping Pattern
+## 3. Universal Stage Eviction & Element Lifecycle Mandate
+
+Infographics become cluttered and illegible when actors from previous beats linger on screen after the discussion has moved on:
+* **Explicit Exit on Focus Shift**: When transitioning between conceptual stages (e.g. intro workstation to internal motherboard circuitry), outgoing actors MUST be explicitly faded out in the first 1.5–2.0 seconds of the new beat's action:
+  ```python
+  self.play(FadeOut(workstation, shift=DOWN * 0.3), FadeOut(log_card), run_time=1.8)
+  ```
+* **Stage Concurrency Limit**: No more than 2 to 3 primary focal groups may be visible on screen simultaneously.
+
+---
+
+## 4. 100% Legibility & Contrast Matrix (Text-In-Object Rules)
+
+Every text element inside any object or container MUST comply with this exact contrast matrix. NEVER guess colors:
+
+| Container / Background Type | Fill Color / Surface | Required Text / Label Color | Strictly Prohibited Colors |
+| :--- | :--- | :--- | :--- |
+| **Canvas Background** | Warm Eggshell (`#F8F9FA` / `PALETTE["bg"]`) | `PALETTE["text"]` (`#1A202C`), `PALETTE["stroke"]` (`#2D3748`) | `#FFFFFF`, `text_light`, yellow |
+| **White Cards (`TechCard`, `VisualCard`)** | Pure White (`#FFFFFF` / `PALETTE["surface_card"]`) | `PALETTE["text"]` (`#1A202C`), `PALETTE["blue"]`, `PALETTE["indigo"]`, `PALETTE["mint"]` | Pure white text (`#FFFFFF`), light gray (`#EDF2F7`) |
+| **Dark Cards (`TechCard(is_dark=True)`)** | Graphite Charcoal (`#2A3238`) | Pure White (`"#FFFFFF"`), `PALETTE["text_light"]` (`#E2E8F0`), `PALETTE["amber"]` | Slate black (`#1A202C`), dark muted gray (`text_dim`) |
+| **Dark PCB Surface (`MotherboardSection`)**| Dark Emerald (`#132B22`) | Pure White (`"#FFFFFF"`), `PALETTE["text_light"]` (`#E2E8F0`), `PALETTE["amber"]` (`#ED8936`) | Slate black (`#1A202C`), `text_dim`, dark blue (`#1E60FF`) |
+| **Dark Solid Pills (`MacOSPill`, badges)** | Indigo, Blue, Coral, Charcoal (`#5A67D8`, `#1E60FF`, `#E53E3E`) | `text_color="#FFFFFF"` | Dark text, blue on indigo, slate black |
+| **Bright Solid Pills (`MacOSPill`, badges)**| Amber, Mint, Subtle Gray (`#ED8936`, `#00C9A7`, `#EDF2F7`) | `text_color="#1A202C"` | Pure white text (`#FFFFFF`) |
+
+---
+
+## 5. Scene Architecture & Scoping Pattern
 
 To eliminate `NameError` and scoping traps, all scenes must follow the **Outer-Scope Variable Declaration Pattern**:
 
@@ -131,14 +162,14 @@ class Scene01(EditorialScene):
             motion_time=7.58,
             hold_time=1.80,
             transient=[
-                {"type": "badge", "text": "ACPI POWER-ON EVENT", "position": [0.0, -3.1], "fill_token": "indigo", "text_color": "#FFFFFF"}
+                {"type": "badge", "text": "ACPI POWER-ON EVENT", "position": [0.0, -3.1, 0.0], "fill_token": "indigo", "text_color": "#FFFFFF"}
             ]
         )
 ```
 
 ---
 
-## 4. Choreography & Beat Timing API
+## 6. Choreography & Beat Timing API
 
 The framework provides an exact, drift-free synchronization mechanism via `self.beat(...)`.
 
@@ -162,20 +193,9 @@ self.beat(
 * `hold_time`: Rest/narration pause duration. `self.beat(...)` handles this automatically with drift compensation.
 * `transient`: List of temporary callouts or badges to display during this beat. The framework automatically materializes, times, and dissolves them with zero drift.
 
-### Transient Dictionary Schema
-Transient elements passed to `transient=[...]` are defined as structured dictionaries:
-```python
-transient=[
-    # High-contrast rounded pill/badge:
-    {"type": "badge", "text": "LINUX BOOT SEQUENCE", "position": [0.0, -3.1], "fill_token": "indigo", "text_color": "#FFFFFF"},
-    # Explanatory annotation label:
-    {"type": "annotation", "text": "3.3V / 5V / 12V RAILS", "position": [-2.0, 1.2], "color_token": "amber"}
-]
-```
-
 ---
 
-## 5. Built-in Physical Actor Catalog (`engine_2d.objects`)
+## 7. Built-in Physical Actor Catalog (`engine_2d.objects`)
 
 ### Standard Animation Verb Whitelist (Zero Method Inventions)
 - **PROHIBITION**: NEVER invent custom animation methods like `.animate.fire_diagnostic_pulses()`, `.animate.verify_chips()`, `.animate.emit_waves()`.
@@ -232,9 +252,9 @@ transient=[
 
 ---
 
-## 6. UI Primitives & Containers (`engine_2d.primitives`)
+## 8. UI Primitives & Containers (`engine_2d.primitives`)
 
-* `MacOSPill`: High-contrast status pill badge (`MacOSPill("RESET VECTOR: 0xFFFFFFF0", color=PALETTE["blue"], is_solid=True)`).
+* `MacOSPill`: High-contrast status pill badge (`MacOSPill("RESET VECTOR: 0xFFFFFFF0", color=PALETTE["blue"], is_solid=True)`). Automatically applies dark text for bright fills (amber/mint) and white text for dark fills.
 * `TechCard`: Elegant container with title header (`TechCard(width=4.5, height=2.4, title="SPECIFICATIONS")`). **Never add traffic-light buttons (🔴🟡🟢)**.
 * `VisualCard`: Minimalist framed container for diagrams and waveforms.
 * `MilestoneTimeline`: Stepped process progression indicator. **Always use `all_up=True` when positioned near the top of the screen (`y >= 2.2`)**. Dot mobjects are accessible via `timeline.dots[i]`.
@@ -242,19 +262,7 @@ transient=[
 
 ---
 
-## 7. Guaranteed High-Contrast Color Matrix
-
-| Background / Surface | Required Text / Stroke Color | Prohibited Colors |
-| :--- | :--- | :--- |
-| **Canvas Background** (`PALETTE["bg"]` = `#F8F9FA`) | `PALETTE["text"]` (`#1A202C`), `PALETTE["stroke"]` (`#2D3748`) | `#FFFFFF`, `text_light`, yellow |
-| **Arctic White Cards** (`PALETTE["surface_card"]` = `#FFFFFF`) | `PALETTE["text"]` (`#1A202C`), `PALETTE["blue"]`, `PALETTE["mint"]` | Pure white text |
-| **Dark Emerald PCB / Dark Graphite Surface** (`#132B22`, `#2A3238`) | `"#FFFFFF"`, `PALETTE["text_light"]`, `PALETTE["amber"]` | `PALETTE["text"]` (black), `text_dim`, `blue` |
-| **Dark Solid Pills** (`indigo`, `blue`, `coral`, `surface_dark`) | `text_color="#FFFFFF"` | Dark text, blue on indigo |
-| **Bright Solid Pills** (`amber`, `mint`, `bg_subtle`) | `text_color="#1A202C"` | White text |
-
----
-
-## 8. Strict Code Safety & Syntax Rules
+## 9. Strict Code Safety & Syntax Rules
 
 1. **Underscores Only in Function Identifiers (NO DOTS)**:
    - Always name action functions `def act_1_1():`, `def act_8_2():`.
