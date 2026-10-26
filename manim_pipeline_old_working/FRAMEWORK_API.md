@@ -108,6 +108,18 @@ Infographics become cluttered and illegible when actors from previous beats ling
   ```python
   self.play(FadeOut(workstation, shift=DOWN * 0.3), FadeOut(log_card), run_time=1.8)
   ```
+* **Sequential Transitions (Anti-Ghosting Mandate)**:
+  - When transitioning between macro stages or scenes containing large opaque backdrops (such as a laptop device rig and a large `MotherboardSection` PCB), NEVER execute simultaneous crossfades (`FadeOut(old_rig)` and `FadeIn(new_stage)` in the same `self.play(...)`).
+  - Simultaneous crossfades cause an ugly 50% opacity overlap / ghost collision.
+  - **MANDATORY**: Sequence them cleanly:
+    ```python
+    # 1. Cleanly dissolve outgoing stage first
+    self.play(FadeOut(outgoing_rig, shift=UP * 0.3), run_time=1.20)
+    # 2. Then introduce incoming stage
+    self.play(FadeIn(incoming_pcb, scale=0.95), run_time=2.30)
+    ```
+* **Dynamic Visual Engagement (Anti-Stagnation)**:
+  - During extended beats (10+ seconds), never leave an empty container or PCB scaling/breathing in place. Progressively reveal or highlight internal components, power traces, or bus signals every 2–3 seconds.
 * **Stage Concurrency Limit**: No more than 2 to 3 primary focal groups may be visible on screen simultaneously.
 
 ---
@@ -238,7 +250,7 @@ self.beat(
 ### Networking, Physics & Security
 | Actor Class | Visual Representation | Key Parameters & Notes |
 | :--- | :--- | :--- |
-| `MacBookDevice` | Aluminum unibody laptop workstation with terminal/app screen | `MacBookDevice(url_text="tty1: Linux")` |
+| `MacBookDevice` | Aluminum unibody laptop workstation with terminal/app screen | `MacBookDevice(url_text="tty1: Linux")`. Submobjects: `laptop.base`, `laptop.lid` (outer bezel), `laptop.screen` (display). When exploding, always shift `lid` with `screen`. |
 | `PhoneDevice` | Sleek smartphone receiver with glass screen and status radar dot | `PhoneDevice(scale=1.0)` |
 | `ModernRouter` | Wi-Fi 6 router with glowing status LEDs and multi-band radio arcs | `ModernRouter(scale=1.0)` |
 | `ServerRackActor` | 42U datacenter server rack with modular blades and blinking LEDs | `ServerRackActor(scale=1.0)` |
@@ -270,6 +282,8 @@ self.beat(
 2. **Scoping**: All persistent mobjects must be declared at the top of `construct()` before any `def act_*` function.
 3. **Pure Action Functions (No `self.wait`)**: `act_X_Y()` must contain ONLY `self.play(...)` calls whose `run_time` values sum to `motion_time`.
 4. **Spatial Clearance**: Follow the 5-Zone Canvas Spatial Matrix. Never stack cards over devices or overlap actors.
-5. **Stage Eviction**: Evict outgoing actors with `FadeOut(...)` when transitioning between conceptual stages.
-6. **No Semantic Inventions**: Use only standard Manim transform/color/fade primitives.
-7. **No Slide Rule**: Never create a scene that is just a bulleted text box. Every beat must be anchored by a concrete physical actor.
+5. **Stage Eviction & Sequential Transitions**: Evict outgoing actors with `FadeOut(...)` when transitioning between stages. Sequence transitions (fade out old first, then fade in new) to avoid messy ghosting overlaps.
+6. **Composite Actor Integrity**: In exploded/shifted views, always animate outer bezels/housings (e.g. `laptop.lid`) alongside their inner screens (`laptop.screen`) so parts never detach.
+7. **No Semantic Inventions**: Use only standard Manim transform/color/fade primitives.
+8. **Progressive Engagement**: In beats > 5 seconds, progressively reveal or illuminate internal components rather than leaving a bare container breathing.
+9. **No Slide Rule**: Never create a scene that is just a bulleted text box. Every beat must be anchored by a concrete physical actor.

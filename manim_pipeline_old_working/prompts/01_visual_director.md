@@ -60,8 +60,12 @@ For every topic and beat, you MUST identify and animate real physical actors:
      - **Split-Screen Layout**: Place Actor A on the left (`x = -2.6`) and Actor B on the right (`x = +2.6`). Never place cards directly on top of physical devices.
      - **3-Stage Pipeline Layout**: Place Stage 1 at `x = -3.6`, Stage 2 at `x = 0.0`, Stage 3 at `x = +3.6`.
      - **Roadmap + Stage Layout**: Place multi-phase timeline across the top margin (`y = 2.5`), the main physical subject in the center (`y = -0.6`), and transient status callouts along the bottom (`y = -3.1`).
-2. **Explicit Stage Eviction**:
-   - Whenever moving from a macro concept (e.g. laptop workstation) to internal mechanisms (e.g. motherboard PCB), explicitly dictate in the storyboard: *"Fade out the laptop before introducing the motherboard."* Never leave obsolete elements on stage.
-3. **Strict Visual Budget**: Maximum 1 to 2 active text annotations on screen at any given instant.
-4. **Transient Telemetry**: Explanatory annotations, force arrows, and signal pulses MUST be marked transient so the engine auto-removes them at the end of each beat.
-5. **Safe Zone Rule**: All elements must remain within `[-5.5, 5.5]` X and `[-2.8, 2.8]` Y.
+2. **Explicit Stage Eviction & Sequential Transitions**:
+   - Whenever moving from a macro concept (e.g. laptop workstation) to internal mechanisms (e.g. motherboard PCB), explicitly dictate in the storyboard: *"Fade out the laptop before introducing the motherboard."* Never leave obsolete elements on stage, and do not crossfade full-screen backgrounds simultaneously.
+3. **Continuous Visual Engagement (Anti-Stagnation Rule)**:
+   - For narration beats longer than 5 seconds, NEVER specify a static or breathing container. You MUST specify progressive sequential micro-actions every 2–3 seconds (e.g., power traces illuminating at 2s, CPU socket engaging at 5s, data pulses traveling along buses at 8s).
+4. **Composite Object Cohesion**:
+   - When specifying exploded views or disassembled hardware (e.g. opening or expanding a laptop), explicitly mandate that bezels, screens, and housings expand cohesively so housings do not detach awkwardly.
+5. **Strict Visual Budget**: Maximum 1 to 2 active text annotations on screen at any given instant.
+6. **Transient Telemetry**: Explanatory annotations, force arrows, and signal pulses MUST be marked transient so the engine auto-removes them at the end of each beat.
+7. **Safe Zone Rule**: All elements must remain within `[-5.5, 5.5]` X and `[-2.8, 2.8]` Y.

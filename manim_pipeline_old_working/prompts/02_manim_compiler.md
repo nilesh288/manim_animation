@@ -83,6 +83,16 @@ Infographics become cluttered and illegible when actors from previous beats ling
   ```python
   self.play(FadeOut(workstation, shift=DOWN * 0.3), FadeOut(log_group, shift=DOWN * 0.3), run_time=2.0)
   ```
+* **Sequential Transitions (Anti-Ghosting Mandate)**:
+  - When transitioning between macro stages or scenes containing large opaque backdrops (such as a laptop device rig and a large `MotherboardSection` PCB), NEVER execute simultaneous crossfades (`FadeOut(old_rig)` and `FadeIn(new_stage)` in the same `self.play(...)` with large run times).
+  - Simultaneous crossfades cause a murky 50% opacity overlap / ghost collision where both objects clash.
+  - **MANDATORY**: ALWAYS sequence them cleanly:
+    ```python
+    # 1. First cleanly dissolve outgoing stage (e.g. 1.2s - 1.5s)
+    self.play(FadeOut(outgoing_rig, shift=UP * 0.3), run_time=1.20)
+    # 2. Then introduce incoming stage (e.g. 2.0s - 2.3s)
+    self.play(FadeIn(incoming_pcb, scale=0.95), run_time=2.30)
+    ```
 * **Stage Concurrency Limit**: No more than 2 to 3 primary focal groups may be visible on screen simultaneously.
 
 ---
@@ -125,9 +135,26 @@ Every text element inside any object or container MUST comply with this exact co
    - **PROHIBITED**: NEVER access arbitrary internal sub-attributes like `mob.dots`, `mob.core`, `mob.pins`, `mob.screen.text` unless explicitly verified in `FRAMEWORK_API.md`.
    - On `MilestoneTimeline`: `timeline.dots[i]` is supported.
    - On `TechCard`: `card.body` is supported.
-   - On `MacBookDevice`: `laptop.base` and `laptop.screen` are supported.
+   - On `MacBookDevice`: `laptop.base`, `laptop.lid`, and `laptop.screen` are supported.
    - On `ChipSoC`: `chip.core` (die center dot) and `chip.die` (silicon die) are supported.
    - For all other actors: Animate the entire actor (`actor.animate.set_color(...)`, `actor.animate.scale(...)`) or use indexed submobjects (`actor[0]`).
+
+3. **Composite Actor Submobject Integrity (No Detached Bezels or Housings)**:
+   - Certain physical actors are composite assemblies with distinct submobjects:
+     - `MacBookDevice` contains `self.base` (aluminum lower chassis), `self.lid` (dark outer display housing/bezel), and `self.screen` (inner display area).
+     - If creating an exploded view or shifting the display upward, you MUST move `laptop.lid` together with `laptop.screen`:
+       ```python
+       # CORRECT: lid and screen move together
+       self.play(
+           laptop.lid.animate.shift(UP * 0.9),
+           laptop.screen.animate.shift(UP * 0.9),
+           screen_fill.animate.shift(UP * 0.9),
+           laptop.base.animate.shift(DOWN * 0.6),
+           run_time=3.50,
+       )
+       ```
+     - ❌ **PROHIBITED**: Moving `laptop.screen` without `laptop.lid`. This leaves the outer bezel floating stranded in mid-air while the screen rips out of it!
+     - **General Rule**: When disassembling or exploding any device, always shift/group enclosures and bezels along with their inner contents.
 
 ---
 
@@ -143,6 +170,19 @@ Every text element inside any object or container MUST comply with this exact co
    - Inside each action function `def act_X_Y():`, the sum of `run_time` values across all `self.play(...)` calls MUST equal `motion_time` exactly.
    - **CRITICAL**: **NEVER CALL `self.wait(...)` INSIDE `act_X_Y()`**!
    - `self.beat(...)` automatically handles the `hold_time`, drift compensation, and transient badge fadeouts. Calling `self.wait()` inside `act_X_Y` breaks drift compensation and causes transient badges to linger forever.
+
+---
+
+### Dynamic Visual Engagement (Anti-Stagnation & Progressive Reveal)
+
+1. **No Extended Visual Dead Zones**:
+   - Avoid stretches longer than 4–5 seconds where the only visual action is a bare container or background object scaling/breathing in and out (`mobo.animate.scale(1.06)`).
+2. **Progressive Component Staging**:
+   - During long narration beats (10+ seconds), keep the viewer visually engaged by progressively introducing or highlighting sub-elements every 2–3 seconds:
+     - Sequentially illuminate power traces or bus lines (`Create(conduit)` or `conduit.animate.set_color(...)`).
+     - Animate data pulses along conduits (`Dot` traveling along a line).
+     - Introduce or highlight key chips (`FadeIn(cpu_chip)`, `FadeIn(ram_module)`).
+     - Zoom or shift focus to the active functional block.
 
 ---
 
@@ -275,5 +315,8 @@ class Scene01(EditorialScene):
 3. **No `self.wait` in Actions**: `act_X_Y()` contains ONLY `self.play(...)` calls summing to `motion_time`.
 4. **Spatial Clearance**: Follow the 5-Zone Canvas Spatial Matrix. Never stack cards over devices or overlap actors.
 5. **Stage Eviction**: Evict outgoing actors with `FadeOut(...)` when transitioning between conceptual stages.
-6. **No Semantic Inventions**: Use only standard Manim transform/color/fade primitives.
-7. **Contrast Assurance**: Apply the 100% Legibility & Contrast Matrix for every text element and container fill.
+6. **Sequential Scene Transitions**: Sequence large stage changes (`FadeOut(old_stage)` then `FadeIn(new_stage)`) to prevent double-exposure ghosting.
+7. **Composite Actor Integrity**: In exploded/shifted views, always animate outer bezels/housings (e.g. `laptop.lid`) alongside their inner screens (`laptop.screen`) so parts never detach.
+8. **Progressive Engagement**: In beats > 5 seconds, progressively introduce or illuminate components rather than leaving a bare container breathing.
+9. **No Semantic Inventions**: Use only standard Manim transform/color/fade primitives.
+10. **Contrast Assurance**: Apply the 100% Legibility & Contrast Matrix for every text element and container fill.
