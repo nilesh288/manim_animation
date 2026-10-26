@@ -1,0 +1,23 @@
+# Manim output and caches
+media/
+renders/
+__pycache__/
+*.py[cod]
+*$py.class
+*.bak*
+
+# Scratch & temporary test scripts
+scenes/.scratch_backup/
+.scratch_backup/
+test_*.py
+inspect_render.py
+linux_boot.txt
+linux_boot_words.json
+blueprints/*_old.json
+blueprints/*_1.json
+blueprints/*_sc1.json
+blueprints/storyboard_linux_boot.json
+
+# Audio tracks (optional: un-ignore if you want them in git)
+*.mp3
+*.wav

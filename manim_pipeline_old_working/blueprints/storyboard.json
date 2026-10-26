@@ -1,1191 +1,989 @@
 {
-  "project": "Continuum_Kinematics_To_Covalent_Bonds",
-  "total_scenes": 6,
-  "scenes": [
-    {
-      "scene_id": "scene_01",
-      "title": "Kinematic Genesis & Mechanical Work",
-      "environment": "SurfaceGround",
-      "environment_intent": "A calibrated linear baseline in #2B2D42 spans horizontally across an infinite #F8F9FA canvas, punctuated by subtle metric subdivisions and Cartesian ticks without enclosing frames.",
-      "beats": [
-        {
-          "beat_id": 1,
-          "full_sentence": "Every physical transformation in our universe, from the orbit of celestial bodies to the synthesis of complex molecules, begins with a fundamental concept: motion.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "1.1",
-              "narration_anchor": "Every physical transformation in our universe, ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["canvas_grid", "surface_baseline"],
-              "visual_action": "A wide #2B2D42 horizontal runway draws across the lower third of the #F8F9FA plane, calibrated with faint isometric ticks."
-            },
-            {
-              "sub_beat_id": "1.2",
-              "narration_anchor": "from the orbit of celestial bodies to the synthesis of complex molecules, ",
-              "kinetic_archetype": "Morph / Scale Shift",
-              "actors_involved": ["macro_orbit_trace", "atomic_bond_pair"],
-              "visual_action": "A faint #4D44B5 elliptical orbit sweeps across the upper canvas, seamlessly collapsing inward to form two tiny counter-rotating point masses linked by a dashed #4ECDC4 vector."
-            },
-            {
-              "sub_beat_id": "1.3",
-              "narration_anchor": "begins with a fundamental concept: motion.",
-              "kinetic_archetype": "Focal Resolution",
-              "actors_involved": ["motion_editorial_label", "initial_velocity_vector"],
-              "visual_action": "Unboxed editorial text 'MOTION' snaps onto the grid in #2B2D42, underlined by a sharp #FF6B6B VectorArrow extending along the baseline."
-            }
-          ]
-        },
-        {
-          "beat_id": 2,
-          "full_sentence": "In classical mechanics, an isolated object resting on a frictionless plane remains motionless.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "2.1",
-              "narration_anchor": "In classical mechanics, ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["coordinate_ticks", "runway_plane"],
-              "visual_action": "The camera shifts into a strict orthographic profile of the #2B2D42 baseline, illuminating zero-friction hashmarks."
-            },
-            {
-              "sub_beat_id": "2.2",
-              "narration_anchor": "an isolated object resting on a frictionless plane ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["primary_mass_block"],
-              "visual_action": "A solid circular disc in #2B2D42 with a crisp #4D44B5 core drops precisely onto the runway, settling with zero oscillation."
-            },
-            {
-              "sub_beat_id": "2.3",
-              "narration_anchor": "remains motionless.",
-              "kinetic_archetype": "Telemetry Lock",
-              "actors_involved": ["equilibrium_ring", "status_callout"],
-              "visual_action": "A hairline ring in #2B2D42 pulses once around the mass, anchoring a static DimensionRuler pinned at origin position x = 0."
-            }
-          ]
-        },
-        {
-          "beat_id": 3,
-          "full_sentence": "Its velocity is zero, and its linear momentum is non-existent.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "3.1",
-              "narration_anchor": "Its velocity is zero, ",
-              "kinetic_archetype": "Telemetry Lock",
-              "actors_involved": ["velocity_readout"],
-              "visual_action": "Direct LeaderCallout extends upward to unboxed typography 'v = 0.0 m/s' in #2B2D42 with a dormant #3B82F6 origin dot."
-            },
-            {
-              "sub_beat_id": "3.2",
-              "narration_anchor": "and its linear momentum is non-existent.",
-              "kinetic_archetype": "Focal Resolution",
-              "actors_involved": ["momentum_metric"],
-              "visual_action": "A secondary unboxed label 'p = 0' renders in #4D44B5 directly beneath the velocity stem, flashing an empty dashed vector box."
-            }
-          ]
-        },
-        {
-          "beat_id": 4,
-          "full_sentence": "But the moment an unbalanced external force acts upon this mass, reality shifts into a dynamic state.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "4.1",
-              "narration_anchor": "But the moment an unbalanced external force acts upon this mass, ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["force_vector_arrow", "primary_mass_block"],
-              "visual_action": "A bold #FF6B6B VectorArrow strikes the rear perimeter of the resting disc, displaying a sharp compression highlight at point of contact."
-            },
-            {
-              "sub_beat_id": "4.2",
-              "narration_anchor": "reality shifts into a dynamic state.",
-              "kinetic_archetype": "Physical Reaction / Resonance",
-              "actors_involved": ["canvas_grid", "primary_mass_block"],
-              "visual_action": "Dynamic motion lines in #4ECDC4 streak backward across the baseline as the mass begins smooth lateral transit to the right."
-            }
-          ]
-        },
-        {
-          "beat_id": 5,
-          "full_sentence": "Newton's second law dictates that force is an active vector imposing continuous acceleration upon mass.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "5.1",
-              "narration_anchor": "Newton's second law dictates that force is an active vector ",
-              "kinetic_archetype": "Telemetry Lock",
-              "actors_involved": ["force_vector_arrow", "newton_equation_label"],
-              "visual_action": "The #FF6B6B VectorArrow locks into dynamic tracking behind the disc, labeled directly above with unboxed text 'F = m · a'."
-            },
-            {
-              "sub_beat_id": "5.2",
-              "narration_anchor": "imposing continuous acceleration upon mass.",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["acceleration_indicator", "primary_mass_block"],
-              "visual_action": "A double-chevron accent in #FFAA00 deploys in front of the disc, spacing wider as the object's translational speed increases."
-            }
-          ]
-        },
-        {
-          "beat_id": 6,
-          "full_sentence": "As this force acts across distance, it performs mechanical work that accumulates directly within the moving body as kinetic energy.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "6.1",
-              "narration_anchor": "As this force acts across distance, ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["displacement_ruler", "surface_baseline"],
-              "visual_action": "A horizontal DimensionRuler in #2B2D42 expands along the runway between initial position and the moving disc, labeled 'Δx'."
-            },
-            {
-              "sub_beat_id": "6.2",
-              "narration_anchor": "it performs mechanical work ",
-              "kinetic_archetype": "Telemetry Lock",
-              "actors_involved": ["work_integral_ribbon"],
-              "visual_action": "A shaded translucent band in #3B82F6 fills between the displacement axis and force vector, sweeping 'W = ∫ F dx'."
-            },
-            {
-              "sub_beat_id": "6.3",
-              "narration_anchor": "that accumulates directly within the moving body as kinetic energy.",
-              "kinetic_archetype": "Physical Reaction / Resonance",
-              "actors_involved": ["primary_mass_block", "kinetic_energy_glow"],
-              "visual_action": "A radiant concentric halo in #4ECDC4 blooms inside the traveling disc, expanding in diameter as mechanical work is absorbed."
-            }
-          ]
-        },
-        {
-          "beat_id": 7,
-          "full_sentence": "The longer the force is applied, the higher the velocity climbs, and the greater the momentum becomes.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "7.1",
-              "narration_anchor": "The longer the force is applied, ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["force_vector_arrow", "primary_mass_block"],
-              "visual_action": "The #FF6B6B VectorArrow sustains its continuous push against the mass across consecutive baseline metric increments."
-            },
-            {
-              "sub_beat_id": "7.2",
-              "narration_anchor": "the higher the velocity climbs, ",
-              "kinetic_archetype": "Telemetry Lock",
-              "actors_involved": ["velocity_readout", "velocity_vector"],
-              "visual_action": "A forward-facing #3B82F6 vector elongates rapidly from the core of the disc while its floating numeric readout increments in real time."
-            },
-            {
-              "sub_beat_id": "7.3",
-              "narration_anchor": "and the greater the momentum becomes.",
-              "kinetic_archetype": "Focal Resolution",
-              "actors_involved": ["momentum_telemetry_bar", "primary_mass_block"],
-              "visual_action": "A heavy #4D44B5 vector arrow extends beneath the disc, thickening in stroke weight to symbolize expanding linear momentum."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "scene_id": "scene_02",
-      "title": "Impending Trajectory & Vector Convergence",
-      "environment": "SurfaceGround",
-      "environment_intent": "The frictionless track broadens into a two-body interaction corridor with parallel telemetry tracks on the #F8F9FA ground plane.",
-      "beats": [
-        {
-          "beat_id": 1,
-          "full_sentence": "Linear momentum is the measure of an object's resistance to stopping once set in motion.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "1.1",
-              "narration_anchor": "Linear momentum is the measure of an object's resistance to stopping ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["primary_mass_block", "retardation_phantom_barrier"],
-              "visual_action": "Dashed vertical threshold lines in #2B2D42 appear on the runway; the speeding disc blasts through them without dropping velocity."
-            },
-            {
-              "sub_beat_id": "1.2",
-              "narration_anchor": "once set in motion.",
-              "kinetic_archetype": "Focal Resolution",
-              "actors_involved": ["inertia_tail_streamers"],
-              "visual_action": "Fine kinetic streamers in #4D44B5 trail behind the mass, holding rigid parallelism along the baseline track."
-            }
-          ]
-        },
-        {
-          "beat_id": 2,
-          "full_sentence": "It is the direct product of mass and instantaneous velocity.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "2.1",
-              "narration_anchor": "It is the direct product ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["formula_anchor"],
-              "visual_action": "Unboxed typography 'p =' anchors directly above the traveling body in bold #2B2D42."
-            },
-            {
-              "sub_beat_id": "2.2",
-              "narration_anchor": "of mass and instantaneous velocity.",
-              "kinetic_archetype": "Telemetry Lock",
-              "actors_involved": ["mass_dimension_tag", "velocity_dimension_tag"],
-              "visual_action": "Terms 'm' in #4D44B5 and 'v' in #3B82F6 glide horizontally into place, bracketed by a live multiplying multiplier dot."
-            }
-          ]
-        },
-        {
-          "beat_id": 3,
-          "full_sentence": "When we observe an accelerating object, we watch a directional vector carry physical influence across space.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "3.1",
-              "narration_anchor": "When we observe an accelerating object, ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["primary_mass_block", "surface_baseline"],
-              "visual_action": "The camera pans laterally, tracking the accelerating mass at high speed as background grid hashmarks blur in #2B2D42."
-            },
-            {
-              "sub_beat_id": "3.2",
-              "narration_anchor": "we watch a directional vector carry physical influence across space.",
-              "kinetic_archetype": "Morph / Scale Shift",
-              "actors_involved": ["influence_corridor_field", "primary_mass_block"],
-              "visual_action": "A translucent directional corridor in #4ECDC4 projects forward from the mass, illuminating the empty track ahead."
-            }
-          ]
-        },
-        {
-          "beat_id": 4,
-          "full_sentence": "If a second, stationary object sits directly along that trajectory, an interaction is inevitable.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "4.1",
-              "narration_anchor": "If a second, stationary object sits directly along that trajectory, ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["target_mass_block", "surface_baseline"],
-              "visual_action": "An identical disc rendered in #2B2D42 with a hollow core manifests at rest downstream on the baseline."
-            },
-            {
-              "sub_beat_id": "4.2",
-              "narration_anchor": "an interaction is inevitable.",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["projected_trajectory_ray", "target_mass_block"],
-              "visual_action": "A straight dashed VectorArrow in #FF6B6B extends from the projectile disc and locks directly into the center of the target disc."
-            }
-          ]
-        },
-        {
-          "beat_id": 5,
-          "full_sentence": "As the distance between the two bodies closes to zero, the moving mass carries an entire reservoir of directional energy.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "5.1",
-              "narration_anchor": "As the distance between the two bodies closes to zero, ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["inter_body_dimension_ruler", "primary_mass_block"],
-              "visual_action": "A dynamic DimensionRuler between the two discs rapidly compresses from 'Δx' toward zero as the projectile hurtles forward."
-            },
-            {
-              "sub_beat_id": "5.2",
-              "narration_anchor": "the moving mass carries an entire reservoir of directional energy.",
-              "kinetic_archetype": "Telemetry Lock",
-              "actors_involved": ["energy_reservoir_gauge", "primary_mass_block"],
-              "visual_action": "A radial energy gauge in #FFAA00 wraps around the projectile disc, glowing with maximum saturation."
-            }
-          ]
-        },
-        {
-          "beat_id": 6,
-          "full_sentence": "This impending contact point is where classical physics reveals one of its most elegant laws: the conservation of linear momentum.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "6.1",
-              "narration_anchor": "This impending contact point is where classical physics reveals one of its most elegant laws: ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["contact_crosshair_marker"],
-              "visual_action": "A high-precision hairline reticle in #FF6B6B snaps onto the exact tangent boundary where the two perimeters will touch."
-            },
-            {
-              "sub_beat_id": "6.2",
-              "narration_anchor": "the conservation of linear momentum.",
-              "kinetic_archetype": "Focal Resolution",
-              "actors_involved": ["conservation_law_title", "momentum_balance_vector"],
-              "visual_action": "Unboxed editorial header 'Σp_initial = Σp_final' draws in #4D44B5 directly centered above the contact boundary."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "scene_id": "scene_03",
-      "title": "The Millisecond of Impact & Momentum Transfer",
-      "environment": "SurfaceGround",
-      "environment_intent": "Ultra-close orthographic framing on the impact plane, converting linear kinematic motion into impulse vectors and kinetic handoff.",
-      "beats": [
-        {
-          "beat_id": 1,
-          "full_sentence": "The millisecond of impact is governed by the laws of impulse and energy transfer.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "1.1",
-              "narration_anchor": "The millisecond of impact ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["time_dilation_grid", "contact_plane"],
-              "visual_action": "Visual tempo slows; subtle vertical time-dilation lines in #2B2D42 radiate from the meeting point."
-            },
-            {
-              "sub_beat_id": "1.2",
-              "narration_anchor": "is governed by the laws of impulse and energy transfer.",
-              "kinetic_archetype": "Telemetry Lock",
-              "actors_involved": ["impulse_integral_symbol", "transfer_field"],
-              "visual_action": "Direct callout typography 'J = ∫ F dt' emerges in #FF6B6B with directional energy flux lines bridging the boundary."
-            }
-          ]
-        },
-        {
-          "beat_id": 2,
-          "full_sentence": "In an idealized elastic collision, the total momentum and kinetic energy of the system remain strictly conserved.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "2.1",
-              "narration_anchor": "In an idealized elastic collision, ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["elastic_boundary_rings"],
-              "visual_action": "Fine spring-like geometric rings in #4ECDC4 envelop both contact interfaces with mathematical perfection."
-            },
-            {
-              "sub_beat_id": "2.2",
-              "narration_anchor": "the total momentum and kinetic energy of the system remain strictly conserved.",
-              "kinetic_archetype": "Focal Resolution",
-              "actors_involved": ["system_energy_bar", "total_momentum_ticker"],
-              "visual_action": "Twin horizontal telemetry meters above the stage ('E_k' in #4ECDC4 and 'P' in #4D44B5) lock at 100% without fluctuation."
-            }
-          ]
-        },
-        {
-          "beat_id": 3,
-          "full_sentence": "The incoming projectile mass decelerates with extreme rapidity, exerting an equal and opposite reaction force against itself while driving an enormous forward impulse into the stationary target.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "3.1",
-              "narration_anchor": "The incoming projectile mass decelerates with extreme rapidity, ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["primary_mass_block", "deceleration_vector"],
-              "visual_action": "The forward vector of the incoming mass violently contracts into a rearward-pointing #FF6B6B braking arrow."
-            },
-            {
-              "sub_beat_id": "3.2",
-              "narration_anchor": "exerting an equal and opposite reaction force against itself ",
-              "kinetic_archetype": "Physical Reaction / Resonance",
-              "actors_involved": ["reaction_force_arrow", "action_force_arrow"],
-              "visual_action": "Opposing vector arrows in #FF6B6B ('-F') and #3B82F6 ('+F') erupt outward from the point of contact in Newton-third equilibrium."
-            },
-            {
-              "sub_beat_id": "3.3",
-              "narration_anchor": "while driving an enormous forward impulse into the stationary target.",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["forward_impulse_pulse", "target_mass_block"],
-              "visual_action": "A compressive kinetic stress wave in #4ECDC4 punches horizontally through the diameter of the stationary target."
-            }
-          ]
-        },
-        {
-          "beat_id": 4,
-          "full_sentence": "In a fraction of a second, the velocity vector is transferred.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "4.1",
-              "narration_anchor": "In a fraction of a second, ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["contact_seam"],
-              "visual_action": "A razor-thin vertical flash in #4ECDC4 illuminates the tangent seam between both bodies."
-            },
-            {
-              "sub_beat_id": "4.2",
-              "narration_anchor": "the velocity vector is transferred.",
-              "kinetic_archetype": "Morph / Scale Shift",
-              "actors_involved": ["primary_velocity_vector", "target_velocity_vector"],
-              "visual_action": "The #3B82F6 velocity vector slides seamlessly out of the projectile body and anchors into the target body."
-            }
-          ]
-        },
-        {
-          "beat_id": 5,
-          "full_sentence": "The original body comes to an abrupt halt, while the target mass launches forward along the runway, inheriting the momentum and continuing across space.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "5.1",
-              "narration_anchor": "The original body comes to an abrupt halt, ",
-              "kinetic_archetype": "Physical Reaction / Resonance",
-              "actors_involved": ["primary_mass_block", "inertial_anchor_dots"],
-              "visual_action": "The first mass freezes in place; its internal kinetic glow dissolves to neutral #2B2D42 contour."
-            },
-            {
-              "sub_beat_id": "5.2",
-              "narration_anchor": "while the target mass launches forward along the runway, ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["target_mass_block", "surface_baseline"],
-              "visual_action": "The target mass instantly accelerates down the #2B2D42 runway, pushed by the acquired forward momentum."
-            },
-            {
-              "sub_beat_id": "5.3",
-              "narration_anchor": "inheriting the momentum and continuing across space.",
-              "kinetic_archetype": "Focal Resolution",
-              "actors_involved": ["target_mass_block", "target_momentum_vector"],
-              "visual_action": "A bold #4D44B5 momentum vector tracks smoothly under the target mass as it recedes into the coordinate distance."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "scene_id": "scene_04",
-      "title": "Inelastic Dissipation & The Atomic Transition",
-      "environment": "ParticleField",
-      "environment_intent": "Continuous topological zoom through the solid boundary of colliding bodies into an interior matrix of vibrating lattice atoms on #F8F9FA.",
-      "beats": [
-        {
-          "beat_id": 1,
-          "full_sentence": "Yet, in the physical world, collisions are rarely perfectly elastic.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "1.1",
-              "narration_anchor": "Yet, in the physical world, ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["macroscopic_collision_pair"],
-              "visual_action": "Two realistic structural bodies collide on the runway under harsher, imperfect mechanical contact lines."
-            },
-            {
-              "sub_beat_id": "1.2",
-              "narration_anchor": "collisions are rarely perfectly elastic.",
-              "kinetic_archetype": "Physical Reaction / Resonance",
-              "actors_involved": ["contact_perimeter_distortion"],
-              "visual_action": "The ideal geometric perimeters buckle with microscopic asymmetric notches in dark #2B2D42."
-            }
-          ]
-        },
-        {
-          "beat_id": 2,
-          "full_sentence": "When macroscopic objects slam together, not all of that mechanical work translates into forward motion.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "2.1",
-              "narration_anchor": "When macroscopic objects slam together, ",
-              "kinetic_archetype": "Physical Reaction / Resonance",
-              "actors_involved": ["impact_compression_zone"],
-              "visual_action": "A violent mechanical shockwave ring in #FF6B6B radiates from the contact interface."
-            },
-            {
-              "sub_beat_id": "2.2",
-              "narration_anchor": "not all of that mechanical work translates into forward motion.",
-              "kinetic_archetype": "Telemetry Lock",
-              "actors_involved": ["transmitted_momentum_vector", "efficiency_loss_tag"],
-              "visual_action": "The exit velocity vector deploys noticeably shorter in #3B82F6, while an unboxed label 'ΔE_loss' indicates missing mechanical energy."
-            }
-          ]
-        },
-        {
-          "beat_id": 3,
-          "full_sentence": "A portion of kinetic energy is absorbed internally, deforming structures and generating stress waves.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "3.1",
-              "narration_anchor": "A portion of kinetic energy is absorbed internally, ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["internal_absorption_grid"],
-              "visual_action": "The camera pushes into the interior volume of the material, revealing an interconnected lattice network."
-            },
-            {
-              "sub_beat_id": "3.2",
-              "narration_anchor": "deforming structures and generating stress waves.",
-              "kinetic_archetype": "Physical Reaction / Resonance",
-              "actors_involved": ["lattice_stress_ripples"],
-              "visual_action": "High-frequency ripples in #FFAA00 surge across lattice bonds, warping the equilibrium spacing."
-            }
-          ]
-        },
-        {
-          "beat_id": 4,
-          "full_sentence": "But energy can never be destroyed.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "4.1",
-              "narration_anchor": "But energy ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["conservation_axiom_anchor"],
-              "visual_action": "A constant numeric indicator 'E_total = const' anchors in #2B2D42 across the upper stage."
-            },
-            {
-              "sub_beat_id": "4.2",
-              "narration_anchor": "can never be destroyed.",
-              "kinetic_archetype": "Focal Resolution",
-              "actors_involved": ["conservation_energy_shield"],
-              "visual_action": "A protective enclosing halo in #4ECDC4 pulses outward, showing zero leakage across system boundaries."
-            }
-          ]
-        },
-        {
-          "beat_id": 5,
-          "full_sentence": "That lost mechanical energy degrades into chaotic microscopic vibrations.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "5.1",
-              "narration_anchor": "That lost mechanical energy ",
-              "kinetic_archetype": "Morph / Scale Shift",
-              "actors_involved": ["ordered_vector_stream"],
-              "visual_action": "The straight forward-pointing #3B82F6 vector shatters into thousands of micro-vectors."
-            },
-            {
-              "sub_beat_id": "5.2",
-              "narration_anchor": "degrades into chaotic microscopic vibrations.",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["lattice_nodes"],
-              "visual_action": "Individual lattice nodes oscillate rapidly in random angular directions, vibrating in jagged patterns."
-            }
-          ]
-        },
-        {
-          "beat_id": 6,
-          "full_sentence": "The uniform forward velocity of billions of atoms is suddenly scrambled into random thermal oscillations.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "6.1",
-              "narration_anchor": "The uniform forward velocity of billions of atoms ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["ordered_atomic_row"],
-              "visual_action": "A structured array of atomic circles initially moves in unison along parallel linear paths in #4D44B5."
-            },
-            {
-              "sub_beat_id": "6.2",
-              "narration_anchor": "is suddenly scrambled into random thermal oscillations.",
-              "kinetic_archetype": "Physical Reaction / Resonance",
-              "actors_involved": ["chaotic_thermal_vectors"],
-              "visual_action": "The aligned velocity arrows instantaneously scatter into frantic, multi-directional jiggles in #FFAA00 and #FF6B6B."
-            }
-          ]
-        },
-        {
-          "beat_id": 7,
-          "full_sentence": "Macroscopic motion converts directly into heat.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "7.1",
-              "narration_anchor": "Macroscopic motion ",
-              "kinetic_archetype": "Morph / Scale Shift",
-              "actors_involved": ["macro_motion_line"],
-              "visual_action": "A single bold translational track fades out in #2B2D42."
-            },
-            {
-              "sub_beat_id": "7.2",
-              "narration_anchor": "converts directly into heat.",
-              "kinetic_archetype": "Focal Resolution",
-              "actors_involved": ["thermal_radiance_field", "thermal_callout"],
-              "visual_action": "A warm thermal field in #FFAA00 diffuses across the particle matrix with an unboxed label 'THERMAL ENERGY'."
-            }
-          ]
-        },
-        {
-          "beat_id": 8,
-          "full_sentence": "To understand heat and chemical reactions, we must peer into the atom itself.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "8.1",
-              "narration_anchor": "To understand heat and chemical reactions, ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["diffuse_particle_sea"],
-              "visual_action": "The background vibrating particles gently drift outward, clearing the central stage."
-            },
-            {
-              "sub_beat_id": "8.2",
-              "narration_anchor": "we must peer into the atom itself.",
-              "kinetic_archetype": "Morph / Scale Shift",
-              "actors_involved": ["single_atom_target", "camera_zoom"],
-              "visual_action": "The camera dives into a single vibrating node, expanding it into an enormous orbital sphere."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "scene_id": "scene_05",
-      "title": "Atomic Architecture & The Activation Barrier",
-      "environment": "ParticleField",
-      "environment_intent": "Quantum-scale electrostatic coordinate space; precise concentric orbital shells and Coulomb repulsion fields rendered in sharp vector geometry.",
-      "beats": [
-        {
-          "beat_id": 1,
-          "full_sentence": "Beneath the surface of every physical material lies a microscopic world governed by electrostatics.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "1.1",
-              "narration_anchor": "Beneath the surface of every physical material ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["atomic_void_canvas"],
-              "visual_action": "The background settles to clean #F8F9FA, inscribed with concentric electrostatic potential rings in #2B2D42."
-            },
-            {
-              "sub_beat_id": "1.2",
-              "narration_anchor": "lies a microscopic world governed by electrostatics.",
-              "kinetic_archetype": "Focal Resolution",
-              "actors_involved": ["coulomb_field_lines"],
-              "visual_action": "Delicate radial field lines in #3B82F6 expand outwards, illustrating the invisible electrostatic landscape."
-            }
-          ]
-        },
-        {
-          "beat_id": 2,
-          "full_sentence": "In the Bohr atomic model, every chemical element is built around a dense, positively charged nucleus surrounded by concentric electron shells.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "2.1",
-              "narration_anchor": "In the Bohr atomic model, ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["bohr_coordinate_center"],
-              "visual_action": "A central spatial anchor initializes with clean Cartesian coordinate crosshairs in #2B2D42."
-            },
-            {
-              "sub_beat_id": "2.2",
-              "narration_anchor": "every chemical element is built around a dense, positively charged nucleus ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["atomic_nucleus"],
-              "visual_action": "A tightly clustered nucleus of positive spheres draws at the origin, glowing in bold #FF6B6B with '+e' charge markers."
-            },
-            {
-              "sub_beat_id": "2.3",
-              "narration_anchor": "surrounded by concentric electron shells.",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["concentric_shells"],
-              "visual_action": "Concentric hairline circles in #2B2D42 sweep outward at radii r1, r2, and r3 like celestial tracks."
-            }
-          ]
-        },
-        {
-          "beat_id": 3,
-          "full_sentence": "Orbiting within these shells are negatively charged electrons, maintaining precise quantum distances from the core.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "3.1",
-              "narration_anchor": "Orbiting within these shells are negatively charged electrons, ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["orbiting_electrons", "orbital_tracks"],
-              "visual_action": "Small, vibrant #3B82F6 dots race along the circular tracks, trailing fine arc paths."
-            },
-            {
-              "sub_beat_id": "3.2",
-              "narration_anchor": "maintaining precise quantum distances from the core.",
-              "kinetic_archetype": "Telemetry Lock",
-              "actors_involved": ["bohr_radius_ruler"],
-              "visual_action": "A radial DimensionRuler extends from the nucleus to the innermost track, displaying 'r_0 = 52.9 pm'."
-            }
-          ]
-        },
-        {
-          "beat_id": 4,
-          "full_sentence": "In reactive elements like hydrogen, the outermost valence shell contains unpaired electrons.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "4.1",
-              "narration_anchor": "In reactive elements like hydrogen, ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["hydrogen_symbol_label"],
-              "visual_action": "An unboxed label '¹H' types onto the canvas in #2B2D42 beside the simplified single-proton core."
-            },
-            {
-              "sub_beat_id": "4.2",
-              "narration_anchor": "the outermost valence shell contains unpaired electrons.",
-              "kinetic_archetype": "Telemetry Lock",
-              "actors_involved": ["valence_electron_solo"],
-              "visual_action": "A single lone electron in #4ECDC4 orbits along the outer rim, highlighted by an open targeting ring."
-            }
-          ]
-        },
-        {
-          "beat_id": 5,
-          "full_sentence": "As they spin in rapid orbital paths, these valence electrons generate an outward electrostatic shield.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "5.1",
-              "narration_anchor": "As they spin in rapid orbital paths, ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["valence_electron_trail"],
-              "visual_action": "The orbiting electron accelerates, leaving a continuous luminous trail that closes into a coherent ring."
-            },
-            {
-              "sub_beat_id": "5.2",
-              "narration_anchor": "these valence electrons generate an outward electrostatic shield.",
-              "kinetic_archetype": "Focal Resolution",
-              "actors_involved": ["electrostatic_shield_halo"],
-              "visual_action": "A translucent negative potential shell in #3B82F6 expands outward, forming a spherical protective boundary."
-            }
-          ]
-        },
-        {
-          "beat_id": 6,
-          "full_sentence": "Because every atom is cloaked in this negative cloud, two independent atoms floating in space do not simply merge when they meet.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "6.1",
-              "narration_anchor": "Because every atom is cloaked in this negative cloud, ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["dual_atom_pair"],
-              "visual_action": "A second identical hydrogen atom enters from the right, both enveloped in matching #3B82F6 negative clouds."
-            },
-            {
-              "sub_beat_id": "6.2",
-              "narration_anchor": "two independent atoms floating in space do not simply merge when they meet.",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["dual_atom_drift"],
-              "visual_action": "Both atoms drift toward each other along a central axis, slowing down as their outer perimeter clouds near."
-            }
-          ]
-        },
-        {
-          "beat_id": 7,
-          "full_sentence": "Negative charges naturally repel negative charges.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "7.1",
-              "narration_anchor": "Negative charges naturally ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["negative_polarity_tags"],
-              "visual_action": "Prominent '-' charge symbols illuminate in #3B82F6 on the facing boundaries of both electron clouds."
-            },
-            {
-              "sub_beat_id": "7.2",
-              "narration_anchor": "repel negative charges.",
-              "kinetic_archetype": "Physical Reaction / Resonance",
-              "actors_involved": ["mutual_repulsion_vectors"],
-              "visual_action": "Diverging vector arrows in #FF6B6B snap into existence between the clouds, pointing aggressively away from each other."
-            }
-          ]
-        },
-        {
-          "beat_id": 8,
-          "full_sentence": "As two atoms drift toward one another, their electron clouds experience mutual Coulomb repulsion.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "8.1",
-              "narration_anchor": "As two atoms drift toward one another, ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["drifting_atoms_motion"],
-              "visual_action": "The atoms close the distance to within a fraction of an atomic diameter."
-            },
-            {
-              "sub_beat_id": "8.2",
-              "narration_anchor": "their electron clouds experience mutual Coulomb repulsion.",
-              "kinetic_archetype": "Telemetry Lock",
-              "actors_involved": ["coulomb_law_formula", "field_compression"],
-              "visual_action": "Electrostatic field lines between them compress and distort outward; unboxed text 'F_c ∝ 1/r²' flashes in #FF6B6B."
-            }
-          ]
-        },
-        {
-          "beat_id": 9,
-          "full_sentence": "Under low-energy conditions, this repulsive force acts like an invisible spring, deflecting the atoms away before their nuclei can get close.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "9.1",
-              "narration_anchor": "Under low-energy conditions, ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["low_energy_indicator"],
-              "visual_action": "Low-velocity indicators ('v_initial ≈ 0') float above both nuclei in subdued #2B2D42."
-            },
-            {
-              "sub_beat_id": "9.2",
-              "narration_anchor": "this repulsive force acts like an invisible spring, ",
-              "kinetic_archetype": "Morph / Scale Shift",
-              "actors_involved": ["electrostatic_spring_metaphor"],
-              "visual_action": "A stylized geometric spring in #FFAA00 appears compressed between the two approaching clouds."
-            },
-            {
-              "sub_beat_id": "9.3",
-              "narration_anchor": "deflecting the atoms away before their nuclei can get close.",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["deflected_atoms_rebound"],
-              "visual_action": "The virtual spring releases, bouncing both hydrogen atoms apart along their incoming paths."
-            }
-          ]
-        },
-        {
-          "beat_id": 10,
-          "full_sentence": "This electrostatic resistance is known as the activation energy barrier.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "10.1",
-              "narration_anchor": "This electrostatic resistance ",
-              "kinetic_archetype": "Morph / Scale Shift",
-              "actors_involved": ["potential_energy_hill"],
-              "visual_action": "A smooth potential energy curve in #2B2D42 elevates between the atoms, forming a steep potential hill."
-            },
-            {
-              "sub_beat_id": "10.2",
-              "narration_anchor": "is known as the activation energy barrier.",
-              "kinetic_archetype": "Focal Resolution",
-              "actors_involved": ["activation_energy_crest", "barrier_label"],
-              "visual_action": "A vertical DimensionRuler crowns the peak of the curve, labeled with editorial typography 'E_a: ACTIVATION BARRIER' in #FF6B6B."
-            }
-          ]
-        },
-        {
-          "beat_id": 11,
-          "full_sentence": "Without sufficient initial momentum, no chemical bond can form.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "11.1",
-              "narration_anchor": "Without sufficient initial momentum, ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["exhausted_momentum_vector"],
-              "visual_action": "A small momentum vector in #4D44B5 rolls halfway up the slope, halts, and slides back down."
-            },
-            {
-              "sub_beat_id": "11.2",
-              "narration_anchor": "no chemical bond can form.",
-              "kinetic_archetype": "Focal Resolution",
-              "actors_involved": ["null_bond_indicator"],
-              "visual_action": "A dashed link between the two atoms breaks apart with a crisp dissolution effect in #2B2D42."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "scene_id": "scene_06",
-      "title": "Orbital Overlap & The Conservation Continuum",
-      "environment": "FlowAxes",
-      "environment_intent": "A synthesis plane linking dynamic coordinate grids with quantum electron restructuring and global energy balance.",
-      "beats": [
-        {
-          "beat_id": 1,
-          "full_sentence": "This is precisely where macroscopic kinematics bridges directly into molecular chemistry.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "1.1",
-              "narration_anchor": "This is precisely where macroscopic kinematics ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["split_screen_kinematic_track"],
-              "visual_action": "On the left side of the stage, the macroscopic cart runway in #2B2D42 re-emerges in miniature."
-            },
-            {
-              "sub_beat_id": "1.2",
-              "narration_anchor": "bridges directly into molecular chemistry.",
-              "kinetic_archetype": "Morph / Scale Shift",
-              "actors_involved": ["conceptual_bridge_vectors"],
-              "visual_action": "A luminous #4ECDC4 flow line connects the cart collision track directly into the atomic coordinate grid on the right."
-            }
-          ]
-        },
-        {
-          "beat_id": 2,
-          "full_sentence": "How do we overcome this electrostatic barrier?",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "2.1",
-              "narration_anchor": "How do we overcome ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["barrier_crosshair"],
-              "visual_action": "The tall potential energy hill 'E_a' centers on the canvas, pulsing in warning coral #FF6B6B."
-            },
-            {
-              "sub_beat_id": "2.2",
-              "narration_anchor": "this electrostatic barrier?",
-              "kinetic_archetype": "Focal Resolution",
-              "actors_involved": ["query_vector_bracket"],
-              "visual_action": "Dashed query brackets enclose the barrier apex with unboxed editorial text '? ' in #2B2D42."
-            }
-          ]
-        },
-        {
-          "beat_id": 3,
-          "full_sentence": "By injecting kinetic energy.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "3.1",
-              "narration_anchor": "By injecting ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["energy_injection_stream"],
-              "visual_action": "A vibrant energy beam in #FFAA00 injects from off-screen into the atoms' motion vectors."
-            },
-            {
-              "sub_beat_id": "3.2",
-              "narration_anchor": "kinetic energy.",
-              "kinetic_archetype": "Focal Resolution",
-              "actors_involved": ["kinetic_energy_surge_label"],
-              "visual_action": "Bold typography 'ΔE_k >> E_a' ignites in #4ECDC4, lighting up the atomic velocity indicators."
-            }
-          ]
-        },
-        {
-          "beat_id": 4,
-          "full_sentence": "If we accelerate atoms toward each other at high velocities, their linear momentum overpowers the repulsive resistance.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "4.1",
-              "narration_anchor": "If we accelerate atoms toward each other at high velocities, ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["accelerating_atomic_nuclei"],
-              "visual_action": "Both hydrogen atoms hurtle inward at blistering speed, propelled by elongating #3B82F6 velocity vectors."
-            },
-            {
-              "sub_beat_id": "4.2",
-              "narration_anchor": "their linear momentum overpowers the repulsive resistance.",
-              "kinetic_archetype": "Physical Reaction / Resonance",
-              "actors_involved": ["momentum_overpower_wave"],
-              "visual_action": "Heavy #4D44B5 momentum vectors pierce straight through the glowing Coulomb repulsion field lines."
-            }
-          ]
-        },
-        {
-          "beat_id": 5,
-          "full_sentence": "Just like accelerating physical carts on a track, the incoming atoms carry enough momentum to crash through the activation energy threshold.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "5.1",
-              "narration_anchor": "Just like accelerating physical carts on a track, ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["ghost_cart_overlay"],
-              "visual_action": "Translucent kinematic cart outlines momentarily overlay the speeding atoms, matching their exact acceleration profile."
-            },
-            {
-              "sub_beat_id": "5.2",
-              "narration_anchor": "the incoming atoms carry enough momentum to crash through the activation energy threshold.",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["barrier_penetration_burst"],
-              "visual_action": "The atomic pair surges directly over the crest of the potential energy curve, shattering the barrier marker into expanding #4ECDC4 fragments."
-            }
-          ]
-        },
-        {
-          "beat_id": 6,
-          "full_sentence": "The kinetic impact forces their outer orbital shells into direct, physical overlap.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "6.1",
-              "narration_anchor": "The kinetic impact forces their outer orbital shells ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["colliding_valence_shells"],
-              "visual_action": "The circular valence perimeters meet, flattening upon impact under extreme forward momentum."
-            },
-            {
-              "sub_beat_id": "6.2",
-              "narration_anchor": "into direct, physical overlap.",
-              "kinetic_archetype": "Morph / Scale Shift",
-              "actors_involved": ["orbital_intersection_zone"],
-              "visual_action": "The two outer circular boundaries intersect, forming a shared lens of intersection highlighted in #4ECDC4."
-            }
-          ]
-        },
-        {
-          "beat_id": 7,
-          "full_sentence": "Once outer electron clouds are forced into overlap, a radical physical restructuring takes place.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "7.1",
-              "narration_anchor": "Once outer electron clouds are forced into overlap, ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["overlapping_cloud_boundary"],
-              "visual_action": "The two individual circular boundaries fade their inner dividing walls into a single outer contour."
-            },
-            {
-              "sub_beat_id": "7.2",
-              "narration_anchor": "a radical physical restructuring takes place.",
-              "kinetic_archetype": "Morph / Scale Shift",
-              "actors_involved": ["topological_reconfiguration"],
-              "visual_action": "The circular shells smoothly morph into an elongated, continuous peanut-shaped organic envelope in dark #2B2D42."
-            }
-          ]
-        },
-        {
-          "beat_id": 8,
-          "full_sentence": "Valence electrons are no longer confined to orbiting a single nucleus.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "8.1",
-              "narration_anchor": "Valence electrons are no longer confined ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["free_valence_electrons"],
-              "visual_action": "The two electrons break free from their rigid circular Bohr paths, their trajectories expanding outward."
-            },
-            {
-              "sub_beat_id": "8.2",
-              "narration_anchor": "to orbiting a single nucleus.",
-              "kinetic_archetype": "Morph / Scale Shift",
-              "actors_involved": ["monocentric_orbits"],
-              "visual_action": "The old concentric orbital rings dissolve into faint dashed memory lines in #2B2D42."
-            }
-          ]
-        },
-        {
-          "beat_id": 9,
-          "full_sentence": "Instead, they feel the attractive pull of both positively charged nuclei simultaneously.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "9.1",
-              "narration_anchor": "Instead, they feel the attractive pull ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["electron_attraction_lines"],
-              "visual_action": "Dual attractive force vectors in #3B82F6 shoot from each traveling electron toward both central nuclei."
-            },
-            {
-              "sub_beat_id": "9.2",
-              "narration_anchor": "of both positively charged nuclei simultaneously.",
-              "kinetic_archetype": "Telemetry Lock",
-              "actors_involved": ["dual_nuclei_attraction_field"],
-              "visual_action": "Both red nuclei '+e' pulse simultaneously; electrostatic vector lines weave an intricate interference pattern between them."
-            }
-          ]
-        },
-        {
-          "beat_id": 10,
-          "full_sentence": "The valence shells merge, locking electrons into a shared molecular orbital.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "10.1",
-              "narration_anchor": "The valence shells merge, ",
-              "kinetic_archetype": "Morph / Scale Shift",
-              "actors_involved": ["molecular_envelope"],
-              "visual_action": "The outer contour solidifies into a single continuous boundary in #4ECDC4."
-            },
-            {
-              "sub_beat_id": "10.2",
-              "narration_anchor": "locking electrons into a shared molecular orbital.",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["shared_molecular_orbital_path"],
-              "visual_action": "Both electrons trace a continuous figure-eight infinity path weaving symmetrically around both nuclei."
-            }
-          ]
-        },
-        {
-          "beat_id": 11,
-          "full_sentence": "This is the birth of a covalent bond.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "11.1",
-              "narration_anchor": "This is the birth ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["bond_axis_line"],
-              "visual_action": "A central horizontal bond axis in #4D44B5 draws between the two locked nuclei."
-            },
-            {
-              "sub_beat_id": "11.2",
-              "narration_anchor": "of a covalent bond.",
-              "kinetic_archetype": "Focal Resolution",
-              "actors_involved": ["covalent_bond_editorial_label"],
-              "visual_action": "Unboxed editorial typography 'COVALENT BOND' stamps directly above the shared electron density in #2B2D42."
-            }
-          ]
-        },
-        {
-          "beat_id": 12,
-          "full_sentence": "By sharing outer electrons, both atoms achieve a stable, lower-energy configuration, locking two formerly independent bodies into a single cohesive molecule.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "12.1",
-              "narration_anchor": "By sharing outer electrons, ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["shared_electron_pair"],
-              "visual_action": "The two electrons pass directly between the nuclei, shielding them from mutual positive repulsion."
-            },
-            {
-              "sub_beat_id": "12.2",
-              "narration_anchor": "both atoms achieve a stable, lower-energy configuration, ",
-              "kinetic_archetype": "Telemetry Lock",
-              "actors_involved": ["potential_well_graph"],
-              "visual_action": "The potential energy plot plunges into a deep, stable potential well labeled 'ΔV < 0' in #4ECDC4."
-            },
-            {
-              "sub_beat_id": "12.3",
-              "narration_anchor": "locking two formerly independent bodies into a single cohesive molecule.",
-              "kinetic_archetype": "Focal Resolution",
-              "actors_involved": ["h2_molecule_system"],
-              "visual_action": "An unboxed label 'H₂ MOLECULE' settles beneath the structure as the composite system moves as one unified body."
-            }
-          ]
-        },
-        {
-          "beat_id": 13,
-          "full_sentence": "Because the synthesized molecule sits at a much lower potential energy state than the separated atoms, the surplus binding energy must be released.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "13.1",
-              "narration_anchor": "Because the synthesized molecule sits at a much lower potential energy state than the separated atoms, ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["energy_differential_ruler"],
-              "visual_action": "A vertical DimensionRuler in #FF6B6B measures the drop between initial separated energy and the molecular ground state."
-            },
-            {
-              "sub_beat_id": "13.2",
-              "narration_anchor": "the surplus binding energy must be released.",
-              "kinetic_archetype": "Physical Reaction / Resonance",
-              "actors_involved": ["surplus_energy_reservoir"],
-              "visual_action": "The energy difference highlights in vibrant #FFAA00, pulsing with outward kinetic tension."
-            }
-          ]
-        },
-        {
-          "beat_id": 14,
-          "full_sentence": "That excess energy is instantaneously discharged outward as a pulse of electromagnetic radiation and thermal vibration.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "14.1",
-              "narration_anchor": "That excess energy is instantaneously discharged outward ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["photon_emission_wave"],
-              "visual_action": "A sinusoidal wave packet in #FFAA00 flashes out from the bond center, traveling diagonally toward the canvas margin."
-            },
-            {
-              "sub_beat_id": "14.2",
-              "narration_anchor": "as a pulse of electromagnetic radiation and thermal vibration.",
-              "kinetic_archetype": "Physical Reaction / Resonance",
-              "actors_involved": ["radiation_wavelet", "thermal_recoil_ripple"],
-              "visual_action": "Concentric acoustic ripples in #FF6B6B pulse along the molecular bond axis accompanied by label 'hν (PHOTON)'."
-            }
-          ]
-        },
-        {
-          "beat_id": 15,
-          "full_sentence": "What began as directional mechanical force pushing a mass across space has transformed into linear momentum, converted through collision into activation energy, and finally settled into the enduring stability of a chemical bond.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "15.1",
-              "narration_anchor": "What began as directional mechanical force pushing a mass across space ",
-              "kinetic_archetype": "Establishment",
-              "actors_involved": ["stage_history_timeline"],
-              "visual_action": "A horizontal timeline rule in #2B2D42 unrolls across the base of the canvas with a marker highlighting 'MECHANICAL WORK'."
-            },
-            {
-              "sub_beat_id": "15.2",
-              "narration_anchor": "has transformed into linear momentum, ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["timeline_marker_momentum"],
-              "visual_action": "A connecting VectorArrow in #4D44B5 extends to the next milestone marker labeled 'LINEAR MOMENTUM (p)'."
-            },
-            {
-              "sub_beat_id": "15.3",
-              "narration_anchor": "converted through collision into activation energy, ",
-              "kinetic_archetype": "Morph / Scale Shift",
-              "actors_involved": ["timeline_marker_collision"],
-              "visual_action": "The vector arcs over an energy barrier icon in #FF6B6B tagged 'ACTIVATION THRESHOLD (E_a)'."
-            },
-            {
-              "sub_beat_id": "15.4",
-              "narration_anchor": "and finally settled into the enduring stability of a chemical bond.",
-              "kinetic_archetype": "Focal Resolution",
-              "actors_involved": ["timeline_marker_bond"],
-              "visual_action": "The trajectory terminates in a locked covalent molecule icon in #4ECDC4 with an unboxed label 'STABLE BOND'."
-            }
-          ]
-        },
-        {
-          "beat_id": 16,
-          "full_sentence": "From macroscopic physics to molecular chemistry, the continuum of energy conservation remains unbroken.",
-          "visual_sub_beats": [
-            {
-              "sub_beat_id": "16.1",
-              "narration_anchor": "From macroscopic physics to molecular chemistry, ",
-              "kinetic_archetype": "Continuous Physics",
-              "actors_involved": ["full_scale_panoramic_axis"],
-              "visual_action": "The camera pulls out to a wide master view displaying the cart runway on the left and the H₂ molecule on the right, linked by unbroken coordinate lines."
-            },
-            {
-              "sub_beat_id": "16.2",
-              "narration_anchor": "the continuum of energy conservation remains unbroken.",
-              "kinetic_archetype": "Focal Resolution",
-              "actors_involved": ["energy_conservation_master_rule", "closing_editorial_title"],
-              "visual_action": "A single continuous line in #4ECDC4 threads through the entire stage beneath bold unboxed typography 'ΔE_UNIVERSE = 0'."
-            }
-          ]
-        }
-      ]
-    }
-  ]
+"project_title": "The Linux Boot Process: From Power Button to PID 1",
+"design_system": {
+"canvas_bg": "#F8F9FA",
+"surface_card": "#FFFFFF",
+"card_title_bar": "#EDF2F7",
+"border_stroke": "#2D3748",
+"os_window_emulation": false,
+"typography": {
+"text_primary": "#1A202C",
+"text_dim": "#718096",
+"badge_text": "#FFFFFF"
+},
+"accents": {
+"blue": "#1E60FF",
+"mint": "#00C9A7",
+"amber": "#ED8936",
+"coral": "#E53E3E",
+"indigo": "#5A67D8",
+"sky": "#0284C7"
+},
+"safe_zone": {
+"x_bounds": [-5.5, 5.5],
+"y_bounds": [-2.8, 2.8]
+},
+"max_concurrent_annotations": 2
+},
+"scenes": [
+{
+"scene_id": 1,
+"title": "Power On & The Reset Vector",
+"beats": [
+{
+"beat_id": "1.1",
+"narration_clause": "Have you ever pressed that power button on your Linux machine and just waited? The screen flickers, some text scrolls by, and then, boom! Your desktop appears.",
+"actors": [
+{
+"actor_type": "MacBookDevice",
+"id": "workstation_laptop",
+"position": [0.0, -0.3]
+}
+],
+"choreography": {
+"mechanical_action": "Mechanical power switch actuator depresses at the top-right keyboard deck. The physical display panel flickers with a brief sky (#0284C7) backlight pulse, scrolls miniature geometric telemetry lines, and snaps into a crisp illuminated workspace grid.",
+"camera": "Static medium shot centered on MacBookDevice."
+},
+"transient_telemetry": []
+},
+{
+"beat_id": "1.2",
+"narration_clause": "But what actually happened during those few seconds? Today, we're going on a journey inside your computer, from the very moment you press that power button all the way to the beautiful desktop you're staring at. Buckle up! This is the Linux boot process, and it's honestly one of the coolest things happening right under your nose.",
+"actors": [
+{
+"actor_type": "MacBookDevice",
+"id": "workstation_laptop",
+"position": [0.0, 1.8],
+"state": "exploded_separation_exit"
+},
+{
+"actor_type": "MotherboardSection",
+"id": "main_pcb",
+"bounds": {
+"x": [-4.8, 4.8],
+"y": [-2.4, 2.4]
+}
+},
+{
+"actor_type": "ChipSoC",
+"id": "cpu_socket",
+"position": [0.0, 0.0],
+"state": "unpowered"
+}
+],
+"choreography": {
+"mechanical_action": "Aluminum chassis lifts away vertically, exposing the dark fibreglass PCB topology populated with unpowered copper traces, central ChipSoC socket, and ATX 24-pin power connector block at (-4.5, 0.0).",
+"camera": "Smooth macro push-in through the chassis into the MotherboardSection."
+},
+"transient_telemetry": [
+{
+"type": "badge",
+"text": "LINUX BOOT SEQUENCE",
+"position": [0.0, 2.3],
+"fill_token": "indigo",
+"text_color": "#FFFFFF",
+"transient": true
+}
+]
+},
+{
+"beat_id": "1.3",
+"narration_clause": "So, let's start at the very beginning. The moment you press the power button, what happens first?",
+"actors": [
+{
+"actor_type": "MotherboardSection",
+"id": "main_pcb",
+"position": [0.0, 0.0]
+},
+{
+"actor_type": "ATX24PinConnector",
+"id": "atx_power",
+"position": [-4.5, 0.0]
+},
+{
+"actor_type": "CapacitorBank",
+"id": "vrm_caps",
+"position": [-2.5, 0.8]
+},
+{
+"actor_type": "QuartzOscillator",
+"id": "clock_crystal",
+"position": [-2.2, -1.2]
+}
+],
+"choreography": {
+"mechanical_action": "ATX pins ignite in amber (#ED8936). Current surges along copper power rails, filling capacitor cylinders to full charge. Simultaneously, the QuartzOscillator vibrates mechanically, emitting a continuous blue (#1E60FF) square-wave clock pulse train across the board.",
+"camera": "Pan left to focus on power delivery rails and crystal oscillator."
+},
+"transient_telemetry": [
+{
+"type": "annotation",
+"text": "3.3V / 5V / 12V RAILS",
+"position": [-3.4, 1.5],
+"color_token": "text_primary",
+"transient": true
+},
+{
+"type": "annotation",
+"text": "CLK LOCK",
+"position": [-1.2, -1.8],
+"color_token": "blue",
+"transient": true
+}
+]
+},
+{
+"beat_id": "1.4",
+"narration_clause": "The CPU wakes up. But here's the thing: the CPU doesn't immediately know how to start Linux. It doesn't automatically understand your operating system or know which files to load.",
+"actors": [
+{
+"actor_type": "ChipSoC",
+"id": "cpu_core",
+"position": [0.0, 0.0]
+}
+],
+"choreography": {
+"mechanical_action": "The blue clock wave strikes the ChipSoC perimeter gold pins. The central silicon die illuminates in warm amber (#ED8936), but its internal execution pipelines remain dark and idle while a physical internal routing needle sweeps back and forth without a target lock.",
+"camera": "Macro centering on ChipSoC silicon die."
+},
+"transient_telemetry": []
+},
+{
+"beat_id": "1.5",
+"narration_clause": "Instead, it begins executing instructions from a predefined location, determined by its hardware architecture. Those initial instructions lead it to firmware stored on your motherboard, commonly known as BIOS or, on modern systems, UEFI.",
+"actors": [
+{
+"actor_type": "ChipSoC",
+"id": "cpu_core",
+"position": [-1.8, 0.2]
+},
+{
+"actor_type": "SpiFlashRom",
+"id": "bios_uefi_rom",
+"position": [2.8, 0.2]
+}
+],
+"choreography": {
+"mechanical_action": "Inside the ChipSoC die, a hardware instruction pointer physically latches onto a hardcoded reset vector contact. Immediately, a high-speed sky (#0284C7) serial bit stream fires out of the ChipSoC along the SPI copper traces, striking Pin 1 of the 8-pin SOIC SpiFlashRom and pulling back indigo (#5A67D8) instruction frames.",
+"camera": "Wide tracking shot bridging ChipSoC and SpiFlashRom across the SPI bus."
+},
+"transient_telemetry": [
+{
+"type": "annotation",
+"text": "0xFFFFFFF0",
+"position": [-1.8, 1.5],
+"color_token": "text_primary",
+"transient": true
+},
+{
+"type": "annotation",
+"text": "SPI BUS",
+"position": [0.5, 0.6],
+"color_token": "text_dim",
+"transient": true
+}
+]
+}
+]
+},
+{
+"scene_id": 2,
+"title": "Firmware & Power-On Self-Test (POST)",
+"beats": [
+{
+"beat_id": "2.1",
+"narration_clause": "BIOS stands for Basic Input/Output System. It's been around since the early days of personal computing. Think of BIOS as the computer's morning checklist manager.",
+"actors": [
+{
+"actor_type": "SpiFlashRom",
+"id": "bios_rom",
+"position": [-3.2, 0.5]
+},
+{
+"actor_type": "ChipSoC",
+"id": "cpu_core",
+"position": [0.0, 1.2]
+},
+{
+"actor_type": "RamModuleActor",
+"id": "ddr5_dimm",
+"position": [0.0, -1.0]
+},
+{
+"actor_type": "NvmeSsdActor",
+"id": "nvme_drive",
+"position": [3.2, 0.0]
+}
+],
+"choreography": {
+"mechanical_action": "The top epoxy encapsulation of the SpiFlashRom becomes semi-transparent, revealing an internal silicon micro-sequencer spinning up in indigo (#5A67D8) and prepping diagnostic probe pulses along three separate copper trace branches.",
+"camera": "Medium overview with focus weighted toward SpiFlashRom on the left."
+},
+"transient_telemetry": [
+{
+"type": "badge",
+"text": "BIOS: Basic Input/Output System",
+"position": [-2.5, 2.2],
+"fill_token": "indigo",
+"text_color": "#FFFFFF",
+"transient": true
+}
+]
+},
+{
+"beat_id": "2.2",
+"narration_clause": "As the motherboard powers up, the firmware begins initializing essential hardware and performs a test called POST, which stands for Power-On Self-Test.",
+"actors": [
+{
+"actor_type": "SpiFlashRom",
+"id": "bios_rom",
+"position": [-3.2, 0.5]
+},
+{
+"actor_type": "ChipSoC",
+"id": "cpu_core",
+"position": [0.0, 1.2]
+},
+{
+"actor_type": "RamModuleActor",
+"id": "ddr5_dimm",
+"position": [0.0, -1.0]
+}
+],
+"choreography": {
+"mechanical_action": "The SpiFlashRom fires synchronized blue (#1E60FF) diagnostic probe pulses down the motherboard traces toward the processor and memory sockets.",
+"camera": "Hold wide motherboard framing."
+},
+"transient_telemetry": [
+{
+"type": "badge",
+"text": "POST: Power-On Self-Test",
+"position": [0.0, 2.3],
+"fill_token": "surface_card",
+"border_token": "border_stroke",
+"text_color": "#1A202C",
+"transient": true
+}
+]
+},
+{
+"beat_id": "2.3",
+"narration_clause": "It checks whether essential components are responding correctly. Is the RAM accessible? Is the processor functioning? Are critical hardware devices available? The exact checks depend on the system, but the goal is the same: make sure the computer can proceed with startup.",
+"actors": [
+{
+"actor_type": "ChipSoC",
+"id": "cpu_core",
+"position": [-0.5, 1.1]
+},
+{
+"actor_type": "RamModuleActor",
+"id": "ddr5_dimm",
+"position": [-0.5, -1.0]
+},
+{
+"actor_type": "NvmeSsdActor",
+"id": "nvme_drive",
+"position": [3.2, 0.0]
+}
+],
+"choreography": {
+"mechanical_action": "The diagnostic probe strikes ChipSoC, illuminating its core perimeter ring in mint (#00C9A7). Next, the probe sweeps across the RamModuleActor gold edge pins—each of the 8 black DRAM silicon packages physically illuminates mint green one by one from left to right. Finally, the NvmeSsdActor controller chip flashes mint.",
+"camera": "Dynamic focus pull following the probe from CPU down to the DDR5 DIMM and across to the NVMe SSD."
+},
+"transient_telemetry": [
+{
+"type": "badge",
+"text": "HARDWARE VERIFIED",
+"position": [0.0, 2.3],
+"fill_token": "mint",
+"text_color": "#FFFFFF",
+"transient": true
+}
+]
+},
+{
+"beat_id": "2.4",
+"narration_clause": "If something goes wrong, you might hear beep codes, see an error message, or notice that the computer refuses to continue booting. In other words, your computer is performing an initial health check before handing control to the next stage.",
+"actors": [
+{
+"actor_type": "RamModuleActor",
+"id": "ddr5_dimm",
+"position": [-0.5, -1.0]
+},
+{
+"actor_type": "DiagnosticSpeaker",
+"id": "piezo_buzzer",
+"position": [3.2, -1.0]
+}
+],
+"choreography": {
+"mechanical_action": "DRAM chip #6 on the RamModuleActor suddenly sparks coral (#E53E3E), halting the green verification sweep. An emergency fault current shoots across a trace to the cylindrical black DiagnosticSpeaker, which physically vibrates and emits three concentric coral acoustic sound wave arcs outward before the DRAM chip resets back to mint (#00C9A7).",
+"camera": "Tighten slightly on the lower board plane between the RAM stick and piezo buzzer."
+},
+"transient_telemetry": [
+{
+"type": "annotation",
+"text": "POST FAULT: BEEP CODE",
+"position": [3.2, 0.2],
+"color_token": "coral",
+"transient": true
+}
+]
+}
+]
+},
+{
+"scene_id": 3,
+"title": "Legacy BIOS vs. Modern UEFI",
+"beats": [
+{
+"beat_id": "3.1",
+"narration_clause": "Now, modern computers generally use UEFI instead of traditional BIOS. UEFI stands for Unified Extensible Firmware Interface.",
+"actors": [
+{
+"actor_type": "SpiFlashRom",
+"id": "legacy_dip_rom",
+"variant": "vintage_dip_package",
+"position": [-2.8, 0.0]
+},
+{
+"actor_type": "SpiFlashRom",
+"id": "modern_uefi_rom",
+"variant": "wson_low_profile",
+"position": [2.8, 0.0]
+}
+],
+"choreography": {
+"mechanical_action": "Split comparison on the motherboard plane: the left vintage DIP chip pulses slow, single-file amber (#ED8936) bits along a narrow single trace; the right modern UEFI chip streams parallel high-speed indigo (#5A67D8) and sky (#0284C7) data lanes across a wide 64-bit bus.",
+"camera": "Balanced dual-subject framing."
+},
+"transient_telemetry": [
+{
+"type": "badge",
+"text": "UEFI: Unified Extensible Firmware Interface",
+"position": [0.0, 2.3],
+"fill_token": "indigo",
+"text_color": "#FFFFFF",
+"transient": true
+}
+]
+},
+{
+"beat_id": "3.2",
+"narration_clause": "Think of it as a more flexible and modern successor to the old BIOS approach. It supports modern disk layouts, larger storage devices, configurable boot entries, and security features such as Secure Boot.",
+"actors": [
+{
+"actor_type": "SpiFlashRom",
+"id": "modern_uefi_rom",
+"position": [-2.5, 0.0]
+},
+{
+"actor_type": "NvmeSsdActor",
+"id": "gpt_nvme_drive",
+"position": [1.8, 0.8]
+},
+{
+"actor_type": "CryptographicPadlock",
+"id": "secure_boot_lock",
+"position": [1.8, -1.0]
+}
+],
+"choreography": {
+"mechanical_action": "The UEFI chip projects a structured sky (#0284C7) laser scanner across the NvmeSsdActor's multi-partition GPT grid, while below, the heavy CryptographicPadlock snaps its chrome shackle shut over the firmware-to-storage bus trace, emitting a glowing mint (#00C9A7) shield halo.",
+"camera": "Push in on the UEFI-to-NVMe security and partition link."
+},
+"transient_telemetry": [
+{
+"type": "annotation",
+"text": "SECURE BOOT VERIFIED",
+"position": [1.8, -2.1],
+"color_token": "mint",
+"transient": true
+}
+]
+},
+{
+"beat_id": "3.3",
+"narration_clause": "If traditional BIOS is an old-school paper checklist, UEFI is more like a digital management system with additional capabilities. Both perform the fundamental job of initializing the platform and finding something to boot from, but UEFI provides a more advanced and flexible framework.",
+"actors": [
+{
+"actor_type": "MechanicalStepperRelay",
+"id": "bios_stepper",
+"position": [-2.8, 0.0]
+},
+{
+"actor_type": "CrossbarRoutingMatrix",
+"id": "uefi_router_matrix",
+"position": [2.2, 0.0]
+}
+],
+"choreography": {
+"mechanical_action": "On the left, the mechanical stepper relay clicks slowly contact-by-contact through 3 fixed copper pins. On the right, the programmable UEFI crossbar matrix instantaneously illuminates multiple parallel blue (#1E60FF) routing pathways directly to target storage controllers.",
+"camera": "Static comparative wide shot."
+},
+"transient_telemetry": [
+{
+"type": "annotation",
+"text": "16-BIT REAL MODE",
+"position": [-2.8, 1.6],
+"color_token": "text_dim",
+"transient": true
+},
+{
+"type": "annotation",
+"text": "64-BIT EXTENSIBLE",
+"position": [2.2, 1.6],
+"color_token": "text_primary",
+"transient": true
+}
+]
+}
+]
+},
+{
+"scene_id": 4,
+"title": "Boot Device Discovery (MBR vs. ESP)",
+"beats": [
+{
+"beat_id": "4.1",
+"narration_clause": "Once the initial hardware checks are complete, the firmware needs to find the operating system. It consults its boot configuration and looks for an available boot device. That might be your SSD, an internal hard drive, a USB drive, or even a network boot source.",
+"actors": [
+{
+"actor_type": "SpiFlashRom",
+"id": "uefi_firmware",
+"position": [-4.0, 0.0]
+},
+{
+"actor_type": "NvmeSsdActor",
+"id": "boot_target_ssd",
+"position": [2.0, 1.4]
+},
+{
+"actor_type": "UsbFlashDriveActor",
+"id": "boot_target_usb",
+"position": [2.0, 0.0]
+},
+{
+"actor_type": "FiberOpticConduit",
+"id": "boot_target_pxe",
+"position": [2.0, -1.4]
+}
+],
+"choreography": {
+"mechanical_action": "A sky (#0284C7) multiplexing selector beam sweeps vertically from the SpiFlashRom across the three candidate hardware ports on the right, finally locking onto the top NvmeSsdActor with a crisp mint (#00C9A7) target ring.",
+"camera": "Wide lateral framing showing selector sweep."
+},
+"transient_telemetry": [
+{
+"type": "annotation",
+"text": "BOOT PRIORITY #1",
+"position": [-1.0, 1.6],
+"color_token": "text_primary",
+"transient": true
+}
+]
+},
+{
+"beat_id": "4.2",
+"narration_clause": "On a traditional BIOS system, the firmware commonly reads the first 512 bytes of the selected boot device. This area is known as the MBR, or Master Boot Record. Think of it like the index at the beginning of a book. It contains a small amount of information that helps the system begin loading the boot software.",
+"actors": [
+{
+"actor_type": "StorageSectorArray",
+"id": "legacy_disk_sectors",
+"bounds": {
+"x": [-4.0, 4.0],
+"y": [0.2, 1.4]
+}
+}
+],
+"choreography": {
+"mechanical_action": "An optical read head sweeps directly to Sector 0 at (-3.5, 0.8). The tiny physical block lifts up slightly, glowing amber (#ED8936), and ejects a compact mechanical pointer arrow that arcs forward into downstream sectors on the drive.",
+"camera": "Macro focus on Sector 0 at the leading edge of the storage array."
+},
+"transient_telemetry": [
+{
+"type": "badge",
+"text": "MBR: Master Boot Record (512 Bytes)",
+"position": [-1.8, 2.1],
+"fill_token": "amber",
+"text_color": "#FFFFFF",
+"transient": true
+}
+]
+},
+{
+"beat_id": "4.3",
+"narration_clause": "On UEFI systems, the process is different. The firmware typically looks for a bootloader on a special partition called the EFI System Partition, or ESP. This partition contains EFI applications that the firmware can launch directly. The exact process depends on the boot configuration, but the objective is the same: locate the program that will continue the startup process.",
+"actors": [
+{
+"actor_type": "NvmeSsdActor",
+"id": "uefi_nvme_ssd",
+"bounds": {
+"x": [-4.2, 4.2],
+"y": [-1.2, 0.5]
+}
+}
+],
+"choreography": {
+"mechanical_action": "The 3D NAND flash package on the NvmeSsdActor splits into visible physical partition chambers. Chamber 1 at (-2.2, -0.3) illuminates in blue (#1E60FF) and opens like a precision vault, revealing modular indigo (#5A67D8) executable micro-crystals. A sky (#0284C7) bus trace latches directly onto the crystal to extract it.",
+"camera": "Camera tilts down to frame the partitioned NvmeSsdActor."
+},
+"transient_telemetry": [
+{
+"type": "badge",
+"text": "ESP: EFI System Partition",
+"position": [-2.0, 1.4],
+"fill_token": "blue",
+"text_color": "#FFFFFF",
+"transient": true
+},
+{
+"type": "annotation",
+"text": "/EFI/ubuntu/grubx64.efi",
+"position": [1.5, 1.4],
+"color_token": "text_primary",
+"transient": true
+}
+]
+}
+]
+},
+{
+"scene_id": 5,
+"title": "The Bootloader (GRUB)",
+"beats": [
+{
+"beat_id": "5.1",
+"narration_clause": "And here's where things get exciting. The bootloader. On many Linux systems, the bootloader is GRUB, which stands for GRand Unified Bootloader. GRUB is that familiar startup screen you might have seen when your Linux machine displays a menu with options such as Ubuntu, advanced startup options, or Windows Boot Manager on a dual-boot computer.",
+"actors": [
+{
+"actor_type": "RotaryDispatchSwitch",
+"id": "grub_dispatcher",
+"position": [0.0, 0.0]
+},
+{
+"actor_type": "NvmeSsdActor",
+"id": "source_ssd",
+"position": [-4.2, 0.0]
+}
+],
+"choreography": {
+"mechanical_action": "The executable crystal from the ESP docks into the central 3-way hardware rotary dispatch switch, powering it up in indigo (#5A67D8). The physical selector arm clicks vertically between three output conduits at (3.0, 1.2), (3.0, 0.0), and (3.0, -1.2) before locking firmly onto the top Linux conduit, lighting a mint (#00C9A7) status LED.",
+"camera": "Center on the mechanical GRUB dispatch switch."
+},
+"transient_telemetry": [
+{
+"type": "badge",
+"text": "GRUB: GRand Unified Bootloader",
+"position": [0.0, 2.3],
+"fill_token": "indigo",
+"text_color": "#FFFFFF",
+"transient": true
+}
+]
+},
+{
+"beat_id": "5.2",
+"narration_clause": "The bootloader's job is to load the Linux kernel and provide the information it needs to continue booting. It locates the kernel image on your storage device, loads it into memory, and typically also loads an initial RAM filesystem image.",
+"actors": [
+{
+"actor_type": "NvmeSsdActor",
+"id": "storage_drive",
+"position": [-3.5, -0.5]
+},
+{
+"actor_type": "RamModuleActor",
+"id": "system_ram",
+"position": [3.0, -0.5]
+}
+],
+"choreography": {
+"mechanical_action": "Guided by the GRUB dispatcher, two distinct physical payload capsules eject from the NvmeSsdActor NAND flash: a compressed, dense indigo (#5A67D8) core capsule (vmlinuz) and a modular amber (#ED8936) utility capsule (initramfs). Both capsules glide rapidly along the sky (#0284C7) PCIe bus traces and dock directly into two adjacent DRAM chips on the RamModuleActor.",
+"camera": "Tracking pan left-to-right following the capsules from NVMe storage into DDR5 RAM."
+},
+"transient_telemetry": [
+{
+"type": "annotation",
+"text": "vmlinuz (Kernel)",
+"position": [-0.5, 0.8],
+"color_token": "indigo",
+"transient": true
+},
+{
+"type": "annotation",
+"text": "initramfs",
+"position": [-0.5, -1.5],
+"color_token": "amber",
+"transient": true
+}
+]
+},
+{
+"beat_id": "5.3",
+"narration_clause": "It can pass kernel parameters that tell Linux how to start, including information about which partition contains the root filesystem. Once everything is ready, GRUB hands control to the kernel. Think of GRUB as a relay runner passing the baton to Linux itself.",
+"actors": [
+{
+"actor_type": "RotaryDispatchSwitch",
+"id": "grub_dispatcher",
+"position": [-2.2, 0.5]
+},
+{
+"actor_type": "DataPacketActor",
+"id": "boot_params_packet",
+"position": [0.0, 0.8]
+},
+{
+"actor_type": "ChipSoC",
+"id": "cpu_core",
+"position": [2.2, 1.0]
+},
+{
+"actor_type": "RamModuleActor",
+"id": "system_ram",
+"position": [2.2, -1.0]
+}
+],
+"choreography": {
+"mechanical_action": "GRUB fires a DataPacketActor with a glowing blue (#1E60FF) jewel header carrying configuration tokens into the memory/CPU bus, then physically hands off a glowing mint (#00C9A7) execution baton (instruction pointer pulse) directly into the ChipSoC core. The GRUB dispatcher powers down and recedes.",
+"camera": "Follow the mint relay baton locking into the ChipSoC."
+},
+"transient_telemetry": [
+{
+"type": "annotation",
+"text": "root=/dev/nvme0n1p2 ro",
+"position": [0.0, 1.9],
+"color_token": "text_primary",
+"transient": true
+}
+]
+}
+]
+},
+{
+"scene_id": 6,
+"title": "The Linux Kernel Awakens",
+"beats": [
+{
+"beat_id": "6.1",
+"narration_clause": "Now the Linux kernel enters the picture, and this is the heart of the entire operating system. The kernel is the core software responsible for managing system resources, including processor time, memory, storage, hardware devices, and networking.",
+"actors": [
+{
+"actor_type": "ChipSoC",
+"id": "kernel_cpu_hub",
+"position": [0.0, 0.0]
+},
+{
+"actor_type": "RamModuleActor",
+"id": "ram_subsystem",
+"position": [-3.8, 1.2]
+},
+{
+"actor_type": "NvmeSsdActor",
+"id": "storage_subsystem",
+"position": [-3.8, -1.2]
+},
+{
+"actor_type": "ModernRouter",
+"id": "network_subsystem",
+"position": [3.8, 1.2]
+},
+{
+"actor_type": "MotherboardSection",
+"id": "io_subsystem",
+"position": [3.8, -1.2]
+}
+],
+"choreography": {
+"mechanical_action": "ChipSoC silicon die illuminates in deep indigo (#5A67D8) and blue (#1E60FF). Active blue control tendrils radiate outward from the central die, establishing synchronized, clock-locked feedback loops with the surrounding RAM, NVMe, network router, and I/O actors.",
+"camera": "Symmetrical overhead hero shot centered on ChipSoC."
+},
+"transient_telemetry": [
+{
+"type": "badge",
+"text": "LINUX KERNEL CORE",
+"position": [0.0, 2.3],
+"fill_token": "blue",
+"text_color": "#FFFFFF",
+"transient": true
+}
+]
+},
+{
+"beat_id": "6.2",
+"narration_clause": "When the bootloader transfers control to the kernel, the kernel begins setting up the environment in which the rest of Linux will operate. First, the kernel performs its early initialization. Depending on the architecture and kernel image, this includes decompressing the kernel if necessary and preparing its internal data structures.",
+"actors": [
+{
+"actor_type": "RamModuleActor",
+"id": "kernel_ram_space",
+"position": [0.0, -0.5]
+}
+],
+"choreography": {
+"mechanical_action": "Macro view of the compressed indigo (#5A67D8) kernel capsule resting inside the RamModuleActor DRAM cells. The capsule mechanically unfolds and expands outward like precision origami, locking into a structured, interconnected lattice of memory tables across the DRAM chips.",
+"camera": "Macro push-in onto the expanding DRAM lattice."
+},
+"transient_telemetry": [
+{
+"type": "annotation",
+"text": "KERNEL DECOMPRESSION",
+"position": [0.0, 1.6],
+"color_token": "text_primary",
+"transient": true
+}
+]
+},
+{
+"beat_id": "6.3",
+"narration_clause": "Next, it initializes essential processor functionality, establishes memory management, discovers hardware, and prepares the necessary device drivers and subsystems. Think of it as a new manager walking into an office and immediately taking stock of every resource available.",
+"actors": [
+{
+"actor_type": "ChipSoC",
+"id": "cpu_manager",
+"position": [-2.2, 0.5]
+},
+{
+"actor_type": "RamModuleActor",
+"id": "paged_ram",
+"position": [2.0, -0.5]
+}
+],
+"choreography": {
+"mechanical_action": "The ChipSoC projects a sweeping sky (#0284C7) laser grid over the RamModuleActor, subdividing the DRAM chips into neatly fenced virtual memory page blocks with mint (#00C9A7) borders, while simultaneously illuminating PCIe hardware lanes across the motherboard.",
+"camera": "Medium two-shot showing CPU laser scanning the RAM module."
+},
+"transient_telemetry": [
+{
+"type": "annotation",
+"text": "VIRTUAL MEMORY PAGING",
+"position": [2.0, 1.2],
+"color_token": "text_primary",
+"transient": true
+}
+]
+}
+]
+},
+{
+"scene_id": 7,
+"title": "The Chicken-and-Egg Problem & initramfs",
+"beats": [
+{
+"beat_id": "7.1",
+"narration_clause": "But the kernel faces an interesting problem during startup. It needs to access the storage device to load the files required for the rest of the boot process. However, the drivers or tools needed to access that storage might themselves be located on the storage device. How can Linux load the tools it needs from a device it cannot access yet? It's a classic chicken-and-egg problem.",
+"actors": [
+{
+"actor_type": "ChipSoC",
+"id": "kernel_cpu",
+"position": [-3.2, 0.0]
+},
+{
+"actor_type": "CryptographicPadlock",
+"id": "storage_gate_lock",
+"position": [1.2, 0.0]
+},
+{
+"actor_type": "NvmeSsdActor",
+"id": "locked_nvme",
+"position": [3.0, 0.0]
+}
+],
+"choreography": {
+"mechanical_action": "The NvmeSsdActor's main NAND storage vault is sealed behind a heavy mechanical interlocking gate locked by a CryptographicPadlock at (1.2, 0.0). Inside the sealed vault at (3.2, 0.0), a glowing mint (#00C9A7) driver gear module sits visible behind glass. A blue (#1E60FF) data probe extends from the ChipSoC toward the SSD to fetch the driver gear, but slams into the closed mechanical gate, sparking coral (#E53E3E) and recoiling.",
+"camera": "Lateral shot emphasizing the physical barrier between CPU and SSD vault."
+},
+"transient_telemetry": [
+{
+"type": "badge",
+"text": "DEADLOCK: DRIVER INSIDE LOCKED STORAGE",
+"position": [0.0, 2.2],
+"fill_token": "coral",
+"text_color": "#FFFFFF",
+"transient": true
+}
+]
+},
+{
+"beat_id": "7.2",
+"narration_clause": "Linux solves this with something called initramfs, short for initial RAM filesystem. Think of initramfs as a tiny temporary environment that lives in memory and gives the kernel the tools it needs to continue booting. The bootloader loads this image into RAM alongside the kernel.",
+"actors": [
+{
+"actor_type": "RamModuleActor",
+"id": "ram_with_initramfs",
+"position": [0.0, -1.2]
+}
+],
+"choreography": {
+"mechanical_action": "The amber (#ED8936) initramfs capsule resting on DRAM chip #4 of the RamModuleActor unfolds upward into a miniature, self-contained mechanical micro-workshop directly on top of the memory stick, complete with spinning amber and mint (#00C9A7) driver gears.",
+"camera": "Pan down and zoom in on the RamModuleActor micro-workshop."
+},
+"transient_telemetry": [
+{
+"type": "badge",
+"text": "initramfs: Initial RAM Filesystem",
+"position": [0.0, 2.2],
+"fill_token": "amber",
+"text_color": "#FFFFFF",
+"transient": true
+}
+]
+},
+{
+"beat_id": "7.3",
+"narration_clause": "After initializing enough of the system to run it, the kernel uses initramfs to execute early userspace programs and scripts. These can load additional drivers, discover storage devices, unlock encrypted volumes, or assemble storage configurations such as RAID arrays. Once the necessary storage is accessible, the system can locate and prepare the real root filesystem. It's like carrying a spare key in your wallet to open the room where your main set of keys is stored.",
+"actors": [
+{
+"actor_type": "RamModuleActor",
+"id": "ram_workshop",
+"position": [-1.5, -1.4]
+},
+{
+"actor_type": "ChipSoC",
+"id": "kernel_cpu",
+"position": [-3.2, 0.3]
+},
+{
+"actor_type": "CryptographicPadlock",
+"id": "storage_gate_lock",
+"position": [1.5, 0.3]
+},
+{
+"actor_type": "NvmeSsdActor",
+"id": "unlocked_nvme",
+"position": [3.0, 0.3]
+}
+],
+"choreography": {
+"mechanical_action": "A precision mint (#00C9A7) mechanical key and NVMe driver gear detach from the initramfs workshop on the RamModuleActor, travel along the copper bus to the NvmeSsdActor gate, mesh directly into the lock mechanism, and pop the CryptographicPadlock open. The heavy storage vault doors slide wide open, glowing mint.",
+"camera": "Follow the driver gear from RAM workshop to the NVMe vault lock."
+},
+"transient_telemetry": [
+{
+"type": "annotation",
+"text": "NVMe DRIVER LOADED",
+"position": [2.2, 1.8],
+"color_token": "mint",
+"transient": true
+}
+]
+}
+]
+},
+{
+"scene_id": 8,
+"title": "Mounting the Root Filesystem (/) & Launching PID 1",
+"beats": [
+{
+"beat_id": "8.1",
+"narration_clause": "With the necessary drivers and storage access ready, Linux can move to the next major stage: mounting the root filesystem. Your root filesystem contains the essential directories and files that make up your Linux installation. These include system programs, shared libraries, configuration files, and other resources needed to run the operating system. The root filesystem is conventionally represented by a forward slash.",
+"actors": [
+{
+"actor_type": "NvmeSsdActor",
+"id": "root_fs_ssd",
+"position": [0.0, -1.6]
+},
+{
+"actor_type": "FilesystemHierarchyTree",
+"id": "root_tree_structure",
+"apex_position": [0.0, 1.4],
+"branch_positions": [
+[-1.8, -0.1],
+[0.0, -0.1],
+[1.8, -0.1]
+]
+}
+],
+"choreography": {
+"mechanical_action": "Out of the open NvmeSsdActor NAND array rises a crisp, interconnected 3D structural tree made of charcoal (#2D3748) conduits and pure white (#FFFFFF) modular node blocks, crowned by a prominent metallic '/' keystone coupler at (0.0, 1.4).",
+"camera": "Low-angle hero elevation as the physical directory tree rises from the SSD."
+},
+"transient_telemetry": [
+{
+"type": "badge",
+"text": "ROOT FILESYSTEM ( / )",
+"position": [0.0, 2.3],
+"fill_token": "blue",
+"text_color": "#FFFFFF",
+"transient": true
+},
+{
+"type": "annotation",
+"text": "/bin   /lib   /etc",
+"position": [0.0, -0.8],
+"color_token": "text_dim",
+"transient": true
+}
+]
+},
+{
+"beat_id": "8.2",
+"narration_clause": "The kernel, working with the early userspace environment when necessary, locates the intended root filesystem and mounts it. Mounting means attaching a filesystem to a location in Linux's directory hierarchy so its contents become accessible. Once the real root filesystem is ready, the system transitions from the temporary startup environment to the main Linux installation. Now the operating system has access to the files and programs it needs to continue starting up. It's like opening the main library of books required to run the entire show.",
+"actors": [
+{
+"actor_type": "ChipSoC",
+"id": "kernel_cpu",
+"position": [-3.5, 0.5]
+},
+{
+"actor_type": "FilesystemHierarchyTree",
+"id": "root_tree_structure",
+"apex_position": [1.5, 0.5]
+},
+{
+"actor_type": "RamModuleActor",
+"id": "ram_reclaim",
+"position": [-1.0, -1.6]
+}
+],
+"choreography": {
+"mechanical_action": "A heavy blue (#1E60FF) structural bus bridge extends from the ChipSoC and mechanically clamps onto the '/' keystone coupler at (1.5, 0.5) with a mint (#00C9A7) lock flash. Simultaneously, the temporary amber initramfs workshop on the RamModuleActor folds flat and dissolves away (switch_root), returning the DRAM cells to clean green capacity.",
+"camera": "Wide shot capturing both the upper mount clamp and lower RAM reclamation."
+},
+"transient_telemetry": [
+{
+"type": "annotation",
+"text": "MOUNT / (READ-WRITE)",
+"position": [1.5, 1.8],
+"color_token": "text_primary",
+"transient": true
+}
+]
+},
+{
+"beat_id": "8.3",
+"narration_clause": "Here comes another important milestone. The kernel starts the very first userspace process: process number one, commonly called PID 1.",
+"actors": [
+{
+"actor_type": "ChipSoC",
+"id": "kernel_cpu",
+"position": [-3.0, 0.0]
+},
+{
+"actor_type": "FilesystemNodeActor",
+"id": "sbin_init_node",
+"position": [0.0, 0.0]
+},
+{
+"actor_type": "CyberneticTurbineHub",
+"id": "pid_1_systemd",
+"position": [2.8, 0.0]
+}
+],
+"choreography": {
+"mechanical_action": "A high-intensity mint (#00C9A7) ignition pulse travels from the ChipSoC through the '/sbin/init' node at (0.0, 0.0) and spins up a master cybernetic process turbine hub at (2.8, 0.0). The turbine locks into steady high-RPM rotation, radiating secondary blue (#1E60FF) service conduits outward toward the system perimeter.",
+"camera": "Dynamic push-in toward the spinning PID 1 turbine hub."
+},
+"transient_telemetry": [
+{
+"type": "badge",
+"text": "PID 1: systemd / init",
+"position": [2.8, 1.8],
+"fill_token": "mint",
+"text_color": "#FFFFFF",
+"transient": true
+}
+]
+}
+]
+}
+]
 }
