@@ -58,7 +58,6 @@ class Scene02(EditorialScene):
             self.play(Create(trace_cpu), Create(trace_ram), Create(trace_nvme), run_time=1.5)
             self.play(bios_rom.animate.scale(1.08), run_time=1.0)
             self.play(bios_rom.animate.scale(1 / 1.08), run_time=1.0)
-            self.wait(1.8)
 
         self.beat(
             "2.1",
@@ -89,7 +88,6 @@ class Scene02(EditorialScene):
                 ddr5_dimm.animate.scale(1 / 1.05),
                 run_time=2.41,
             )
-            self.wait(1.8)
 
         self.beat(
             "2.2",
@@ -114,7 +112,6 @@ class Scene02(EditorialScene):
             self.play(ddr5_dimm.animate.set_color(PALETTE["mint"]), run_time=3.0)
             self.play(probe_cpu.animate.move_to([2.6, 0.0, 0.0]), run_time=2.0)
             self.play(nvme_drive.animate.set_color(PALETTE["mint"]), run_time=2.6)
-            self.wait(1.8)
 
         self.beat(
             "2.3",
@@ -123,7 +120,7 @@ class Scene02(EditorialScene):
             motion_time=14.6,
             hold_time=1.8,
             transient=[
-                {"type": "badge", "text": "HARDWARE VERIFIED", "position": [0.0, 2.3], "fill_token": "mint", "text_color": "#FFFFFF"}
+                {"type": "badge", "text": "HARDWARE VERIFIED", "position": [0.0, 2.3], "fill_token": "mint", "text_color": "#1A202C"}
             ]
         )
 
@@ -148,7 +145,6 @@ class Scene02(EditorialScene):
                 FadeOut(fault_dot),
                 run_time=3.37,
             )
-            self.wait(1.8)
 
         self.beat(
             "2.4",
