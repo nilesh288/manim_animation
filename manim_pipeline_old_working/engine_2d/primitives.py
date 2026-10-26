@@ -628,6 +628,7 @@ class MilestoneTimeline(VGroup):
         length: float = 10.0,
         y_pos: float = -2.4,
         color=None,
+        all_up: bool = False,
         **kwargs
     ):
         super().__init__(**kwargs)
@@ -638,6 +639,8 @@ class MilestoneTimeline(VGroup):
         n = len(milestones)
         step = length / max(n - 1, 1)
 
+        self.dots = VGroup()
+        self.ticks = VGroup()
         self.markers = VGroup()
         self.labels = VGroup()
 
@@ -647,7 +650,7 @@ class MilestoneTimeline(VGroup):
             accent = PALETTE["coral"] if i == 0 else PALETTE["sky"]
             dot = Dot(pt, radius=0.09, color=accent)
 
-            is_up = (i % 2 == 0)
+            is_up = True if all_up else (i % 2 == 0)
             tick_dir = UP if is_up else DOWN
             tick = Line(pt, pt + tick_dir * 0.40, color=col, stroke_width=2.0)
 
@@ -661,6 +664,8 @@ class MilestoneTimeline(VGroup):
             )
             text_mob.next_to(tick.get_end(), tick_dir, buff=0.10)
 
+            self.dots.add(dot)
+            self.ticks.add(tick)
             self.markers.add(dot, tick)
             self.labels.add(text_mob)
 

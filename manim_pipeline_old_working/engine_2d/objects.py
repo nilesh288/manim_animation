@@ -1189,6 +1189,7 @@ class ChipSoC(InteractiveActor):
             fill_opacity=1.0,
         )
         self.die_core = Dot(radius=0.12, color=accent).move_to(self.die.get_center())
+        self.core = self.die_core
         self.add(pins, self.package, self.die, self.die_core)
 
 

@@ -304,10 +304,15 @@ class InfographicScene(Scene):
                 self.wait(fade_duration)
         elif remaining_hold > 0:
             self.wait(remaining_hold)
-            if active_transients:
-                for item in active_transients:
-                    if item not in self._pending_transients:
-                        self._pending_transients.append(item)
+
+        # Ensure any active transients remaining on screen are queued for clean eviction
+        if active_transients:
+            for item in active_transients:
+                is_on_canvas = item in self.mobjects or (
+                    hasattr(item, "get_family") and any(sub in self.mobjects for sub in item.get_family())
+                )
+                if is_on_canvas and item not in self._pending_transients:
+                    self._pending_transients.append(item)
 
         self.elapsed_time += target_total
 
@@ -429,10 +434,15 @@ class InfographicThreeDScene(ThreeDScene):
                 self.wait(fade_duration)
         elif remaining_hold > 0:
             self.wait(remaining_hold)
-            if active_transients:
-                for item in active_transients:
-                    if item not in self._pending_transients:
-                        self._pending_transients.append(item)
+
+        # Ensure any active transients remaining on screen are queued for clean eviction
+        if active_transients:
+            for item in active_transients:
+                is_on_canvas = item in self.mobjects or (
+                    hasattr(item, "get_family") and any(sub in self.mobjects for sub in item.get_family())
+                )
+                if is_on_canvas and item not in self._pending_transients:
+                    self._pending_transients.append(item)
 
         self.elapsed_time += target_total
 

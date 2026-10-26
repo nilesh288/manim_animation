@@ -79,7 +79,11 @@ class SafePalette(dict):
         if not isinstance(key, str):
             return super().__getitem__(key)
 
-        normalized = key.strip().lower()
+        trimmed = key.strip()
+        if trimmed.startswith("#"):
+            return trimmed
+
+        normalized = trimmed.lower()
 
         # Support nested dictionary access like PALETTE["accents"]["sky"]
         if normalized in ("accents", "typography", "design_system", "palette", "colors", "tokens"):

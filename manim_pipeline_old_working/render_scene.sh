@@ -95,10 +95,18 @@ if [[ -n "$AUDIO_FILE" ]]; then
 
     if [[ -f "$AUDIO_FILE" ]]; then
         SCENE_STEM="$(basename "$SCENE_FILE" .py)"
-        OUT_MUX="$REPO_DIR/renders/${SCENE_STEM}_1080p.mp4"
+        RES_TAG="1080p"
+        if [[ "$QUALITY" == *"-ql"* ]]; then
+            RES_TAG="480p"
+        elif [[ "$QUALITY" == *"-qm"* ]]; then
+            RES_TAG="720p"
+        elif [[ "$QUALITY" == *"-qk"* ]]; then
+            RES_TAG="4k"
+        fi
+        OUT_MUX="$REPO_DIR/renders/${SCENE_STEM}_${RES_TAG}.mp4"
         echo "🎵 Muxing audio ($AUDIO_FILE) with video..."
         ffmpeg -y -i "$PERM_DEST" -i "$AUDIO_FILE" -c:v copy -c:a aac -shortest "$OUT_MUX"
-        if [[ "$SCENE_STEM" == *"linux_boot"* ]]; then
+        if [[ "$SCENE_STEM" == *"linux_boot"* && "$RES_TAG" == "1080p" ]]; then
             cp "$OUT_MUX" "$REPO_DIR/renders/Linux_Boot_Scene01_1080p.mp4"
         fi
         echo "🎉 Complete Production Video Ready: $OUT_MUX"
