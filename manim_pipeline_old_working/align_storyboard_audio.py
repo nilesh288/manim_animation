@@ -4,6 +4,9 @@ align_storyboard_audio.py
 Audio-Synchronized Timestamp Injector for Visual Director Storyboards.
 Uses Faster-Whisper word-level alignment and SequenceMatcher to inject
 exact start_time, end_time, motion_time, and hold_time into the storyboard JSON.
+Supports both schema variations:
+1. Scenes -> Beats -> visual_sub_beats (sub-beat level timing)
+2. Scenes -> Beats (direct beat level timing with narration_clause / text)
 """
 
 import sys
@@ -47,16 +50,24 @@ def calculate_pacing(sub_beat_duration: float):
     return motion_t, hold_t
 
 
-def assign_words_to_sub_beats(whisper_words, flattened_sub_beats):
+def get_narration_text(obj: dict) -> str:
+    """Extracts spoken narration text across different storyboard schema formats."""
+    for key in ("narration_anchor", "narration_clause", "narration", "text", "voiceover", "speech"):
+        val = obj.get(key)
+        if isinstance(val, str) and val.strip():
+            return val.strip()
+    return ""
+
+
+def assign_words_to_sub_beats(whisper_words, flattened_targets):
     """
-    Maps Whisper words to sub-beat indices using difflib + nearest-neighbor interpolation.
-    Adapted from the reference alignment script.
+    Maps Whisper words to target indices using difflib + nearest-neighbor interpolation.
     """
     s_words = []
     s_word_to_target = []
 
-    for target_idx, sb in enumerate(flattened_sub_beats):
-        anchor_text = sb.get("narration_anchor", "")
+    for target_idx, target in enumerate(flattened_targets):
+        anchor_text = get_narration_text(target)
         for w in anchor_text.split():
             cw = clean_word(w)
             if cw:
@@ -65,6 +76,10 @@ def assign_words_to_sub_beats(whisper_words, flattened_sub_beats):
 
     w_words = [w['clean'] for w in whisper_words]
     assign = [-1] * len(w_words)
+
+    if not s_words:
+        print("⚠️ Warning: No narration text found across storyboard targets.")
+        return [0] * len(w_words)
 
     sm = difflib.SequenceMatcher(None, w_words, s_words, autojunk=False)
     for block in sm.get_matching_blocks():
@@ -95,45 +110,48 @@ def assign_words_to_sub_beats(whisper_words, flattened_sub_beats):
         else:
             assign[i] = 0
 
-    # Outlier filter: if isolated word differs from both identical neighbors
-    for i in range(1, n - 1):
-        if assign[i - 1] == assign[i + 1] and assign[i] != assign[i - 1]:
-            assign[i] = assign[i - 1]
-
-    # Monotonicity check: narration is strictly sequential
-    for i in range(1, n):
-        if assign[i] < assign[i - 1]:
-            assign[i] = assign[i - 1]
-
     return assign
 
 
-def align_storyboard_to_audio(audio_path: str, storyboard_json_path: str, output_json_path: str, model_size="base"):
-    from faster_whisper import WhisperModel
-
-    audio_file = Path(audio_path)
-    storyboard_file = Path(storyboard_json_path)
-    out_file = Path(output_json_path)
-
-    if not audio_file.exists():
-        print(f"❌ Audio file not found: {audio_file}")
-        sys.exit(1)
-    if not storyboard_file.exists():
-        print(f"❌ Storyboard JSON not found: {storyboard_file}")
+def align_storyboard_to_audio(audio_file: str, storyboard_file: str, output_file: str, model_size: str = "base"):
+    try:
+        from faster_whisper import WhisperModel
+    except ImportError:
+        print("❌ Error: faster-whisper is not installed in the environment.")
+        print("   Run: pip install faster-whisper")
         sys.exit(1)
 
+    audio_path = Path(audio_file)
+    if not audio_path.is_file():
+        print(f"❌ Error: Audio file not found: {audio_file}")
+        sys.exit(1)
+
+    storyboard_path = Path(storyboard_file)
+    if not storyboard_path.is_file():
+        print(f"❌ Error: Storyboard file not found: {storyboard_file}")
+        sys.exit(1)
+
+    out_file = Path(output_file)
+
+    # 1. Transcribe Audio for Word-Level Timestamps
     print(f"Loading Faster-Whisper Model ('{model_size}', device=cpu, int8)...")
     model = WhisperModel(model_size, device="cpu", compute_type="int8")
 
-    print(f"Transcribing audio '{audio_file.name}' for word-level timestamps...")
-    segments, info = model.transcribe(str(audio_file), beam_size=5, word_timestamps=True, language="en")
+    print(f"Transcribing audio '{audio_path.name}' for word-level timestamps...")
+    segments, info = model.transcribe(str(audio_path), word_timestamps=True, language="en")
 
     whisper_words = []
     for segment in segments:
         for word in segment.words:
-            cleaned = clean_word(word.word)
-            if cleaned:
-                whisper_words.append({"clean": cleaned, "start": word.start, "end": word.end})
+            cw = clean_word(word.word)
+            if cw:
+                whisper_words.append({
+                    "word": word.word,
+                    "clean": cw,
+                    "start": round(word.start, 3),
+                    "end": round(word.end, 3),
+                    "probability": round(word.probability, 3)
+                })
 
     if not whisper_words:
         print("❌ No words detected in the audio file.")
@@ -141,37 +159,50 @@ def align_storyboard_to_audio(audio_path: str, storyboard_json_path: str, output
 
     print(f"Detected {len(whisper_words)} spoken words across {info.duration:.2f}s of audio.")
 
-    # Load Storyboard JSON
-    with open(storyboard_file, "r", encoding="utf-8") as f:
+    # 2. Load Storyboard JSON
+    with open(storyboard_path, "r", encoding="utf-8") as f:
         storyboard_data = json.load(f)
 
-    # Flatten all sub-beats into a linear sequence for matching
-    flattened_sub_beats = []
+    # 3. Flatten targets (supports both visual_sub_beats and direct beats)
+    flattened_targets = []
+    has_sub_beats = False
+
     for scene in storyboard_data.get("scenes", []):
         for beat in scene.get("beats", []):
-            for sb in beat.get("visual_sub_beats", []):
-                flattened_sub_beats.append(sb)
+            subs = beat.get("visual_sub_beats", [])
+            if subs:
+                has_sub_beats = True
+                for sb in subs:
+                    flattened_targets.append(sb)
+            else:
+                flattened_targets.append(beat)
 
-    total_targets = len(flattened_sub_beats)
-    print(f"Aligning audio across {total_targets} visual sub-beats...")
+    total_targets = len(flattened_targets)
+    if total_targets == 0:
+        print("❌ Error: No scenes or beats found in the storyboard JSON.")
+        sys.exit(1)
 
-    assignments = assign_words_to_sub_beats(whisper_words, flattened_sub_beats)
+    target_type = "visual sub-beats" if has_sub_beats else "storyboard beats"
+    print(f"Aligning audio across {total_targets} {target_type}...")
 
-    # First-word start / last-word end per sub-beat
-    sub_beat_times = {}
+    # 4. Map words to targets
+    assignments = assign_words_to_sub_beats(whisper_words, flattened_targets)
+
+    # First-word start / last-word end per target
+    target_times = {}
     for i, w in enumerate(whisper_words):
         target_idx = assignments[i]
-        if target_idx not in sub_beat_times:
-            sub_beat_times[target_idx] = {'start': w['start'], 'end': w['end']}
+        if target_idx not in target_times:
+            target_times[target_idx] = {'start': w['start'], 'end': w['end']}
         else:
-            sub_beat_times[target_idx]['end'] = w['end']
+            target_times[target_idx]['end'] = w['end']
 
-    # Raw start/end calculation with fallback
+    # Raw start/end calculation with forward interpolation fallback
     raw_start, raw_end = [], []
     for idx in range(total_targets):
-        if idx in sub_beat_times:
-            s = sub_beat_times[idx]['start']
-            e = sub_beat_times[idx]['end']
+        if idx in target_times:
+            s = target_times[idx]['start']
+            e = target_times[idx]['end']
         else:
             s = raw_end[-1] if raw_end else 0.0
             e = s + 1.2
@@ -179,49 +210,60 @@ def align_storyboard_to_audio(audio_path: str, storyboard_json_path: str, output
         raw_end.append(e)
 
     # Midpoint boundary calculation to absorb silence
-    total_audio_duration = max(info.duration, raw_end[-1])
+    total_audio_duration = max(info.duration, raw_end[-1] if raw_end else info.duration)
     bounds = [0.0]
     for i in range(1, total_targets):
         bounds.append((raw_end[i - 1] + raw_start[i]) / 2.0)
     bounds.append(total_audio_duration)
 
-    # Round boundaries with minimum duration per sub-beat (0.4s)
+    # Round boundaries with minimum duration per beat/sub-beat (0.4s)
     calibrated_bounds = round_boundaries(bounds, min_duration=0.40, ndigits=2)
 
-    # Inject calculated timing back into the hierarchical JSON
-    global_sb_idx = 0
+    # 5. Inject calculated timing back into the hierarchical JSON
+    global_idx = 0
     for scene in storyboard_data.get("scenes", []):
         for beat in scene.get("beats", []):
-            for sb in beat.get("visual_sub_beats", []):
-                start = calibrated_bounds[global_sb_idx]
-                end = calibrated_bounds[global_sb_idx + 1]
+            subs = beat.get("visual_sub_beats", [])
+            if subs:
+                for sb in subs:
+                    start = calibrated_bounds[global_idx]
+                    end = calibrated_bounds[global_idx + 1]
+                    duration = round(end - start, 2)
+                    motion_t, hold_t = calculate_pacing(duration)
+
+                    sb["start_time"] = start
+                    sb["end_time"] = end
+                    sb["duration"] = duration
+                    sb["motion_time"] = motion_t
+                    sb["hold_time"] = hold_t
+                    global_idx += 1
+
+                beat["start_time"] = subs[0]["start_time"]
+                beat["end_time"] = subs[-1]["end_time"]
+                beat["duration"] = round(beat["end_time"] - beat["start_time"], 2)
+            else:
+                start = calibrated_bounds[global_idx]
+                end = calibrated_bounds[global_idx + 1]
                 duration = round(end - start, 2)
                 motion_t, hold_t = calculate_pacing(duration)
 
-                sb["start_time"] = start
-                sb["end_time"] = end
-                sb["duration"] = duration
-                sb["motion_time"] = motion_t
-                sb["hold_time"] = hold_t
+                beat["start_time"] = start
+                beat["end_time"] = end
+                beat["duration"] = duration
+                beat["motion_time"] = motion_t
+                beat["hold_time"] = hold_t
+                global_idx += 1
 
-                global_sb_idx += 1
-
-            # Aggregate beat-level metrics
-            sub_beats = beat.get("visual_sub_beats", [])
-            beat["start_time"] = sub_beats[0]["start_time"]
-            beat["end_time"] = sub_beats[-1]["end_time"]
-            beat["duration"] = round(beat["end_time"] - beat["start_time"], 2)
-
-        # Aggregate scene-level metrics
         beats = scene.get("beats", [])
-        scene["audio_start_time"] = beats[0]["start_time"]
-        scene["audio_end_time"] = beats[-1]["end_time"]
-        scene["total_duration"] = round(scene["audio_end_time"] - scene["audio_start_time"], 2)
+        if beats:
+            scene["audio_start_time"] = beats[0]["start_time"]
+            scene["audio_end_time"] = beats[-1]["end_time"]
+            scene["total_duration"] = round(scene["audio_end_time"] - scene["audio_start_time"], 2)
 
     # Update root metadata
     storyboard_data["master_audio_total_duration"] = round(total_audio_duration, 2)
 
-    # Write formatted output JSON
+    # 6. Write formatted output JSON
     out_file.parent.mkdir(parents=True, exist_ok=True)
     with open(out_file, "w", encoding="utf-8") as out_f:
         json.dump(storyboard_data, out_f, indent=2)
@@ -229,11 +271,15 @@ def align_storyboard_to_audio(audio_path: str, storyboard_json_path: str, output
     print(f"\n✅ Timing Alignment Complete!")
     print(f"   • Output Saved To:     {out_file}")
     print(f"   • Master Audio Length: {total_audio_duration:.2f}s")
-    print(f"   • Sub-Beats Timed:     {total_targets}")
+    print(f"   • Beats Timed:         {total_targets}")
     print("\nScene Breakdown:")
     for sc in storyboard_data.get("scenes", []):
-        print(f"   - {sc['scene_id']} [{sc['audio_start_time']}s -> {sc['audio_end_time']}s] "
-              f"| {sc['total_duration']:.2f}s | {len(sc['beats'])} beats")
+        sc_id = sc.get('scene_id')
+        start = sc.get('audio_start_time', 0.0)
+        end = sc.get('audio_end_time', 0.0)
+        dur = sc.get('total_duration', 0.0)
+        n_beats = len(sc.get('beats', []))
+        print(f"   - Scene {sc_id} [{start}s -> {end}s] | {dur:.2f}s | {n_beats} beats")
 
 
 if __name__ == "__main__":
